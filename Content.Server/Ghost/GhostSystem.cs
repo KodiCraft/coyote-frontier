@@ -35,6 +35,7 @@ using Content.Shared.Warps;
 using Robust.Server.GameObjects;
 using Robust.Server.Player;
 using Robust.Shared.Configuration;
+using Robust.Shared.Enums;
 using Robust.Shared.Map;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Systems;
@@ -404,14 +405,16 @@ namespace Content.Server.Ghost
                         continue;
                     var jobName = _jobs.MindTryGetJobName(mind?.Mind);
                     var nameName = Comp<MetaDataComponent>(attached).EntityName;
+                    _player.TryGetSessionByEntity(attached, out var session);
+                    var isConnected = session is { Status: SessionStatus.Connected };
                     // var playerInfo = $"{nameName} ({jobName})";
                     var gStatus = true switch
                     {
-                        true when mind!.IsInCryosleep => GhostStatus.CryoSleep,
-                        // true when _mobState.IsCritical(attached) => GhostStatus.Unconscious,
+                        true when _mobState.IsDead(attached) => GhostStatus.Dead,
                         true when HasComp<GhostComponent>(attached) => GhostStatus.Ghost,
-                        true when _mobState.IsAlive(attached) => GhostStatus.Alive,
-                        _ => GhostStatus.Dead,
+                        true when mind!.IsInCryosleep => GhostStatus.CryoSleep,
+                        true when !isConnected => GhostStatus.SSD,
+                        _ => GhostStatus.Alive,
                     };
                     var dupeNumber = 0;
                     if (dupeNum.TryGetValue(nameName, out var dupeCount))

@@ -218,6 +218,7 @@ namespace Content.Shared.Ghost
         Ghost,
         Unconscious,
         CryoSleep,
+        SSD,
         OtherStuff,
     }
 

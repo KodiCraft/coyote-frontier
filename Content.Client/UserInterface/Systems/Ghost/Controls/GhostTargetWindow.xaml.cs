@@ -12,7 +12,7 @@ namespace Content.Client.UserInterface.Systems.Ghost.Controls
     [GenerateTypedNameReferences]
     public sealed partial class GhostTargetWindow : DefaultWindow
     {
-        private List<(string, NetEntity)> _warps = new();
+        private List<(string, NetEntity?)> _warps = new();
         private string _searchText = string.Empty;
 
         public event Action<NetEntity>? WarpClicked;
@@ -28,110 +28,74 @@ namespace Content.Client.UserInterface.Systems.Ghost.Controls
 
         public void UpdateWarps(IEnumerable<GhostWarp> warps)
         {
-            // check if the client is an admin!
             var adminManager = IoCManager.Resolve<IClientAdminManager>();
             var isAdmin = adminManager.IsAdmin();
-            // Server COULD send these sorted but how about we just use the client to do it instead
-            _warps = warps
+
+            var sortedWarps = warps
+                .Where(w => w.WarpKind != GhostStatus.CryoSleep || isAdmin)
                 .OrderBy(w => w.IsWarpPoint)
                 .ThenBy(w => w.AdminOnly)
-                .ThenBy(
-                    w => w.WarpKind,
-                    Comparer<GhostStatus>.Create(
-                    comparison: (x, y) =>
-                        x == y
-                            ? 0
-                            : x < y
-                                ? -1
-                                : 1))
-                .ThenBy(
-                    w => w.DisplayName,
-                    Comparer<string>.Create(
-                        (x, y) =>
-                            string.Compare(
-                                x,
-                                y,
-                                StringComparison.Ordinal)))
-                .Select(
-                    w =>
-                    {
-                        //okay first, if the WarpKind is CryoSleep, only show it for admins
-                        if (w.WarpKind == GhostStatus.CryoSleep
-                            && !isAdmin)
-                        {
-                            return (string.Empty, NetEntity.Invalid);
-                        }
-                        string name;
-                        if (!w.IsWarpPoint)
-                        {
-                            if (string.IsNullOrEmpty(w.JobName))
-                            {
-                                w.JobName = "Unknown";
-                            }
-                            if (w.DupeNumber > 0)
-                            {
-                                name = w.WarpKind switch
-                                {
-                                    GhostStatus.Dead => Loc.GetString(
-                                        "ghost-target-window-warp-button-dead-dupe",
-                                        ("name", w.DisplayName),
-                                        ("job", w.JobName),
-                                        ("dupe", w.DupeNumber)),
-                                    GhostStatus.Unconscious => Loc.GetString(
-                                        "ghost-target-window-warp-button-unconscious-dupe",
-                                        ("name", w.DisplayName),
-                                        ("job", w.JobName),
-                                        ("dupe", w.DupeNumber)),
-                                    GhostStatus.Ghost => Loc.GetString(
-                                        "ghost-target-window-warp-button-ghost-dupe",
-                                        ("name", w.DisplayName),
-                                        ("job", w.JobName),
-                                        ("dupe", w.DupeNumber)),
-                                    GhostStatus.CryoSleep => Loc.GetString(
-                                        "ghost-target-window-warp-button-cryo-dupe",
-                                        ("name", w.DisplayName),
-                                        ("job", w.JobName),
-                                        ("dupe", w.DupeNumber)),
-                                    _ => Loc.GetString(
-                                        "ghost-target-window-current-button-dupe",
-                                        ("name", w.DisplayName),
-                                        ("job", w.JobName),
-                                        ("dupe", w.DupeNumber)),
-                                };
-                            }
-                            else
-                            {
-                                name = w.WarpKind switch
-                                {
-                                    GhostStatus.Dead => Loc.GetString(
-                                        "ghost-target-window-warp-button-dead",
-                                        ("name", w.DisplayName),
-                                        ("job", w.JobName)),
-                                    GhostStatus.Unconscious => Loc.GetString(
-                                        "ghost-target-window-warp-button-unconscious",
-                                        ("name", w.DisplayName),
-                                        ("job", w.JobName)),
-                                    GhostStatus.Ghost => Loc.GetString(
-                                        "ghost-target-window-warp-button-ghost",
-                                        ("name", w.DisplayName),
-                                        ("job", w.JobName)),
-                                    GhostStatus.CryoSleep => Loc.GetString(
-                                        "ghost-target-window-warp-button-cryo",
-                                        ("name", w.DisplayName),
-                                        ("job", w.JobName)),
-                                    _ => Loc.GetString(
-                                        "ghost-target-window-current-button",
-                                        ("name", w.DisplayName),
-                                        ("job", w.JobName)),
-                                };
-                            }
-                        }
-                        else
-                            name = $"Warp: {w.DisplayName}"; //w.DisplayName;
-
-                        return (name, w.Entity);
-                    })
+                .ThenBy(w => w.WarpKind)
+                .ThenBy(w => w.DisplayName, StringComparer.Ordinal)
                 .ToList();
+
+            _warps = new List<(string, NetEntity?)>();
+            string? lastGroup = null;
+            foreach (var w in sortedWarps)
+            {
+                string currentGroup = w.IsWarpPoint ? "WarpPoint" : w.WarpKind.ToString();
+                if (currentGroup != lastGroup && lastGroup != null)
+                {
+                    string dividerText = GetDividerText(w);
+                    _warps.Add((dividerText, null));
+                }
+                _warps.Add((GetWarpName(w), w.Entity));
+                lastGroup = currentGroup;
+            }
+        }
+
+        private string GetWarpName(GhostWarp w)
+        {
+            if (w.IsWarpPoint)
+                return $"Warp: {w.DisplayName}";
+
+            if (string.IsNullOrEmpty(w.JobName))
+                w.JobName = "Unknown";
+
+            var baseKey = w.DupeNumber > 0 ? "-dupe" : "";
+            var statusKey = w.WarpKind switch
+            {
+                GhostStatus.Dead => "dead",
+                GhostStatus.Unconscious => "unconscious",
+                GhostStatus.Ghost => "ghost",
+                GhostStatus.CryoSleep => "cryo",
+                GhostStatus.SSD => "ssd",
+                _ => "current",
+            };
+
+            return Loc.GetString(
+                $"ghost-target-window-warp-button-{statusKey}{baseKey}",
+                ("name", w.DisplayName),
+                ("job", w.JobName),
+                ("dupe", w.DupeNumber));
+        }
+
+        private string GetDividerText(GhostWarp w)
+        {
+            if (w.IsWarpPoint)
+                return "============WARP POINTS============";
+
+            var statusKey = w.WarpKind switch
+            {
+                GhostStatus.Dead => "DEAD",
+                GhostStatus.Unconscious => "UNCONSCIOUS",
+                GhostStatus.Ghost => "GHOST",
+                GhostStatus.CryoSleep => "CRYO",
+                GhostStatus.SSD => "SSD",
+                _ => "CURRENT",
+            };
+
+            return $"============{statusKey}============";
         }
 
         public void Populate()
@@ -144,10 +108,20 @@ namespace Content.Client.UserInterface.Systems.Ghost.Controls
         {
             foreach (var (name, warpTarget) in _warps)
             {
-                // If the name is empty, skip it.
-                if (string.IsNullOrEmpty(name)
-                    || warpTarget == NetEntity.Invalid)
+                if (warpTarget == null)
+                {
+                    var label = new Label
+                    {
+                        Text = name,
+                        HorizontalAlignment = HAlignment.Center,
+                    };
+                    ButtonContainer.AddChild(label);
                     continue;
+                }
+
+                if (string.IsNullOrEmpty(name) || warpTarget == NetEntity.Invalid)
+                    continue;
+
                 var currentButtonRef = new Button
                 {
                     Text = name,
@@ -155,11 +129,10 @@ namespace Content.Client.UserInterface.Systems.Ghost.Controls
                     HorizontalAlignment = HAlignment.Stretch,
                     VerticalAlignment = VAlignment.Center,
                     SizeFlagsStretchRatio = 1,
-                    // MinSize = new Vector2(445, 1),
                     ClipText = true,
                 };
 
-                currentButtonRef.OnPressed += _ => WarpClicked?.Invoke(warpTarget);
+                currentButtonRef.OnPressed += _ => WarpClicked?.Invoke(warpTarget.Value);
                 currentButtonRef.Visible = ButtonIsVisible(currentButtonRef);
 
                 ButtonContainer.AddChild(currentButtonRef);
