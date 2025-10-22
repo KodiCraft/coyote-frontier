@@ -120,10 +120,11 @@
     - SingularityTeslaEngine
     - Power
   # Frontier: tethered danger balls & radar blips
-  - type: DangerTethered
+  #  - type: DangerTethered # nah throw them into space and have fun
   - type: RadarBlip
-    scale: 4
+    scale: 8
     shape: Star
+    color: Red
     visibleFromOtherGrids: true
   # End Frontier: tethered danger balls & radar blips
 
