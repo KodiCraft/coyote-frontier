@@ -77,6 +77,9 @@ public sealed class RoleplayIncentiveSystem : EntitySystem
     private TimeSpan DeathPunishmentCooldown = TimeSpan.FromMinutes(30);
     private TimeSpan DeepFryerPunishmentCooldown = TimeSpan.FromMinutes(5); // please stop deep frying tesharis
 
+    private TimeSpan NextUpdate = TimeSpan.Zero;
+    private TimeSpan UpdateInterval = TimeSpan.FromSeconds(10);
+
     /// <inheritdoc/>
     public override void Initialize()
     {
@@ -94,6 +97,7 @@ public sealed class RoleplayIncentiveSystem : EntitySystem
         SubscribeLocalEvent<RoleplayIncentiveComponent, GetVerbsEvent<Verb>>(GetRpiVerbs);
         // SubscribeLocalEvent<RoleplayIncentiveComponent, GetVerbsEvent<ExamineVerb>>   (OnGetExamineVerbs);
         SortTaxBrackets();
+        NextUpdate = _timing.CurTime + UpdateInterval;
     }
 
     #region Setup stuff
@@ -782,6 +786,10 @@ public sealed class RoleplayIncentiveSystem : EntitySystem
     public override void Update(float frameTime)
     {
         base.Update(frameTime);
+
+        if (_timing.CurTime < NextUpdate)
+            return;
+        NextUpdate = _timing.CurTime + UpdateInterval;
 
         var query = EntityQueryEnumerator<RoleplayIncentiveComponent>();
         while (query.MoveNext(out var uid, out var rpic))
