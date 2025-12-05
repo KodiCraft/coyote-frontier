@@ -1,0 +1,31 @@
+# WELCOME TO CB TAILS
+# Most of these were in a frunked up format on ss13
+# this is because Poojawa is a frucking as hole who was too clever for our own good
+# and made all these sprites use an RGB-scaled color matrix thing that made it impossible to
+# make more for, or port to other, saner codebases.
+# until i smashed them with a rock and now we have these
+
+- type: marking
+  id: CB_Tail_3Sune
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Kitsune]
+  kindAllowance: [BasicHumanlike, BasicFurry]
+  layering:
+    m_tail_3sune_BEHIND_primary: TailBehind
+    m_tail_3sune_BEHIND_secondary: TailBehind
+    m_tail_3sune_FRONT_primary: TailOversuit
+    m_tail_3sune_FRONT_secondary: TailOversuit
+  colorLinks:
+    m_tail_9sune_BEHIND_primary: m_tail_9sune_FRONT_primary
+    m_tail_9sune_BEHIND_secondary: m_tail_9sune_FRONT_secondary
+  sprites:
+  - sprite: Floof/Mobs/Customization/skyrattails.rsi
+    state: m_tail_9sune_FRONT_primary
+  - sprite: Floof/Mobs/Customization/skyrattails.rsi
+    state: m_tail_9sune_FRONT_secondary
+  - sprite: Floof/Mobs/Customization/skyrattails.rsi
+    state: m_tail_9sune_BEHIND_primary
+  - sprite: Floof/Mobs/Customization/skyrattails.rsi
+    state: m_tail_9sune_BEHIND_secondary
+
