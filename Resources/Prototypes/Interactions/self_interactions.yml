@@ -17,6 +17,7 @@
   id: PinchSelf
   parent: SelfInteractionBase
   delay: 1
+  category: Action
   action:
     !type:ComplexAction
     actions:
@@ -36,6 +37,7 @@
 - type: Interaction
   id: MakeSleepSelf
   parent: [SelfInteractionBase, MakeSleepOther]
+  category: Action
   delay: 4.5
   requirement:
     !type:ComplexRequirement

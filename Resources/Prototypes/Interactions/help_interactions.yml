@@ -20,6 +20,7 @@
   delay: 1.5
   cooldown: 0.5
   hideByRequirement: true
+  category: Action
   requirement:
     !type:StandingStateRequirement
     allowLaying: true
@@ -43,6 +44,7 @@
   id: ForceDown
   parent: [BaseHelp, BaseGlobal]
   delay: 4.5
+  category: Action
   hideByRequirement: true
   requirement:
     !type:StandingStateRequirement
@@ -56,6 +58,7 @@
   parent: [BaseHelp, BaseGlobal]
   priority: -6
   delay: 10 # Should be long enough to be non-abusable, right?
+  category: Action
   hideByRequirement: true
   requirement:
     !type:ComplexRequirement
@@ -75,6 +78,7 @@
   parent: [BaseHelp, BaseGlobal]
   priority: -5
   delay: 0.8
+  category: Action
   cooldown: 10 # Slightly abusable
   effectDelayed: null
   hideByRequirement: true

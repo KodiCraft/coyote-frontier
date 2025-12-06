@@ -324,9 +324,24 @@ public abstract class SharedInteractionVerbsSystem : EntitySystem
         verb.Text = proto.Name;
         verb.Message = proto.Description;
         verb.DoContactInteraction = proto.DoContactInteraction;
-        verb.Priority = proto.Priority;
+        verb.Priority = proto.Priority
+                        + proto.Category switch
+        {
+            InteractionVerbPrototype.InteractionVerbCategory.Interaction => 400,
+            InteractionVerbPrototype.InteractionVerbCategory.NsfwInteraction => 300,
+            InteractionVerbPrototype.InteractionVerbCategory.Action => 200,
+            InteractionVerbPrototype.InteractionVerbCategory.NsfwAction => 100,
+            _ => 0,
+        };
         verb.Icon = proto.Icon;
-        verb.Category = VerbCategory.Interaction;
+        verb.Category = proto.Category switch
+        {
+            InteractionVerbPrototype.InteractionVerbCategory.Interaction => VerbCategory.Interaction,
+            InteractionVerbPrototype.InteractionVerbCategory.NsfwInteraction => VerbCategory.InteractionNsfw,
+            InteractionVerbPrototype.InteractionVerbCategory.Action => VerbCategory.InteractionAction,
+            InteractionVerbPrototype.InteractionVerbCategory.NsfwAction => VerbCategory.InteractionActionNsfw,
+            _ => VerbCategory.Interaction,
+        };
     }
 
     /// <summary>

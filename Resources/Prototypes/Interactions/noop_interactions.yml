@@ -6,6 +6,7 @@
   requiresCanInteract: false
   contactInteraction: false
   allowSelfInteract: true
+  category: Interaction
   icon: /Textures/Interface/Actions/eyeopen.png
   range: {max: 20}
   effectSuccess:
@@ -22,6 +23,7 @@
   requiresCanInteract: false
   contactInteraction: false
   range: {max: 20}
+  category: Interaction
   effectSuccess:
     popup: Obvious
     sound: {path: /Audio/Effects/ominous.ogg}
@@ -36,6 +38,7 @@
 # Knocking on the target - windows, doors, etc.
 - type: Interaction
   id: KnockOn
+  category: Action
   parent: BaseHands
   priority: 20
   effectSuccess:
@@ -49,6 +52,7 @@
   id: Rattle
   parent: BaseHands
   priority: 20
+  category: Interaction
   effectSuccess:
     popup: VisibleNoChat
     sound: {collection: FenceRattle}
@@ -63,6 +67,7 @@
   requiresHands: false
   requiresCanInteract: false
   contactInteraction: false
+  category: NsfwInteraction
   icon: /Textures/Interface/Actions/eyeopen.png
   range: {max: 20}
   effectSuccess:

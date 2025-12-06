@@ -32,6 +32,9 @@ public sealed partial class InteractionVerbPrototype : IPrototype, IInheritingPr
 
     public string? Description => Loc.TryGetString($"interaction-{ID}-description" , out var loc) ? loc : null;
 
+    [DataField]
+    public InteractionVerbCategory Category { get; } = InteractionVerbCategory.Interaction;
+
     /// <summary>
     ///     Sprite of the icon that the user sees on the verb button.
     /// </summary>
@@ -253,6 +256,16 @@ public sealed partial class InteractionVerbPrototype : IPrototype, IInheritingPr
         Health = 1 << 2,
         All = Mass | Stamina | Health,
         None = 0
+    }
+
+    [Serializable]
+    public enum InteractionVerbCategory : byte
+    {
+        Default,
+        Interaction,
+        Action,
+        NsfwInteraction,
+        NsfwAction,
     }
 }
 

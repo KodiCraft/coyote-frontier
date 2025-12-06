@@ -93,7 +93,10 @@ namespace Content.Shared.Verbs
             new("verb-categories-pen", "/Textures/Interface/pencil.png"); // Frontier
 
         // EE interaction system
-        public static readonly VerbCategory Interaction = new("verb-categories-interaction", null);
+        public static readonly VerbCategory Interaction           = new("verb-categories-interaction", null);
+        public static readonly VerbCategory InteractionNsfw       = new("verb-categories-interaction-nsfw", null);
+        public static readonly VerbCategory InteractionAction     = new("verb-categories-interaction-zz-action", null);
+        public static readonly VerbCategory InteractionActionNsfw = new("verb-categories-interaction-zz-action-nsfw", null);
 
         public static readonly VerbCategory Vore = new("verb-categories-vore", null); // Floofstation
     }
