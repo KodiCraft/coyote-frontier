@@ -402,6 +402,7 @@
         true
       NavSmash: !type:Bool # They use this option too much for my liking, but I'll keep it here as an option
         true
+#  - type: LaserPointer
 
 - type: entity
   id: MobHumanoidHostileAIComplex
