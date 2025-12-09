@@ -13,7 +13,7 @@ namespace Content.Server.Speech.EntitySystems
         public string Accentuate(string message)
         {
             // Insert E before every S
-            message = InsertS(message);
+            // message = InsertS(message);
             // If a sentence ends with ?, insert a reverse ? at the beginning of the sentence
             message = ReplacePunctuation(message);
             return message;
