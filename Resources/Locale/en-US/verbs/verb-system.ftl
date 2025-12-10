@@ -31,9 +31,9 @@ verb-categories-power-level = Power Level
 verb-categories-adjust = Adjust
 # EE interaction system
 verb-categories-interaction = Interact
-verb-categories-interaction-nsfw = Interact (Lewd)
+verb-categories-interaction-nsfw = Interact (NSFW)
 verb-categories-interaction-zz-action = Action
-verb-categories-interaction-zz-action-nsfw = Action (Lewd)
+verb-categories-interaction-zz-action-nsfw = Action (NSFW)
 
 verb-categories-blip-preset = BLIP Preset
 verb-categories-blip-color = BLIP Color
