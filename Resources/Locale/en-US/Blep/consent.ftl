@@ -45,6 +45,9 @@ consent-NoClone-desc = Turn this on to disallow Paradox clones of yourself.
 consent-NSFWDescriptions-name = See NSFW Descriptions
 consent-NSFWDescriptions-desc = Turn this on to see any temporary descriptions that are flagged as NSFW.
 
+consent-CanSmellLewdScents-name = Smell NSFW Scents
+consent-CanSmellLewdScents-desc = Turn this on to smell scents that are flagged as NSFW.
+
 consent-GenitalMarkings-name = See Genital Markings
 consent-GenitalMarkings-desc = Turn this on to allow showing/hiding genital markings in-game.
 

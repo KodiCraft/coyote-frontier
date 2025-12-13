@@ -1,0 +1,73 @@
+- type: scent
+  id: ScentDirectOnly
+  abstract: true
+  directOnly: true
+  msgsDirect:
+  - "%TARGET% has a distinct smell."
+  msgsFar: []
+  msgsClose: []
+
+- type: scent
+  id: ScentLewd
+  abstract: true
+  isLewd: true
+
+- type: scent
+  id: ScentStinky
+  abstract: true
+  isStinky: true
+
+- type: scent
+  id: ScentBase
+  closeRange: 2
+  farRange: 10
+  minCooldownSeconds: 20
+  maxCooldownSeconds: 120
+  detectionPercent: 20
+  detectionInterval: 10
+  directOnly: false
+  isStinky: false
+  isLewd: false
+  priorityMultiplier: 1.0
+  preventingComponents: []
+  blockingComponents: []
+
+- type: scent
+  id: ScentExampleForFenny
+  parents:
+    - ScentBase
+  msgsDirect:
+    - "%TARGET% smells like you'd expect."
+  msgsClose:
+    - "You smell something."
+  msgsFar:
+    - "You catch a faint scent."
+
+- type: scent
+  id: ScentLewdExampleForFenny
+  parents:
+    - ScentBase
+    - ScentLewd
+  msgsDirect:
+    - "%TARGET% has a very lewd scent."
+  msgsClose:
+    - "You smell something lewd."
+  msgsFar:
+    - "You catch a faint lewd scent."
+
+- type: scent
+  id: ScentDirectOnlyExampleForFenny
+  parents:
+    - ScentBase
+    - ScentDirectOnly
+  msgsDirect:
+    - "%TARGET% smells really cool."
+
+- type: scent
+  id: ScentDirectOnlyLewdExampleForFenny
+  parents:
+    - ScentBase
+    - ScentDirectOnly
+    - ScentLewd
+  msgsDirect:
+    - "%TARGET% smells really horny."
