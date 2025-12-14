@@ -40,8 +40,8 @@ namespace Content.Client.Popups
         private readonly Dictionary<WorldPopupData, WorldPopupLabel> _aliveWorldLabels = new();
         private readonly Dictionary<CursorPopupData, CursorPopupLabel> _aliveCursorLabels = new();
 
-        public const float MinimumPopupLifetime = 0.7f;
-        public const float MaximumPopupLifetime = 5f;
+        public const float MinimumPopupLifetime = 2f;
+        public const float MaximumPopupLifetime = 7f;
         public const float PopupLifetimePerCharacter = 0.04f;
 
         // WD EDIT START
@@ -139,7 +139,13 @@ namespace Content.Client.Popups
                     10))
             {
                 var fontsize = FontSizeDict.GetValueOrDefault(type, "10");
-                var fontcolor = type is PopupType.LargeCaution or PopupType.MediumCaution or PopupType.SmallCaution
+                var fontcolor = type
+                    is PopupType.LargeCaution
+                    or PopupType.LargeCautionLingering
+                    or PopupType.MediumCaution
+                    or PopupType.MediumCautionLingering
+                    or PopupType.SmallCaution
+                    or PopupType.SmallCautionLingering
                     ? "#C62828"
                     : "#AEABC4";
 
@@ -421,7 +427,18 @@ namespace Content.Client.Popups
 
         public static float GetPopupLifetime(PopupLabel label)
         {
-            return Math.Clamp(PopupLifetimePerCharacter * label.Text.Length,
+            var baselifetime = label.Type switch
+            {
+                PopupType.Small or PopupType.SmallCaution => 2f,
+                PopupType.SmallLingering or PopupType.SmallCautionLingering => 4f,
+                PopupType.Medium or PopupType.MediumCaution => 3f,
+                PopupType.MediumLingering or PopupType.MediumCautionLingering => 5f,
+                PopupType.Large or PopupType.LargeCaution => 4f,
+                PopupType.LargeLingering or PopupType.LargeCautionLingering => 6f,
+                _ => 2f,
+            };
+            return Math.Clamp(
+                PopupLifetimePerCharacter * label.Text.Length + baselifetime,
                 MinimumPopupLifetime,
                 MaximumPopupLifetime);
         }

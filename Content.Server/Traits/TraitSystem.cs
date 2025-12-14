@@ -1,4 +1,5 @@
 using Content.Shared._Coyote.HornyQuirks;
+using Content.Shared._Coyote.SniffAndSmell;
 using Content.Shared.GameTicking;
 using Content.Shared.Hands.Components;
 using Content.Shared.Hands.EntitySystems;
@@ -14,6 +15,7 @@ public sealed class TraitSystem : EntitySystem
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly SharedHandsSystem _sharedHandsSystem = default!;
     [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
+    [Dependency] private readonly ScentSystem _scentSystem = default!;
 
     public override void Initialize()
     {
@@ -60,6 +62,15 @@ public sealed class TraitSystem : EntitySystem
                 if (_prototypeManager.TryIndex(traitPrototype.HornyExamineProto, out var hormy))
                 {
                     EnsureComp<HornyExamineQuirksComponent>(args.Mob).AddHornyExamineTrait(hormy, _prototypeManager);
+                }
+            }
+
+            if (traitPrototype.Scents is { Count: > 0 })
+            {
+                var scentComp = EnsureComp<ScentComponent>(args.Mob);
+                foreach (var scentProtoId in traitPrototype.Scents)
+                {
+                    _scentSystem.AddScentPrototype(scentComp, scentProtoId);
                 }
             }
 

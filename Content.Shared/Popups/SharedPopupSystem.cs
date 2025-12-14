@@ -272,17 +272,23 @@ namespace Content.Shared.Popups
         ///     Small popups are the default, and denote actions that may be spammable or are otherwise unimportant.
         /// </summary>
         Small,
+        SmallLingering,
         SmallCaution,
+        SmallCautionLingering,
         /// <summary>
         ///     Medium popups should be used for actions which are not spammable but may not be particularly important.
         /// </summary>
         Medium,
+        MediumLingering,
         MediumCaution,
+        MediumCautionLingering,
         /// <summary>
         ///     Large popups should be used for actions which may be important or very important to one or more users,
         ///     but is not life-threatening.
         /// </summary>
         Large,
-        LargeCaution
+        LargeLingering,
+        LargeCaution,
+        LargeCautionLingering,
     }
 }
