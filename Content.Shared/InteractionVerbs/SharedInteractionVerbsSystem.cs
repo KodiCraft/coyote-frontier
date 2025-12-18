@@ -326,7 +326,16 @@ public abstract class SharedInteractionVerbsSystem : EntitySystem
         verb.DoContactInteraction = proto.DoContactInteraction;
         verb.Priority = proto.Priority;
         verb.Icon = proto.Icon;
-        verb.Category = VerbCategory.Interaction;
+
+        // Set category based on the CategoryKey, or default to Interaction
+        verb.Category = proto.CategoryKey switch
+        {
+            "interact-sfw" => VerbCategory.InteractSFW,
+            "interact-nsfw" => VerbCategory.InteractNSFW,
+            "actions" => VerbCategory.Actions,
+            "examine-group" => VerbCategory.ExamineGroup,
+            _ => VerbCategory.Interaction
+        };
     }
 
     /// <summary>

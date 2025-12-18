@@ -94,7 +94,8 @@ namespace Content.Server.Carrying
                     StartCarryDoAfter(args.User, uid, component);
                 },
                 Text = Loc.GetString("carry-verb"),
-                Priority = 2
+                Priority = 2,
+                Category = VerbCategory.Actions
             };
             args.Verbs.Add(verb);
         }

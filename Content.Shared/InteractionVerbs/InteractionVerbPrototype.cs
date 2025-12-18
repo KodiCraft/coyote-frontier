@@ -176,6 +176,13 @@ public sealed partial class InteractionVerbPrototype : IPrototype, IInheritingPr
     [DataField]
     public bool Global = false;
 
+    /// <summary>
+    ///     The category key for the verb. Can be used to specify custom categories like "interact-sfw", "interact-nsfw", "actions", etc.
+    ///     If not specified, defaults to "interaction".
+    /// </summary>
+    [DataField]
+    public string? CategoryKey = null;
+
     [DataDefinition, Serializable]
     public partial struct RangeSpecifier()
     {
