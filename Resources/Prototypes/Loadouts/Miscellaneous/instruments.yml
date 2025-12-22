@@ -1,196 +1,168 @@
 # Instruments
 - type: loadout
   id: Glockenspiel
-  price: 2000
   storage:
     back:
     - GlockenspielInstrument
 
 - type: loadout
   id: MusicBox
-  price: 2000
   storage:
     back:
     - MusicBoxInstrument
 
 - type: loadout
   id: Xylophone
-  price: 2000
   storage:
     back:
     - XylophoneInstrument
 
 - type: loadout
   id: Microphone
-  price: 2000
   storage:
     back:
     - MicrophoneInstrument
 
 - type: loadout
   id: Synthesizer
-  price: 2000
   storage:
     back:
     - SynthesizerInstrument
 
 - type: loadout
   id: Kalimba
-  price: 2000
   storage:
     back:
     - KalimbaInstrument
 
 - type: loadout
   id: Woodblock
-  price: 2000
   storage:
     back:
     - WoodblockInstrument
 
 - type: loadout
   id: ElectricGuitar
-  price: 2000
   storage:
     back:
     - ElectricGuitarInstrument
 
 - type: loadout
   id: BassGuitar
-  price: 2000
   storage:
     back:
     - BassGuitarInstrument
 
 - type: loadout
   id: RockGuitar
-  price: 2000
   storage:
     back:
     - RockGuitarInstrument
 
 - type: loadout
   id: AcousticGuitar
-  price: 2000
   storage:
     back:
     - AcousticGuitarInstrument
 
 - type: loadout
   id: Banjo
-  price: 2000
   storage:
     back:
     - BanjoInstrument
 
 - type: loadout
   id: Violin
-  price: 2000
   storage:
     back:
     - ViolinInstrument
 
 - type: loadout
   id: Viola
-  price: 2000
   storage:
     back:
     - ViolaInstrument
 
 - type: loadout
   id: Cello
-  price: 2000
   storage:
     back:
     - CelloInstrument
 
 - type: loadout
   id: Trumpet
-  price: 2000
   storage:
     back:
     - TrumpetInstrument
 
 - type: loadout
   id: Trombone
-  price: 2000
   storage:
     back:
     - TromboneInstrument
 
 - type: loadout
   id: FrenchHorn
-  price: 2000
   storage:
     back:
     - FrenchHornInstrument
 
 - type: loadout
   id: Euphonium
-  price: 2000
   storage:
     back:
     - EuphoniumInstrument
 
 - type: loadout
   id: Saxophone
-  price: 2000
   storage:
     back:
     - SaxophoneInstrument
 
 - type: loadout
   id: Accordion
-  price: 2000
   storage:
     back:
     - AccordionInstrument
 
 - type: loadout
   id: Harmonica
-  price: 2000
   storage:
     back:
     - HarmonicaInstrument
 
 - type: loadout
   id: Clarinet
-  price: 2000
   storage:
     back:
     - ClarinetInstrument
 
 - type: loadout
   id: Flute
-  price: 2000
   storage:
     back:
     - FluteInstrument
 
 - type: loadout
   id: Recorder
-  price: 2000
   storage:
     back:
     - RecorderInstrument
 
 - type: loadout
   id: PanFlute
-  price: 2000
   storage:
     back:
     - PanFluteInstrument
 
 - type: loadout
   id: Ocarina
-  price: 2000
   storage:
     back:
     - OcarinaInstrument
 
 - type: loadout
   id: Bagpipe
-  price: 2000
   storage:
     back:
     - BagpipeInstrument
