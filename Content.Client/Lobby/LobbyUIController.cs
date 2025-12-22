@@ -48,7 +48,7 @@ public sealed class LobbyUIController : UIController, IOnStateEntered<LobbyState
     private CharacterSetupGuiSavePanel? _savePanel;
     public bool ShowUndies = true;
     public bool ShowGenitals = true;
-    
+
     /// <summary>
     /// This is the characher preview panel in the chat. This should only update if their character updates.
     /// </summary>
@@ -512,7 +512,7 @@ public sealed class LobbyUIController : UIController, IOnStateEntered<LobbyState
                 GiveDummyLoadout(dummyEnt, loadout);
             }
         }
-        
+
         if (!ShowUndies)
         {
             _humanoid.HideUndies(dummyEnt);

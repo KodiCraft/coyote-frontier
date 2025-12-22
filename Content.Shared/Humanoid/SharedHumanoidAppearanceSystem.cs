@@ -847,7 +847,7 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         Dirty(uid, humanoid);
     }
     // Floofstation section end
-    
+
     public virtual void HideUndies(EntityUid uid, HumanoidAppearanceComponent? humanoid = null)
     {
         if (!Resolve(uid, ref humanoid))
@@ -857,7 +857,7 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         // humanoid.PermanentlyHidden.Add(HumanoidVisualLayers.UndergarmentTop);
         Dirty(uid, humanoid);
     }
-    
+
     public virtual void HideGenitals(EntityUid ent, HumanoidAppearanceComponent? humanoid = null)
     {
         if (!Resolve(ent, ref humanoid))

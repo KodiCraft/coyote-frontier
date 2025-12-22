@@ -115,7 +115,7 @@ namespace Content.Client.Lobby.UI
         public event Action<List<ProtoId<GuideEntryPrototype>>>? OnOpenGuidebook;
 
         private ISawmill _sawmill;
-        
+
         private ProfilePreviewSettings _ppSettings = new();
 
         public HumanoidProfileEditor(

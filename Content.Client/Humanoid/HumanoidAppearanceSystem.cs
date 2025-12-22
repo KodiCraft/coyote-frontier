@@ -19,7 +19,7 @@ public sealed class HumanoidAppearanceSystem : SharedHumanoidAppearanceSystem
     [Dependency] private readonly MarkingManager _markingManager = default!;
     [Dependency] private readonly IConfigurationManager _configurationManager = default!;
     [Dependency] private readonly DisplacementMapSystem _displacement = default!;
-    
+
     public ProfilePreviewSettings? ProfilePreviewSettings = null;
 
     public override void Initialize()
@@ -310,7 +310,7 @@ public sealed class HumanoidAppearanceSystem : SharedHumanoidAppearanceSystem
         humanoid.EyeColor = profile.Appearance.EyeColor;
         humanoid.Height = profile.Height;
         humanoid.Width = profile.Width;
-        
+
         // Apply profile preview settings if they exist
         if (ProfilePreviewSettings != null)
         {
