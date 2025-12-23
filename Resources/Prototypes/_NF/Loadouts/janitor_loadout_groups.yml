@@ -11,6 +11,7 @@
 - type: loadoutGroup
   id: JanitorNFJumpsuit
   name: loadout-group-contractor-jumpsuit
+  minLimit: 0 # Coyote
   loadouts:
   - JanitorNFClothingUniformJumpsuitJanitor
   - JanitorNFClothingUniformJumpskirtJanitor
@@ -40,6 +41,7 @@
 - type: loadoutGroup
   id: JanitorBackpack
   name: loadout-group-contractor-backpack
+  minLimit: 0 # Coyote
   loadouts:
   - JanitorNFClothingBackpackDuffelJanitor
   - JanitorClothingBackpackMessengerJanitor

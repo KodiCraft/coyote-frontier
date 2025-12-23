@@ -1,6 +1,7 @@
 - type: loadoutGroup
   id: ContractorJumpsuit
   name: loadout-group-contractor-jumpsuit
+  minLimit: 0 # Coyote
   loadouts:
   - ContractorClothingUniformJumpsuitColorGrey
   - ContractorClothingUniformJumpskirtColorGrey
@@ -224,6 +225,7 @@
 - type: loadoutGroup
   id: ContractorBackpack
   name: loadout-group-contractor-backpack
+  minLimit: 0 # Coyote
   loadouts:
   - ContractorClothingBackpack
   - ContractorClothingBackpackDuffel
@@ -434,6 +436,7 @@
 - type: loadoutGroup
   id: ContractorShoes
   name: loadout-group-contractor-shoes
+  minLimit: 0 # Coyote
   loadouts:
   - ContractorClothingShoesColorBlack
   - ContractorClothingShoesClothwrap
@@ -872,6 +875,7 @@
 - type: loadoutGroup
   id: ContractorFace
   name: loadout-group-contractor-face
+  minLimit: 0 # Coyote
   loadouts:
   - ContractorClothingMaskBreath
   - ContractorClothingMaskBreathMedical

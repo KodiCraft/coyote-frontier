@@ -1,6 +1,7 @@
 - type: loadoutGroup
   id: StationRepJumpsuit
   name: loadout-group-contractor-jumpsuit
+  minLimit: 0 # Coyote
   loadouts:
   - StationRepClothingUniformJumpsuitSr
   - StationRepClothingUniformJumpskirtSr
@@ -24,6 +25,7 @@
 - type: loadoutGroup
   id: StationRepBackpack
   name: loadout-group-contractor-backpack
+  minLimit: 0 # Coyote
   loadouts:
   - StationRepClothingBackpackDuffelSr
   - StationRepClothingBackpackMessengerSr

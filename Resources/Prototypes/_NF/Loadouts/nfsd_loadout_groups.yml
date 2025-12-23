@@ -1,7 +1,7 @@
 - type: loadoutGroup
   id: NfsdBackpackBrown
   name: loadout-group-contractor-backpack
-  minLimit: 1
+  minLimit: 0
   loadouts:
   - NfsdClothingBackpackNfsdBrown
   - NfsdClothingBackpackSatchelNfsdBrown
@@ -17,7 +17,7 @@
 - type: loadoutGroup
   id: NfsdBackpackCream
   name: loadout-group-contractor-backpack
-  minLimit: 1
+  minLimit: 0
   loadouts:
   - NfsdClothingBackpackNfsdCream
   - NfsdClothingBackpackSatchelNfsdCream
@@ -33,7 +33,7 @@
 - type: loadoutGroup
   id: NfsdShoesBrown
   name: loadout-group-contractor-shoes
-  minLimit: 1
+  minLimit: 0
   loadouts:
   - NfsdClothingShoesBootsBrown
   - NfsdClothingShoesBootsCream
@@ -43,7 +43,7 @@
 - type: loadoutGroup
   id: NfsdShoesCream
   name: loadout-group-contractor-shoes
-  minLimit: 1
+  minLimit: 0
   loadouts:
   - NfsdClothingShoesBootsCream
   - NfsdClothingShoesBootsBrown
@@ -53,7 +53,7 @@
 - type: loadoutGroup
   id: NfsdGlovesBrown
   name: loadout-group-contractor-gloves
-  minLimit: 1
+  minLimit: 0
   loadouts:
   - NfsdClothingHandsGlovesCombatNfsdBrown
   - NfsdClothingHandsGlovesCombatNfsdCream
@@ -63,7 +63,7 @@
 - type: loadoutGroup
   id: NfsdGlovesCream
   name: loadout-group-contractor-gloves
-  minLimit: 1
+  minLimit: 0
   loadouts:
   - NfsdClothingHandsGlovesCombatNfsdCream
   - NfsdClothingHandsGlovesCombatNfsdBrown
@@ -73,7 +73,7 @@
 - type: loadoutGroup
   id: NfsdBelt
   name: loadout-group-contractor-belt
-  minLimit: 1
+  minLimit: 0
   loadouts:
   - NfsdWebbing
   - NfsdBelt
@@ -97,7 +97,8 @@
 - type: loadoutGroup
   id: NfsdFace
   name: loadout-group-contractor-face
-  hidden: true # No point in showing this, it gets auto-selected.
+  minLimit: 0 # Coyote
+  hidden: false # No point in showing this, it gets auto-selected.
   loadouts:
   - NfsdClothingMaskGasNfsd
   fallbacks:
@@ -106,7 +107,8 @@
 - type: loadoutGroup
   id: NfsdGlasses
   name: loadout-group-contractor-glasses
-  hidden: true # No point in showing this, it gets auto-selected.
+  minLimit: 0 # Coyote
+  hidden: false # No point in showing this, it gets auto-selected.
   loadouts:
   - NfsdClothingEyesGlasses
   fallbacks:
