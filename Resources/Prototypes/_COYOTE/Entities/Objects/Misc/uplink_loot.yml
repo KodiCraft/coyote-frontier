@@ -27,7 +27,6 @@
     - WeaponCaseLongBarlowsBoltExpedition
     - WeaponCaseLongRepeaterExpedition
     - WeaponCaseLongSniperCeremonialExpedition
-    - BrokenBottle
     - Shiv
     - ReinforcedShiv
     - PlasmaShiv
@@ -35,7 +34,6 @@
     - ScalpelShiv
     - BaseBallBat
     - Stunprod
-    - WhiteCane
     - CombatKnife
     - SurvivalKnife
     chance: 1.0
