@@ -1416,5 +1416,41 @@ marking-CoyoteTailwagWah-m_tailwag_wah_FRONT_B = Red Panda Wah, Wagging (Primary
 marking-CoyoteTailwagWah-m_tailwag_wah_FRONT_C = Red Panda Wah, Wagging (Secondary)
 marking-CoyoteTailwagWah = Red Panda Wah, Wagging
 
+marking-KemonoBunnyTail                        = Kemono Bunny Tail
+marking-KemonoBunnyTail-bunnytail              = Kemono Bunny Tail
 
+marking-KemonoBunnyTailAlt                     = Kemono Bunny Tail Alt
+marking-KemonoBunnyTailAlt-bunnytailalt        = Kemono Bunny Tail Alt
+
+marking-KemonoDobleFurTail                     = Kemono Doble Fur Tail
+marking-KemonoDobleFurTail-doblefurtailtone1   = Kemono Doble Fur Tail Tone 1
+marking-KemonoDobleFurTail-doblefurtailtone2   = Kemono Doble Fur Tail Tone 2
+
+marking-KemonoFluffyTail                       = Kemono Fluffy Tail
+marking-KemonoFluffyTail-fluffytail            = Kemono Fluffy Tail
+
+marking-KemonoFoxNineTails                     = Kemono Fox Nine Tails
+marking-KemonoFoxNineTails-foxninetailstone1   = Kemono Fox Nine Tails Tone 1
+marking-KemonoFoxNineTails-foxninetailstone2   = Kemono Fox Nine Tails Tone 2
+
+marking-KemonoFoxThreeTails                    = Kemono Fox Three Tails
+marking-KemonoFoxThreeTails-foxthreetailstone1 = Kemono Fox Three Tails Tone 1
+marking-KemonoFoxThreeTails-foxthreetailstone2 = Kemono Fox Three Tails Tone 2
+
+marking-KemonoFoxTwoTails                      = Kemono Fox Two Tails
+marking-KemonoFoxTwoTails-foxtwotailstone1     = Kemono Fox Two Tails Tone 1
+marking-KemonoFoxTwoTails-foxtwotailstone2     = Kemono Fox Two Tails Tone 2
+
+marking-KemonoHorseTailCulty                   = Kemono Horse Tail Culty
+marking-KemonoHorseTailCulty-horsetailculty    = Kemono Horse Tail Culty
+
+marking-KemonoHorseTailLong                    = Kemono Horse Tail Long
+marking-KemonoHorseTailLong-horsetaillong      = Kemono Horse Tail Long
+
+marking-KemonoSharkTail                        = Kemono Shark Tail
+marking-KemonoSharkTail-sharktail              = Kemono Shark Tail
+
+marking-KemonoTasselTail                       = Kemono Tassel Tail
+marking-KemonoTasselTail-tasseltailtone1       = Kemono Tassel Tail Tone 1
+marking-KemonoTasselTail-tasseltailtone2       = Kemono Tassel Tail Tone 2
 
