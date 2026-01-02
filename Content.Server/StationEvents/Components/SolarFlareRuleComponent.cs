@@ -63,4 +63,7 @@ public sealed partial class SolarFlareRuleComponent : Component
     [DataField]
     public bool AllChannels;
     // End Frontier
+
+    [DataField]
+    public bool DontBlockRadios = true;
 }

@@ -113,7 +113,7 @@ public abstract class SharedNeedsSystem : EntitySystem
                     false);
             },
             Text = Loc.GetString("examinable-need-verb-text"),
-            Category = VerbCategory.Examine,
+            Category = VerbCategory.ExamineGroup,
             Disabled = !detailsRange,
             Message = detailsRange ? null : Loc.GetString("examinable-need-verb-disabled"),
             Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/NavMap/beveled_triangle.png"))

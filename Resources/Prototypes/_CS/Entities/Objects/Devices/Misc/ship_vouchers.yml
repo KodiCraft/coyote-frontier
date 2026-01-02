@@ -82,6 +82,7 @@
     vessels:
     - Legman
     - Oculus
+    - Stringer
 
 - type: entity
   parent: BaseShipVoucherCoyoteGeneric

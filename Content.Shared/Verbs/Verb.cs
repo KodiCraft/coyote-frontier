@@ -249,7 +249,7 @@ namespace Content.Shared.Verbs
     public sealed class InteractionVerb : Verb
     {
         public new static string DefaultTextStyleClass = "InteractionVerb";
-        public override int TypePriority => 4;
+        public override int TypePriority => 3;
         public override bool DefaultDoContactInteraction => true;
 
         public InteractionVerb() : base()
@@ -290,7 +290,7 @@ namespace Content.Shared.Verbs
     [Serializable, NetSerializable]
     public sealed class InnateVerb : Verb
     {
-        public override int TypePriority => 3;
+        public override int TypePriority => 4;
         public InnateVerb() : base()
         {
             TextStyleClass = InteractionVerb.DefaultTextStyleClass;

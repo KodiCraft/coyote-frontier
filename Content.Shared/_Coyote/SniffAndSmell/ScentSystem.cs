@@ -58,17 +58,19 @@ public sealed class ScentSystem : EntitySystem
     /// </summary>
     private void GetSmellVerbs(EntityUid uid, ScentComponent component, GetVerbsEvent<InteractionVerb> args)
     {
-        if (!TryComp<ScentComponent>(args.Target, out var scentComp))
+        if (!TryComp<SmellerComponent>(args.User, out SmellerComponent? smellerComp))
             return;
-        if (!TryComp<SmellerComponent>(args.User, out var smellerComp))
-            return;
-        if (args.CanInteract)
+        bool canSmellTarget = TryComp<ScentComponent>(args.Target, out ScentComponent? scentComp);
+        // Me smell you (or me)
+        if (args.CanInteract
+            && canSmellTarget
+            && scentComp != null)
         {
             InteractionVerb verb = new()
             {
                 Text = "Smell",
                 Priority = 2,
-                Category = VerbCategory.Interaction,
+                Category = VerbCategory.Actions,
                 Disabled = !_interact.InRangeUnobstructed(
                     args.User,
                     args.Target,
@@ -94,11 +96,11 @@ public sealed class ScentSystem : EntitySystem
             {
                 Text = passiveText,
                 Priority = 0,
-                Category = VerbCategory.Interaction,
+                Category = VerbCategory.Actions,
                 Act = () =>
                 {
                     smellerComp.PassiveSmellDetectionEnabled = !smellerComp.PassiveSmellDetectionEnabled;
-                    var popupMsg = smellerComp.PassiveSmellDetectionEnabled
+                    string popupMsg = smellerComp.PassiveSmellDetectionEnabled
                         ? Loc.GetString("scent-verb-passive-unignore-popup")
                         : Loc.GetString("scent-verb-passive-ignore-popup");
                     _popupSystem.PopupEntity(
@@ -113,7 +115,8 @@ public sealed class ScentSystem : EntitySystem
         }
         // and a verb to toggle being able to smell this smelly beast
         // trust me, its needed
-        if (args.User != args.Target)
+        if (args.User != args.Target
+            && scentComp != null)
         {
             var isIgnoringThem = IsIgnoringSmell(smellerComp, scentComp);
             var toggleText = isIgnoringThem ? "Notice Scent" : "Ignore Scent";
@@ -122,7 +125,7 @@ public sealed class ScentSystem : EntitySystem
             {
                 Text = toggleText,
                 Priority = 1,
-                Category = VerbCategory.Interaction,
+                Category = VerbCategory.Actions,
                 Act = () =>
                 {
                     ToggleIgnoreSmell(smellerComp, scentComp);

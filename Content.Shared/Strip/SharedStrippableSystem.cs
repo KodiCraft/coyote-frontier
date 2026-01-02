@@ -66,6 +66,7 @@ public abstract class SharedStrippableSystem : EntitySystem
             Text = Loc.GetString("strip-verb-get-data-text"),
             Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/outfit.svg.192dpi.png")),
             Act = () => TryOpenStrippingUi(args.User, (uid, component), true),
+            Category = VerbCategory.Actions
         };
 
         args.Verbs.Add(verb);
@@ -81,7 +82,7 @@ public abstract class SharedStrippableSystem : EntitySystem
             Text = Loc.GetString("strip-verb-get-data-text"),
             Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/outfit.svg.192dpi.png")),
             Act = () => TryOpenStrippingUi(args.User, (uid, component), true),
-            Category = VerbCategory.Examine,
+            Category = VerbCategory.ExamineGroup,
         };
 
         args.Verbs.Add(verb);

@@ -22,6 +22,7 @@
   - ContractorImplanter
   - ContractorBackpackItems
   - ContractorHandItems
+  - ContractorInstruments # Coyote
   - NFSpeciesSpecific
 
 - type: roleLoadout
@@ -47,6 +48,7 @@
   - ContractorImplanter
   - ContractorBackpackItems
   - ContractorHandItems
+  - ContractorInstruments # Coyote
   - NFSpeciesSpecific
 
 - type: roleLoadout
@@ -72,6 +74,7 @@
   - ContractorImplanter
   - ContractorBackpackItems
   - ContractorHandItems
+  - ContractorInstruments # Coyote
   - NFSpeciesSpecific
 
 # region Frontier
@@ -95,6 +98,7 @@
   - ContractorImplanter
   - ContractorBackpackItems
   - ContractorHandItems
+  - ContractorInstruments # Coyote
   - NFSpeciesSpecific
 
 - type: roleLoadout
@@ -116,6 +120,7 @@
   - ContractorImplanter
   - ContractorBackpackItems
   - ContractorHandItems
+  - ContractorInstruments # Coyote
   - NFSpeciesSpecific
 
 - type: roleLoadout
@@ -137,6 +142,7 @@
   - ContractorImplanter
   - ContractorBackpackItems
   - ContractorHandItems
+  - ContractorInstruments # Coyote
   - NFSpeciesSpecific
 
 - type: roleLoadout
@@ -160,6 +166,7 @@
   - ContractorImplanter
   - ContractorBackpackItems
   - ContractorHandItems
+  - ContractorInstruments # Coyote
   - NFSpeciesSpecific
 
 - type: roleLoadout
@@ -184,6 +191,7 @@
   - ContractorImplanter
   - StationRepBackpackItems
   - ContractorHandItems
+  - ContractorInstruments # Coyote
   - NFSpeciesSpecific
 
 - type: roleLoadout
@@ -207,6 +215,7 @@
   - ContractorEncryptionKey
   - ContractorBackpackItems
   - ContractorHandItems
+  - ContractorInstruments # Coyote
   - NFSpeciesSpecific
 
 # region Misc
@@ -233,6 +242,7 @@
   - ContractorEncryptionKey
   - ContractorBackpackItems
   - ContractorHandItems
+  - ContractorInstruments # Coyote
   - NFSpeciesSpecific
 
 - type: roleLoadout
@@ -258,6 +268,7 @@
   - ContractorEncryptionKey
   - ContractorBackpackItems
   - ContractorHandItems
+  - ContractorInstruments # Coyote
   - NFSpeciesSpecific
 
 - type: roleLoadout
@@ -282,6 +293,7 @@
   - ContractorEncryptionKey
   - ContractorBackpackItems
   - ContractorHandItems
+  - ContractorInstruments # Coyote
   - NFSpeciesSpecific
 
 # region NFSD
@@ -308,6 +320,7 @@
   - ContractorEncryptionKey
   - ContractorBackpackItems
   - ContractorHandItems
+  - ContractorInstruments # Coyote
   - NfsdSpeciesSpecific
 
 - type: roleLoadout
@@ -333,6 +346,7 @@
   - ContractorEncryptionKey
   - ContractorBackpackItems
   - ContractorHandItems
+  - ContractorInstruments # Coyote
   - NfsdSpeciesSpecific
 
 - type: roleLoadout
@@ -358,6 +372,7 @@
   - ContractorEncryptionKey
   - ContractorBackpackItems
   - ContractorHandItems
+  - ContractorInstruments # Coyote
   - NfsdSpeciesSpecific
 
 - type: roleLoadout
@@ -383,6 +398,7 @@
   - ContractorEncryptionKey
   - ContractorBackpackItems
   - ContractorHandItems
+  - ContractorInstruments # Coyote
   - NfsdSpeciesSpecific
 
 - type: roleLoadout
@@ -407,6 +423,7 @@
   - ContractorEncryptionKey
   - ContractorBackpackItems
   - ContractorHandItems
+  - ContractorInstruments # Coyote
   - NFSpeciesSpecific # Explicitly civilian variant
 
 # - type: roleLoadout # Fix when this is actully used
@@ -432,6 +449,7 @@
   # - ContractorEncryptionKey
   # - ContractorBackpackItems
   # - ContractorHandItems
+  # - ContractorInstruments # Coyote
   # - NfsdSpeciesSpecific
 
 - type: roleLoadout
@@ -457,6 +475,7 @@
   - ContractorEncryptionKey
   - SeniorOfficerBackpackItems
   - ContractorHandItems
+  - ContractorInstruments # Coyote
   - NfsdSpeciesSpecific
 
 - type: roleLoadout
@@ -482,6 +501,7 @@
   - ContractorEncryptionKey
   - SeniorOfficerBackpackItems
   - ContractorHandItems
+  - ContractorInstruments # Coyote
   - NfsdSpeciesSpecific
 
 - type: roleLoadout
@@ -506,6 +526,7 @@
   - ContractorImplanter
   - SeniorOfficerBackpackItems
   - ContractorHandItems
+  - ContractorInstruments # Coyote
   - NfsdSpeciesSpecific
 
 # region NFPirate
@@ -533,6 +554,7 @@
   - ContractorWallet
   - PirateBackpackItems
   - ContractorHandItems
+  - ContractorInstruments # Coyote
   - NFSpeciesSpecific
   canCustomizeName: true # pseudonym?
 
@@ -560,6 +582,7 @@
   - ContractorWallet
   - PirateBackpackItems
   - ContractorHandItems
+  - ContractorInstruments # Coyote
   - NFSpeciesSpecific
   canCustomizeName: true # pseudonym?
 
@@ -587,6 +610,7 @@
   - PirateCaptainWallet
   - PirateCaptainBackpackItems
   - ContractorHandItems
+  - ContractorInstruments # Coyote
   - NFSpeciesSpecific
   canCustomizeName: true # pseudonym?
 
@@ -606,4 +630,5 @@
   - PrisonerSurvival
   - PrisonerPDA
   - PrisonerWallet
+  - ContractorInstruments # Coyote
   - NFSpeciesSpecific

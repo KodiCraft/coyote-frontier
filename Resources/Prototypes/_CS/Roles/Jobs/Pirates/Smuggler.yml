@@ -7,7 +7,7 @@
     - !type:OverallPlaytimeRequirement
       time: 43200 # 12 hours / 2 shifts
     - !type:RoleTimeRequirement
-      role: JobSmuggler
+      role: JobPirate #CS Changed from JobSmuggler, this way all freelancer roles require the Pirate Whitelist.
       time: 3600 # 1 hour
     #- !type:DepartmentTimeRequirement # CS: swaps the playtime requirement to literally just be an hour of the role itself.
     #  department: Security
@@ -101,5 +101,6 @@
   - ContractorCartridge
   - ContractorBackpackItems
   - ContractorHandItems
+  - ContractorInstruments
   - NFSpeciesSpecific
   canCustomizeName: true # Allows pseudonyms.

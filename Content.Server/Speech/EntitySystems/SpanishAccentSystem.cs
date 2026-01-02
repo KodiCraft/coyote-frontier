@@ -5,6 +5,7 @@ namespace Content.Server.Speech.EntitySystems
 {
     public sealed class SpanishAccentSystem : EntitySystem
     {
+        [Dependency] private readonly ReplacementAccentSystem _replacement = default!;
         public override void Initialize()
         {
             SubscribeLocalEvent<SpanishAccentComponent, AccentGetEvent>(OnAccent);
@@ -13,9 +14,10 @@ namespace Content.Server.Speech.EntitySystems
         public string Accentuate(string message)
         {
             // Insert E before every S
-            message = InsertS(message);
+            // message = InsertS(message);
             // If a sentence ends with ?, insert a reverse ? at the beginning of the sentence
             message = ReplacePunctuation(message);
+            message = _replacement.ApplyReplacements(message, "spanish");
             return message;
         }
 

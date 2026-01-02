@@ -1,4 +1,5 @@
 using System.Linq;
+using Content.Client.Consent;
 using Content.Client.Guidebook;
 using Content.Client.Humanoid;
 using Content.Client.Inventory;
@@ -30,6 +31,7 @@ namespace Content.Client.Lobby;
 public sealed class LobbyUIController : UIController, IOnStateEntered<LobbyState>, IOnStateExited<LobbyState>
 {
     [Dependency] private readonly IClientPreferencesManager _preferencesManager = default!;
+    [Dependency] private readonly IClientConsentManager _consentManager = default!;
     [Dependency] private readonly IConfigurationManager _configurationManager = default!;
     [Dependency] private readonly IFileDialogManager _dialogManager = default!;
     [Dependency] private readonly IPlayerManager _playerManager = default!;
@@ -46,6 +48,8 @@ public sealed class LobbyUIController : UIController, IOnStateEntered<LobbyState
     private CharacterSetupGui? _characterSetup;
     private HumanoidProfileEditor? _profileEditor;
     private CharacterSetupGuiSavePanel? _savePanel;
+    public bool ShowUndies = true;
+    public bool ShowGenitals = true;
 
     /// <summary>
     /// This is the characher preview panel in the chat. This should only update if their character updates.
@@ -275,7 +279,8 @@ public sealed class LobbyUIController : UIController, IOnStateEntered<LobbyState
             _prototypeManager,
             _resourceCache,
             _requirements,
-            _markings);
+            _markings,
+            _consentManager);
 
         _profileEditor.OnOpenGuidebook += _guide.OpenHelp;
 
@@ -465,7 +470,10 @@ public sealed class LobbyUIController : UIController, IOnStateEntered<LobbyState
     /// <summary>
     /// Loads the profile onto a dummy entity.
     /// </summary>
-    public EntityUid LoadProfileEntity(HumanoidCharacterProfile? humanoid, JobPrototype? job, bool jobClothes)
+    public EntityUid LoadProfileEntity(
+        HumanoidCharacterProfile? humanoid,
+        JobPrototype? job,
+        bool jobClothes)
     {
         EntityUid dummyEnt;
 
@@ -506,6 +514,16 @@ public sealed class LobbyUIController : UIController, IOnStateEntered<LobbyState
                 var loadout = humanoid.GetLoadoutOrDefault(LoadoutSystem.GetJobPrototype(job.ID), _playerManager.LocalSession, humanoid.Species, EntityManager, _prototypeManager);
                 GiveDummyLoadout(dummyEnt, loadout);
             }
+        }
+
+        if (!ShowUndies)
+        {
+            _humanoid.HideUndies(dummyEnt);
+        }
+
+        if (!ShowGenitals)
+        {
+            _humanoid.HideGenitals(dummyEnt);
         }
 
         return dummyEnt;

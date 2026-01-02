@@ -36,7 +36,7 @@ public sealed class HealthExaminableSystem : EntitySystem
                 RaiseLocalEvent(uid, examineCompletedEvent); // Goobstation
             },
             Text = Loc.GetString("health-examinable-verb-text"),
-            Category = VerbCategory.Examine,
+            Category = VerbCategory.ExamineGroup,
             Disabled = !detailsRange,
             Message = detailsRange ? null : Loc.GetString("health-examinable-verb-disabled"),
             Icon = new SpriteSpecifier.Texture(new ("/Textures/Interface/VerbIcons/rejuvenate.svg.192dpi.png"))

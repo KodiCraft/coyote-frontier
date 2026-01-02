@@ -1330,3 +1330,127 @@ marking-Hairupdogeneric = Hair Updo Extension
 marking-Hairupdogeneric-hairupdogeneric = Hair Updo Extension
 marking-Drillandbunhair = Hair Drill and Bun Extension
 marking-Drillandbunhair-hair_drillandbun = Hair Drill and Bun Extension
+
+# wingus
+
+marking-CoyoteWingsDragon-m_insect_wings_dragon_alt_BEHIND_A  = Dragon Wings Alt (Primary)
+marking-CoyoteWingsDragon-m_insect_wings_dragon_alt_BEHIND_B  = Dragon Wings Alt (Secondary)
+marking-CoyoteWingsDragon-m_insect_wings_dragon_alt_FRONT_A   = Dragon Wings Alt (Primary)
+marking-CoyoteWingsDragon-m_insect_wings_dragon_alt_FRONT_B   = Dragon Wings Alt (Secondary)
+marking-CoyoteWingsDragon = Dragon Wings Alt
+
+marking-CoyoteWingsSepulchre-m_insect_wings_sepulchre_BEHIND_B  = Sepulchre
+marking-CoyoteWingsSepulchre-m_insect_wings_sepulchre_FRONT_B   = Sepulchre
+marking-CoyoteWingsSepulchre = Sepulchre
+
+marking-CoyoteWingsSuccubus-m_insect_wings_succubus_BEHIND_B  = Succubus
+marking-CoyoteWingsSuccubus-m_insect_wings_succubus_FRONT_B   = Succubus
+marking-CoyoteWingsSuccubus = Succubus
+
+# tailgus
+marking-CoyoteTailDatashark-m_tail_datashark_BEHIND_A = Datashark (Primary)
+marking-CoyoteTailDatashark-m_tail_datashark_BEHIND_C = Datashark (Secondary)
+marking-CoyoteTailDatashark-m_tail_datashark_FRONT_A = Datashark (Primary)
+marking-CoyoteTailDatashark-m_tail_datashark_FRONT_C = Datashark (Secondary)
+marking-CoyoteTailDatashark = Datashark
+
+marking-CoyoteTailDownhusky-m_tail_downhusky_BEHIND_B = Husky, downward (Primary)
+marking-CoyoteTailDownhusky-m_tail_downhusky_BEHIND_C = Husky, downward (Secondary)
+marking-CoyoteTailDownhusky-m_tail_downhusky_FRONT_B = Husky, downward (Primary)
+marking-CoyoteTailDownhusky-m_tail_downhusky_FRONT_C = Husky, downward (Secondary)
+marking-CoyoteTailDownhusky = Husky, downward
+
+marking-CoyoteTailEasternd-m_tail_easternd_BEHIND_B = Eastern Dragon Pro (Primary)
+marking-CoyoteTailEasternd-m_tail_easternd_BEHIND_C = Eastern Dragon Pro (Secondary)
+marking-CoyoteTailEasternd-m_tail_easternd_FRONT_B = Eastern Dragon Pro (Primary)
+marking-CoyoteTailEasternd-m_tail_easternd_FRONT_C = Eastern Dragon Pro (Secondary)
+marking-CoyoteTailEasternd = Eastern Dragon Pro
+
+marking-CoyoteTailPorkupine-m_tail_porkupine_BEHIND_A = Porkupine (Primary)
+marking-CoyoteTailPorkupine-m_tail_porkupine_BEHIND_B = Porkupine (Secondary)
+marking-CoyoteTailPorkupine-m_tail_porkupine_BEHIND_C = Porkupine (Tertiary)
+marking-CoyoteTailPorkupine-m_tail_porkupine_FRONT_A = Porkupine (Primary)
+marking-CoyoteTailPorkupine-m_tail_porkupine_FRONT_B = Porkupine (Secondary)
+marking-CoyoteTailPorkupine-m_tail_porkupine_FRONT_C = Porkupine (Tertiary)
+marking-CoyoteTailPorkupine = Porkupine
+
+marking-CoyoteTailSam-m_tail_sam_BEHIND_B = Squirrelfox (Primary)
+marking-CoyoteTailSam-m_tail_sam_BEHIND_C = Squirrelfox (Secondary)
+marking-CoyoteTailSam-m_tail_sam_FRONT_B = Squirrelfox (Primary)
+marking-CoyoteTailSam-m_tail_sam_FRONT_C = Squirrelfox (Secondary)
+marking-CoyoteTailSam = Squirrelfox
+
+marking-CoyoteTailWah-m_tail_wah_BEHIND_B = Red Panda Wah (Primary)
+marking-CoyoteTailWah-m_tail_wah_BEHIND_C = Red Panda Wah (Secondary)
+marking-CoyoteTailWah-m_tail_wah_FRONT_B = Red Panda Wah (Primary)
+marking-CoyoteTailWah-m_tail_wah_FRONT_C = Red Panda Wah (Secondary)
+marking-CoyoteTailWah = Red Panda Wah
+
+marking-CoyoteTailwagDatashark-m_tailwag_datashark_BEHIND_A = Datashark, Wagging (Primary)
+marking-CoyoteTailwagDatashark-m_tailwag_datashark_BEHIND_C = Datashark, Wagging (Secondary)
+marking-CoyoteTailwagDatashark-m_tailwag_datashark_FRONT_A = Datashark, Wagging (Primary)
+marking-CoyoteTailwagDatashark-m_tailwag_datashark_FRONT_C = Datashark, Wagging (Secondary)
+marking-CoyoteTailwagDatashark = Datashark, Wagging
+
+marking-CoyoteTailwagDownhusky-m_tailwag_downhusky_BEHIND_B = Husky, Downward, Wagging (Primary)
+marking-CoyoteTailwagDownhusky-m_tailwag_downhusky_BEHIND_C = Husky, Downward, Wagging (Secondary)
+marking-CoyoteTailwagDownhusky-m_tailwag_downhusky_FRONT_B = Husky, Downward, Wagging (Primary)
+marking-CoyoteTailwagDownhusky-m_tailwag_downhusky_FRONT_C = Husky, Downward, Wagging (Secondary)
+marking-CoyoteTailwagDownhusky = Husky, Downward, Wagging
+
+marking-CoyoteTailwagEasternd-m_tailwag_easternd_BEHIND_B = Eastern Dragon Pro, Wagging (Primary)
+marking-CoyoteTailwagEasternd-m_tailwag_easternd_BEHIND_C = Eastern Dragon Pro, Wagging (Secondary)
+marking-CoyoteTailwagEasternd-m_tailwag_easternd_FRONT_B = Eastern Dragon Pro, Wagging (Primary)
+marking-CoyoteTailwagEasternd-m_tailwag_easternd_FRONT_C = Eastern Dragon Pro, Wagging (Secondary)
+marking-CoyoteTailwagEasternd = Eastern Dragon Pro, Wagging
+
+marking-CoyoteTailwagSam-m_tailwag_sam_BEHIND_B = Squirrelfox, Wagging (Primary)
+marking-CoyoteTailwagSam-m_tailwag_sam_BEHIND_C = Squirrelfox, Wagging (Secondary)
+marking-CoyoteTailwagSam-m_tailwag_sam_FRONT_B = Squirrelfox, Wagging (Primary)
+marking-CoyoteTailwagSam-m_tailwag_sam_FRONT_C = Squirrelfox, Wagging (Secondary)
+marking-CoyoteTailwagSam = Squirrelfox, Wagging
+
+marking-CoyoteTailwagWah-m_tailwag_wah_BEHIND_B = Red Panda Wah, Wagging (Primary)
+marking-CoyoteTailwagWah-m_tailwag_wah_BEHIND_C = Red Panda Wah, Wagging (Secondary)
+marking-CoyoteTailwagWah-m_tailwag_wah_FRONT_B = Red Panda Wah, Wagging (Primary)
+marking-CoyoteTailwagWah-m_tailwag_wah_FRONT_C = Red Panda Wah, Wagging (Secondary)
+marking-CoyoteTailwagWah = Red Panda Wah, Wagging
+
+marking-KemonoBunnyTail                        = Kemono Bunny Tail
+marking-KemonoBunnyTail-bunnytail              = Kemono Bunny Tail
+
+marking-KemonoBunnyTailAlt                     = Kemono Bunny Tail Alt
+marking-KemonoBunnyTailAlt-bunnytailalt        = Kemono Bunny Tail Alt
+
+marking-KemonoDobleFurTail                     = Kemono Doble Fur Tail
+marking-KemonoDobleFurTail-doblefurtailtone1   = Kemono Doble Fur Tail Tone 1
+marking-KemonoDobleFurTail-doblefurtailtone2   = Kemono Doble Fur Tail Tone 2
+
+marking-KemonoFluffyTail                       = Kemono Fluffy Tail
+marking-KemonoFluffyTail-fluffytail            = Kemono Fluffy Tail
+
+marking-KemonoFoxNineTails                     = Kemono Fox Nine Tails
+marking-KemonoFoxNineTails-foxninetailstone1   = Kemono Fox Nine Tails Tone 1
+marking-KemonoFoxNineTails-foxninetailstone2   = Kemono Fox Nine Tails Tone 2
+
+marking-KemonoFoxThreeTails                    = Kemono Fox Three Tails
+marking-KemonoFoxThreeTails-foxthreetailstone1 = Kemono Fox Three Tails Tone 1
+marking-KemonoFoxThreeTails-foxthreetailstone2 = Kemono Fox Three Tails Tone 2
+
+marking-KemonoFoxTwoTails                      = Kemono Fox Two Tails
+marking-KemonoFoxTwoTails-foxtwotailstone1     = Kemono Fox Two Tails Tone 1
+marking-KemonoFoxTwoTails-foxtwotailstone2     = Kemono Fox Two Tails Tone 2
+
+marking-KemonoHorseTailCulty                   = Kemono Horse Tail Culty
+marking-KemonoHorseTailCulty-horsetailculty    = Kemono Horse Tail Culty
+
+marking-KemonoHorseTailLong                    = Kemono Horse Tail Long
+marking-KemonoHorseTailLong-horsetaillong      = Kemono Horse Tail Long
+
+marking-KemonoSharkTail                        = Kemono Shark Tail
+marking-KemonoSharkTail-sharktail              = Kemono Shark Tail
+
+marking-KemonoTasselTail                       = Kemono Tassel Tail
+marking-KemonoTasselTail-tasseltailtone1       = Kemono Tassel Tail Tone 1
+marking-KemonoTasselTail-tasseltailtone2       = Kemono Tassel Tail Tone 2
+

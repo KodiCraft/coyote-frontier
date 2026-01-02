@@ -221,7 +221,8 @@ public abstract partial class SharedBuckleSystem
         {
             Act = () => TryUnbuckle(uid, args.User, buckleComp: component),
             Text = Loc.GetString("verb-categories-unbuckle"),
-            Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/unbuckle.svg.192dpi.png"))
+            Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/unbuckle.svg.192dpi.png")),
+            Category = VerbCategory.Actions
         };
 
         if (args.Target == args.User && args.Using == null)

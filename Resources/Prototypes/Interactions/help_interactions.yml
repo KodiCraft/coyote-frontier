@@ -2,6 +2,7 @@
   id: BaseHelp
   parent: [BaseDangerous, BaseHands]
   abstract: true
+  categoryKey: actions
   priority: -5
   cooldown: 4
   range: {max: 1.2}

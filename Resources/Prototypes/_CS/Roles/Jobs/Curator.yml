@@ -67,6 +67,7 @@
   - ContractorImplanter
   - ContractorBackpackItems
   - ContractorHandItems
+  - ContractorInstruments
   - NFSpeciesSpecific
 
 - type: chameleonOutfit

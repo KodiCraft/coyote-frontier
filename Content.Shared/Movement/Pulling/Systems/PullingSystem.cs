@@ -252,7 +252,8 @@ public sealed class PullingSystem : EntitySystem
             {
                 Text = Loc.GetString("pulling-verb-get-data-text-stop-pulling"),
                 Act = () => TryStopPull(uid, component, user: args.User),
-                DoContactInteraction = false // pulling handle its own contact interaction.
+                DoContactInteraction = false, // pulling handle its own contact interaction.
+                Category = VerbCategory.Actions
             };
             args.Verbs.Add(verb);
         }
@@ -262,7 +263,8 @@ public sealed class PullingSystem : EntitySystem
             {
                 Text = Loc.GetString("pulling-verb-get-data-text"),
                 Act = () => TryStartPull(args.User, args.Target),
-                DoContactInteraction = false // pulling handle its own contact interaction.
+                DoContactInteraction = false, // pulling handle its own contact interaction.
+                Category = VerbCategory.Actions
             };
             args.Verbs.Add(verb);
         }

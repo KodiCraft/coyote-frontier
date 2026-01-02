@@ -1,6 +1,7 @@
 - type: loadoutGroup
   id: SeniorOfficerJumpsuit
   name: loadout-group-contractor-jumpsuit
+  minLimit: 0 # Coyote
   loadouts:
   - SeniorOfficerClothingUniformJumpsuitSeniorOfficer
   - SeniorOfficerClothingUniformJumpskirtSeniorOfficer
@@ -9,7 +10,7 @@
   - SeniorOfficerClothingUniformJumpskirtSeniorOfficer
   subgroups:
   - CoyoteJumpsuit
-  
+
 - type: loadoutGroup
   id: SeniorOfficerOuterClothing
   name: loadout-group-contractor-outerclothing
@@ -27,7 +28,8 @@
 - type: loadoutGroup
   id: SeniorOfficerNeck
   name: loadout-group-contractor-neck
-  hidden: true
+  minLimit: 0 # Coyote
+  hidden: false
   loadouts:
   - SeniorOfficerClothingNeckBadgeSeniorOfficer
   fallbacks:

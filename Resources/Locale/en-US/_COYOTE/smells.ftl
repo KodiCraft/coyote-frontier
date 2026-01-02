@@ -364,3 +364,186 @@ scent-spaceweed-direct       = {CAPITALIZE($src)} smells like spaceweed.
 scent-spaceweed-close        = You smell a trace of spaceweed.
 scent-spaceweed-far          = You catch a faint whiff of spaceweed.
 
+# gunpowder
+scent-gunpowder-examine      = gunpowder
+scent-gunpowder-direct       = {CAPITALIZE($src)} smells like gunpowder.
+scent-gunpowder-close        = You smell a trace of gunpowder.
+scent-gunpowder-far          = You catch a faint whiff of gunpowder.
+
+# smoke
+scent-smoke-examine      = smoke
+scent-smoke-direct       = {CAPITALIZE($src)} smells like smoke.
+scent-smoke-close        = You smell a trace of smoke.
+scent-smoke-far          = You catch a faint whiff of smoke.
+
+# cigarettes
+scent-cigarettes-examine      = cigarettes
+scent-cigarettes-direct       = {CAPITALIZE($src)} smells like cigarettes.
+scent-cigarettes-close        = You smell a trace of cigarettes.
+scent-cigarettes-far          = You catch a faint whiff of cigarettes.
+
+# strawberry
+scent-strawberry-examine      = strawberry
+scent-strawberry-direct       = {CAPITALIZE($src)} smells like strawberry.
+scent-strawberry-close        = You smell a trace of strawberry.
+scent-strawberry-far          = You catch a faint whiff of strawberry.
+
+# freshbread
+scent-freshbread-examine      = fresh bread
+scent-freshbread-direct       = {CAPITALIZE($src)} smells like fresh bread.
+scent-freshbread-close        = You smell a trace of fresh bread.
+scent-freshbread-far          = You catch a faint whiff of fresh bread.
+
+# orangecreamsicle
+scent-orangecreamsicle-examine      = orange creamsicle
+scent-orangecreamsicle-direct       = {CAPITALIZE($src)} smells like an orange creamsicle.
+scent-orangecreamsicle-close        = You smell a trace of an orange creamsicle.
+scent-orangecreamsicle-far          = You catch a faint whiff of an orange creamsicle.
+
+# cookies
+scent-cookies-examine      = cookies
+scent-cookies-direct       = {CAPITALIZE($src)} smells like fresh-baked cookies.
+scent-cookies-close        = You smell a trace of fresh-baked cookies.
+scent-cookies-far          = You catch a faint whiff of fresh-baked cookies.
+
+# cherryblossom
+scent-cherryblossom-examine      = cherryblossom
+scent-cherryblossom-direct       = {CAPITALIZE($src)} smells like cherry blossom.
+scent-cherryblossom-close        = You smell a trace of cherry blossom.
+scent-cherryblossom-far          = You catch a faint whiff of cherry blossom.
+
+# cherries
+scent-cherries-examine      = cherries
+scent-cherries-direct       = {CAPITALIZE($src)} smells like cherries.
+scent-cherries-close        = You smell a trace of cherries.
+scent-cherries-far          = You catch a faint whiff of cherries.
+
+# hazelnut
+scent-hazelnut-examine      = hazelnut
+scent-hazelnut-direct       = {CAPITALIZE($src)} smells like hazelnut.
+scent-hazelnut-close        = You smell a trace of hazelnut.
+scent-hazelnut-far          = You catch a faint whiff of hazelnut.
+
+# ashwood
+scent-ashwood-examine      = ashwood
+scent-ashwood-direct       = {CAPITALIZE($src)} smells like ashwood.
+scent-ashwood-close        = You smell a trace of ashwood.
+scent-ashwood-far          = You catch a faint whiff of ashwood.
+
+# harshchemicals
+scent-harshchemicals-examine      = harsh chemicals
+scent-harshchemicals-direct       = {CAPITALIZE($src)} smells like harsh chemicals.
+scent-harshchemicals-close        = You smell a trace of harsh chemicals.
+scent-harshchemicals-far          = You catch a faint whiff of harsh chemicals.
+
+# acrid
+scent-acrid-examine      = acrid
+scent-acrid-direct       = {CAPITALIZE($src)} smells very acrid.
+scent-acrid-close        = You smell a trace of something acrid.
+scent-acrid-far          = You catch a faint whiff of something acrid.
+
+# liquor
+scent-liquor-examine      = liquor
+scent-liquor-direct       = {CAPITALIZE($src)} smells like liquor.
+scent-liquor-close        = You smell a trace of liquor.
+scent-liquor-far          = You catch a faint whiff of liquor.
+
+# weldingfuel
+scent-weldingfuel-examine      = welding fuel
+scent-weldingfuel-direct       = {CAPITALIZE($src)} smells like welding fuel.
+scent-weldingfuel-close        = You smell a trace of welding fuel.
+scent-weldingfuel-far          = You catch a faint whiff of welding fuel.
+
+# dust
+scent-dust-examine      = dust
+scent-dust-direct       = {CAPITALIZE($src)} smells like dust.
+scent-dust-close        = You smell a trace of dust.
+scent-dust-far          = You catch a faint whiff of dust.
+
+# oldbooks
+scent-oldbooks-examine      = old books
+scent-oldbooks-direct       = {CAPITALIZE($src)} smells like old books.
+scent-oldbooks-close        = You smell a trace of old books.
+scent-oldbooks-far          = You catch a faint whiff of old books.
+
+# burningplastic
+scent-burningplastic-examine      = burning plastic
+scent-burningplastic-direct       = {CAPITALIZE($src)} smells like burning plastic.
+scent-burningplastic-close        = You smell a trace of burning plastic.
+scent-burningplastic-far          = You catch a faint whiff of burning plastic.
+
+# mail
+scent-mail-examine      = mail
+scent-mail-direct       = {CAPITALIZE($src)} smells like mail.
+scent-mail-close        = You smell a trace of mail.
+scent-mail-far          = You catch a faint whiff of mail.
+
+# glue
+scent-glue-examine      = glue
+scent-glue-direct       = {CAPITALIZE($src)} smells like glue.
+scent-glue-close        = You smell a trace of glue.
+scent-glue-far          = You catch a faint whiff of glue.
+
+# superglue
+scent-superglue-examine      = superglue
+scent-superglue-direct       = {CAPITALIZE($src)} smells like superglue.
+scent-superglue-close        = You smell a trace of superglue.
+scent-superglue-far          = You catch a faint whiff of superglue.
+
+# paint
+scent-paint-examine      = paint
+scent-paint-direct       = {CAPITALIZE($src)} smells like paint.
+scent-paint-close        = You smell a trace of paint.
+scent-paint-far          = You catch a faint whiff of paint.
+
+# paintthinner
+scent-paintthinner-examine      = paint thinner
+scent-paintthinner-direct       = {CAPITALIZE($src)} smells like paint thinner.
+scent-paintthinner-close        = You smell a trace of paint thinner.
+scent-paintthinner-far          = You catch a faint whiff of paint thinner.
+
+# cookingoil
+scent-cookingoil-examine      = cooking oil
+scent-cookingoil-direct       = {CAPITALIZE($src)} smells like cooking oil.
+scent-cookingoil-close        = You smell a trace of cooking oil.
+scent-cookingoil-far          = You catch a faint whiff of cooking oil.
+
+# garlic
+scent-garlic-examine      = garlic
+scent-garlic-direct       = {CAPITALIZE($src)} smells like garlic.
+scent-garlic-close        = You smell a trace of garlic.
+scent-garlic-far          = You catch a faint whiff of garlic.
+
+# spices
+scent-spices-examine      = spices
+scent-spices-direct       = {CAPITALIZE($src)} smells like spices.
+scent-spices-close        = You smell a trace of spices.
+scent-spices-far          = You catch a faint whiff of spices.
+
+# fastfood
+scent-fastfood-examine      = fast food
+scent-fastfood-direct       = {CAPITALIZE($src)} smells like fast food.
+scent-fastfood-close        = You smell a trace of fastfood.
+scent-fastfood-far          = You catch a faint whiff of fastfood.
+
+# kitchen
+scent-kitchen-examine      = kitchen
+scent-kitchen-direct       = {CAPITALIZE($src)} smells like a kitchen.
+scent-kitchen-close        = You smell a trace of a kitchen.
+scent-kitchen-far          = You catch a faint whiff of a kitchen.
+
+# blood
+scent-blood-examine      = blood
+scent-blood-direct       = {CAPITALIZE($src)} smells like blood.
+scent-blood-close        = You smell a trace of a blood.
+scent-blood-far          = You catch a faint whiff of a blood.
+
+# bankcustomers
+scent-bankcustomers-examine      = bank customers
+scent-bankcustomers-direct       = {CAPITALIZE($src)} smells like bank customers.
+scent-bankcustomers-close        = You smell a trace of bank customers.
+scent-bankcustomers-far          = You catch a faint whiff of bank customers.
+
+
+
+

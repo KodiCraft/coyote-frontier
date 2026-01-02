@@ -848,4 +848,398 @@
   msgsFar:
   - scent-spaceweed-far
 
+- type: scent
+  id: Gunpowder
+  parent:
+  - ScentBase
+  msgsExamine:
+  - scent-gunpowder-examine
+  msgsDirect:
+  - scent-gunpowder-direct
+  msgsClose:
+  - scent-gunpowder-close
+  msgsFar:
+  - scent-gunpowder-far
+
+- type: scent
+  id: Smoke
+  parent:
+  - ScentBase
+  msgsExamine:
+  - scent-smoke-examine
+  msgsDirect:
+  - scent-smoke-direct
+  msgsClose:
+  - scent-smoke-close
+  msgsFar:
+  - scent-smoke-far
+
+- type: scent
+  id: Cigarettes
+  parent:
+  - ScentBase
+  msgsExamine:
+  - scent-cigarettes-examine
+  msgsDirect:
+  - scent-cigarettes-direct
+  msgsClose:
+  - scent-cigarettes-close
+  msgsFar:
+  - scent-cigarettes-far
+
+- type: scent
+  id: Strawberry
+  parent:
+  - ScentBase
+  msgsExamine:
+  - scent-strawberry-examine
+  msgsDirect:
+  - scent-strawberry-direct
+  msgsClose:
+  - scent-strawberry-close
+  msgsFar:
+  - scent-strawberry-far
+
+- type: scent
+  id: FreshBread
+  parent:
+  - ScentBase
+  msgsExamine:
+  - scent-freshbread-examine
+  msgsDirect:
+  - scent-freshbread-direct
+  msgsClose:
+  - scent-freshbread-close
+  msgsFar:
+  - scent-freshbread-far
+
+- type: scent
+  id: OrangeCreamsicle
+  parent:
+  - ScentBase
+  msgsExamine:
+  - scent-orangecreamsicle-examine
+  msgsDirect:
+  - scent-orangecreamsicle-direct
+  msgsClose:
+  - scent-orangecreamsicle-close
+  msgsFar:
+  - scent-orangecreamsicle-far
+
+- type: scent
+  id: Cookies
+  parent:
+  - ScentBase
+  msgsExamine:
+  - scent-cookies-examine
+  msgsDirect:
+  - scent-cookies-direct
+  msgsClose:
+  - scent-cookies-close
+  msgsFar:
+  - scent-cookies-far
+
+- type: scent
+  id: Cherryblossom
+  parent:
+  - ScentBase
+  msgsExamine:
+  - scent-cherryblossom-examine
+  msgsDirect:
+  - scent-cherryblossom-direct
+  msgsClose:
+  - scent-cherryblossom-close
+  msgsFar:
+  - scent-cherryblossom-far
+
+- type: scent
+  id: Cherries
+  parent:
+  - ScentBase
+  msgsExamine:
+  - scent-cherries-examine
+  msgsDirect:
+  - scent-cherries-direct
+  msgsClose:
+  - scent-cherries-close
+  msgsFar:
+  - scent-cherries-far
+
+- type: scent
+  id: Hazelnut
+  parent:
+  - ScentBase
+  msgsExamine:
+  - scent-hazelnut-examine
+  msgsDirect:
+  - scent-hazelnut-direct
+  msgsClose:
+  - scent-hazelnut-close
+  msgsFar:
+  - scent-hazelnut-far
+
+- type: scent
+  id: Ashwood
+  parent:
+  - ScentBase
+  msgsExamine:
+  - scent-ashwood-examine
+  msgsDirect:
+  - scent-ashwood-direct
+  msgsClose:
+  - scent-ashwood-close
+  msgsFar:
+  - scent-ashwood-far
+
+- type: scent
+  id: HarshChemicals
+  parent:
+  - ScentBase
+  msgsExamine:
+  - scent-harshchemicals-examine
+  msgsDirect:
+  - scent-harshchemicals-direct
+  msgsClose:
+  - scent-harshchemicals-close
+  msgsFar:
+  - scent-harshchemicals-far
+
+- type: scent
+  id: Acrid
+  parent:
+  - ScentBase
+  msgsExamine:
+  - scent-acrid-examine
+  msgsDirect:
+  - scent-acrid-direct
+  msgsClose:
+  - scent-acrid-close
+  msgsFar:
+  - scent-acrid-far
+
+- type: scent
+  id: Liquor
+  parent:
+  - ScentBase
+  msgsExamine:
+  - scent-liquor-examine
+  msgsDirect:
+  - scent-liquor-direct
+  msgsClose:
+  - scent-liquor-close
+  msgsFar:
+  - scent-liquor-far
+
+- type: scent
+  id: WeldingFuel
+  parent:
+  - ScentBase
+  msgsExamine:
+  - scent-weldingfuel-examine
+  msgsDirect:
+  - scent-weldingfuel-direct
+  msgsClose:
+  - scent-weldingfuel-close
+  msgsFar:
+  - scent-weldingfuel-far
+
+- type: scent
+  id: Dust
+  parent:
+  - ScentBase
+  msgsExamine:
+  - scent-dust-examine
+  msgsDirect:
+  - scent-dust-direct
+  msgsClose:
+  - scent-dust-close
+  msgsFar:
+  - scent-dust-far
+
+- type: scent
+  id: OldBooks
+  parent:
+  - ScentBase
+  msgsExamine:
+  - scent-oldbooks-examine
+  msgsDirect:
+  - scent-oldbooks-direct
+  msgsClose:
+  - scent-oldbooks-close
+  msgsFar:
+  - scent-oldbooks-far
+
+- type: scent
+  id: BurningPlastic
+  parent:
+  - ScentBase
+  msgsExamine:
+  - scent-burningplastic-examine
+  msgsDirect:
+  - scent-burningplastic-direct
+  msgsClose:
+  - scent-burningplastic-close
+  msgsFar:
+  - scent-burningplastic-far
+
+- type: scent
+  id: Mail
+  parent:
+  - ScentBase
+  msgsExamine:
+  - scent-mail-examine
+  msgsDirect:
+  - scent-mail-direct
+  msgsClose:
+  - scent-mail-close
+  msgsFar:
+  - scent-mail-far
+
+- type: scent
+  id: Glue
+  parent:
+  - ScentBase
+  msgsExamine:
+  - scent-glue-examine
+  msgsDirect:
+  - scent-glue-direct
+  msgsClose:
+  - scent-glue-close
+  msgsFar:
+  - scent-glue-far
+
+- type: scent
+  id: Superglue
+  parent:
+  - ScentBase
+  msgsExamine:
+  - scent-superglue-examine
+  msgsDirect:
+  - scent-superglue-direct
+  msgsClose:
+  - scent-superglue-close
+  msgsFar:
+  - scent-superglue-far
+
+- type: scent
+  id: Paint
+  parent:
+  - ScentBase
+  msgsExamine:
+  - scent-paint-examine
+  msgsDirect:
+  - scent-paint-direct
+  msgsClose:
+  - scent-paint-close
+  msgsFar:
+  - scent-paint-far
+
+- type: scent
+  id: PaintThinner
+  parent:
+  - ScentBase
+  msgsExamine:
+  - scent-paintthinner-examine
+  msgsDirect:
+  - scent-paintthinner-direct
+  msgsClose:
+  - scent-paintthinner-close
+  msgsFar:
+  - scent-paintthinner-far
+
+- type: scent
+  id: CookingOil
+  parent:
+  - ScentBase
+  msgsExamine:
+  - scent-cookingoil-examine
+  msgsDirect:
+  - scent-cookingoil-direct
+  msgsClose:
+  - scent-cookingoil-close
+  msgsFar:
+  - scent-cookingoil-far
+
+- type: scent
+  id: Garlic
+  parent:
+  - ScentBase
+  msgsExamine:
+  - scent-garlic-examine
+  msgsDirect:
+  - scent-garlic-direct
+  msgsClose:
+  - scent-garlic-close
+  msgsFar:
+  - scent-garlic-far
+
+- type: scent
+  id: Spices
+  parent:
+  - ScentBase
+  msgsExamine:
+  - scent-spices-examine
+  msgsDirect:
+  - scent-spices-direct
+  msgsClose:
+  - scent-spices-close
+  msgsFar:
+  - scent-spices-far
+
+- type: scent
+  id: FastFood
+  parent:
+  - ScentBase
+  msgsExamine:
+  - scent-fastfood-examine
+  msgsDirect:
+  - scent-fastfood-direct
+  msgsClose:
+  - scent-fastfood-close
+  msgsFar:
+  - scent-fastfood-far
+
+- type: scent
+  id: Kitchen
+  parent:
+  - ScentBase
+  msgsExamine:
+  - scent-kitchen-examine
+  msgsDirect:
+  - scent-kitchen-direct
+  msgsClose:
+  - scent-kitchen-close
+  msgsFar:
+  - scent-kitchen-far
+
+- type: scent
+  id: Blood
+  isStinky: true
+  parent:
+  - ScentBase
+  msgsExamine:
+  - scent-blood-examine
+  msgsDirect:
+  - scent-blood-direct
+  msgsClose:
+  - scent-blood-close
+  msgsFar:
+  - scent-blood-far
+
+- type: scent
+  id: BankCustomers
+  parent:
+  - ScentBase
+  isLewd: true
+  isStinky: true
+  msgsExamine:
+  - scent-bankcustomers-examine
+  msgsDirect:
+  - scent-bankcustomers-direct
+  msgsClose:
+  - scent-bankcustomers-close
+  msgsFar:
+  - scent-bankcustomers-far
+
+
 

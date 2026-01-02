@@ -386,7 +386,7 @@ trait-scent-girlsmell-desc = You smell like girlsmell.
 trait-scent-spaceweed-name = Spaceweed
 trait-scent-spaceweed-desc = You smell like spaceweed.
 
-###### BODYTYPES!
+# BODYTYPES!
 trait-bodytype-buxom-name             = Buxom
 trait-bodytype-buxom-desc             = You are pretty buxom!
 
@@ -522,4 +522,132 @@ trait-bodytype-morbidlyobese-desc     = You are extremely fat!
 trait-bodytype-extremelybuxom-name    = Extremely Buxom
 trait-bodytype-extremelybuxom-desc    = You have extremely massive breasts!
 
+trait-scent-gunpowder-name = Gunpowder
+trait-scent-gunpowder-desc = You smell kinda like Gunpowder!
+
+trait-scent-smoke-name = Smoke
+trait-scent-smoke-desc = You smell kinda like Smoke!
+
+trait-scent-cigarettes-name = Cigarettes
+trait-scent-cigarettes-desc = You smell kinda like Cigarettes!
+
+trait-scent-strawberry-name = Strawberry
+trait-scent-strawberry-desc = You smell kinda like Strawberry!
+
+trait-scent-freshbread-name = Fresh Bread
+trait-scent-freshbread-desc = You smell kinda like Fresh Bread!
+
+trait-scent-orangecreamsicle-name = Orange Creamsicle
+trait-scent-orangecreamsicle-desc = You smell kinda like Orange Creamsicle!
+
+trait-scent-cookies-name = Cookies
+trait-scent-cookies-desc = You smell kinda like Cookies!
+
+trait-scent-cherryblossom-name = Cherryblossom
+trait-scent-cherryblossom-desc = You smell kinda like Cherryblossom!
+
+trait-scent-cherries-name = Cherries
+trait-scent-cherries-desc = You smell kinda like Cherries!
+
+trait-scent-hazelnut-name = Hazelnut
+trait-scent-hazelnut-desc = You smell kinda like Hazelnut!
+
+trait-scent-ashwood-name = Ashwood
+trait-scent-ashwood-desc = You smell kinda like Ashwood!
+
+trait-scent-harshchemicals-name = Harsh Chemicals
+trait-scent-harshchemicals-desc = You smell kinda like Harsh Chemicals!
+
+trait-scent-acrid-name = Acrid
+trait-scent-acrid-desc = You smell kinda Acrid!
+
+trait-scent-liquor-name = Liquor
+trait-scent-liquor-desc = You smell kinda like Liquor!
+
+trait-scent-weldingfuel-name = Welding Fuel
+trait-scent-weldingfuel-desc = You smell kinda like Welding Fuel!
+
+trait-scent-dust-name = Dust
+trait-scent-dust-desc = You smell kinda like Dust!
+
+trait-scent-oldbooks-name = Old Books
+trait-scent-oldbooks-desc = You smell kinda like Old Books!
+
+trait-scent-burningplastic-name = Burning Plastic
+trait-scent-burningplastic-desc = You smell kinda like Burning Plastic!
+
+trait-scent-mail-name = Mail
+trait-scent-mail-desc = You smell kinda like Mail!
+
+trait-scent-glue-name = Glue
+trait-scent-glue-desc = You smell kinda like Glue!
+
+trait-scent-superglue-name = Superglue
+trait-scent-superglue-desc = You smell kinda like Superglue!
+
+trait-scent-paint-name = Paint
+trait-scent-paint-desc = You smell kinda like Paint!
+
+trait-scent-paintthinner-name = Paint Thinner
+trait-scent-paintthinner-desc = You smell kinda like Paint Thinner!
+
+trait-scent-cookingoil-name = Cooking Oil
+trait-scent-cookingoil-desc = You smell kinda like Cooking Oil!
+
+trait-scent-garlic-name = Garlic
+trait-scent-garlic-desc = You smell kinda like Garlic!
+
+trait-scent-spices-name = Spices
+trait-scent-spices-desc = You smell kinda like Spices!
+
+trait-scent-fastfood-name = Fast Food
+trait-scent-fastfood-desc = You smell kinda like Fast Food!
+
+trait-scent-kitchen-name = Kitchen
+trait-scent-kitchen-desc = You smell kinda like the Kitchen!
+
+trait-scent-blood-name = Blood
+trait-scent-blood-desc = You smell kinda like blood!
+
+trait-scent-bankcustomers-name = Bank Customers
+trait-scent-bankcustomers-desc = You smell kinda like Bank Customers!
+
+trait-bodytype-morphable-name = Morphable
+trait-bodytype-morphable-desc = You look morphable
+
+trait-bodytype-swimmer-name = Swimmer
+trait-bodytype-swimmer-desc = You look like a swimmer
+
+trait-bodytype-androgynous-name = Androgynous
+trait-bodytype-androgynous-desc = You look androgynous
+
+trait-bodytype-masculinepresenting-name = Masculine Presenting
+trait-bodytype-masculinepresenting-desc = You look masculine-presenting
+
+trait-bodytype-femininepresenting-name = Feminine Presenting
+trait-bodytype-femininepresenting-desc = You look feminine-presenting
+
+trait-bodytype-fluffy-name = Fluffy
+trait-bodytype-fluffy-desc = You look fluffy
+
+trait-bodytype-extremelyfluffy-name = Extremely Fluffy
+trait-bodytype-extremelyfluffy-desc = You look extremely fluffy
+
+trait-bodytype-jacked-name = Jacked
+trait-bodytype-jacked-desc = You look jacked
+
+trait-bodytype-shortstack-name = Shortstack
+trait-bodytype-shortstack-desc = You look shortstack
+
+trait-bodytype-buttsum-name = Buttsum
+trait-bodytype-buttsum-desc = You look buttsum
+
+trait-bodytype-extremelybuttsum-name = Extremely Buttsum
+trait-bodytype-extremelybuttsum-desc = You look extremely buttsum
+
+trait-bodytype-flatchested-name = Flatchested
+trait-bodytype-flatchested-desc = You look flatchested
+
+trait-bodytype-flatassed-name = Flatassed
+trait-bodytype-flatassed-desc = You look flatassed
 

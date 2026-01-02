@@ -3,6 +3,7 @@
 - type: loadoutGroup
   id: NFPirateJumpsuit
   name: loadout-group-contractor-jumpsuit
+  minLimit: 0 # Coyote
   loadouts:
   - NFPirateJumpsuit
   - NFPirateJumpskirt
@@ -55,6 +56,7 @@
 - type: loadoutGroup
   id: NFPirateShoes
   name: loadout-group-contractor-shoes
+  minLimit: 0 # Coyote
   loadouts:
   - NFPirateClothingShoesBootsLaceup
   - NFPirateClothingShoesBootsPirateLuffy
@@ -109,7 +111,8 @@
 - type: loadoutGroup
   id: NFPirateCaptainOuterClothing
   name: loadout-group-contractor-outerclothing
-  hidden: true # No point in showing this, it gets auto-selected.
+  minLimit: 0 # Coyote
+  hidden: false # No point in showing this, it gets auto-selected.
   loadouts:
   - NFPirateCaptainClothingOuterCoatPirate
   subgroups:
@@ -178,6 +181,7 @@
 - type: loadoutGroup
   id: NFPirateFirstMateOuterClothing
   name: loadout-group-contractor-outerclothing
+  minLimit: 0 # Coyote
   loadouts:
   - NFPirateFirstMateClothingOuterCoatGentle
   subgroups:

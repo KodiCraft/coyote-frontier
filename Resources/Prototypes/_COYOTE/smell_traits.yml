@@ -495,4 +495,273 @@
   scentProtos:
   - Spaceweed
 
+- type: trait
+  id: ScentGunpowder
+  name: trait-scent-gunpowder-name
+  description: trait-scent-gunpowder-desc
+  category: Scents
+  cost: 1
+  scentProtos:
+  - Gunpowder
+
+- type: trait
+  id: ScentSmoke
+  name: trait-scent-smoke-name
+  description: trait-scent-smoke-desc
+  category: Scents
+  cost: 1
+  scentProtos:
+  - Smoke
+
+- type: trait
+  id: ScentCigarettes
+  name: trait-scent-cigarettes-name
+  description: trait-scent-cigarettes-desc
+  category: Scents
+  cost: 1
+  scentProtos:
+  - Cigarettes
+
+- type: trait
+  id: ScentStrawberry
+  name: trait-scent-strawberry-name
+  description: trait-scent-strawberry-desc
+  category: Scents
+  cost: 1
+  scentProtos:
+  - Strawberry
+
+- type: trait
+  id: ScentFreshBread
+  name: trait-scent-freshbread-name
+  description: trait-scent-freshbread-desc
+  category: Scents
+  cost: 1
+  scentProtos:
+  - FreshBread
+
+- type: trait
+  id: ScentOrangeCreamsicle
+  name: trait-scent-orangecreamsicle-name
+  description: trait-scent-orangecreamsicle-desc
+  category: Scents
+  cost: 1
+  scentProtos:
+  - OrangeCreamsicle
+
+- type: trait
+  id: ScentCookies
+  name: trait-scent-cookies-name
+  description: trait-scent-cookies-desc
+  category: Scents
+  cost: 1
+  scentProtos:
+  - Cookies
+
+- type: trait
+  id: ScentCherryblossom
+  name: trait-scent-cherryblossom-name
+  description: trait-scent-cherryblossom-desc
+  category: Scents
+  cost: 1
+  scentProtos:
+  - Cherryblossom
+
+- type: trait
+  id: ScentCherries
+  name: trait-scent-cherries-name
+  description: trait-scent-cherries-desc
+  category: Scents
+  cost: 1
+  scentProtos:
+  - Cherries
+
+- type: trait
+  id: ScentHazelnut
+  name: trait-scent-hazelnut-name
+  description: trait-scent-hazelnut-desc
+  category: Scents
+  cost: 1
+  scentProtos:
+  - Hazelnut
+
+- type: trait
+  id: ScentAshwood
+  name: trait-scent-ashwood-name
+  description: trait-scent-ashwood-desc
+  category: Scents
+  cost: 1
+  scentProtos:
+  - Ashwood
+
+- type: trait
+  id: ScentHarshChemicals
+  name: trait-scent-harshchemicals-name
+  description: trait-scent-harshchemicals-desc
+  category: Scents
+  cost: 1
+  scentProtos:
+  - HarshChemicals
+
+- type: trait
+  id: ScentAcrid
+  name: trait-scent-acrid-name
+  description: trait-scent-acrid-desc
+  category: Scents
+  cost: 1
+  scentProtos:
+  - Acrid
+
+- type: trait
+  id: ScentLiquor
+  name: trait-scent-liquor-name
+  description: trait-scent-liquor-desc
+  category: Scents
+  cost: 1
+  scentProtos:
+  - Liquor
+
+- type: trait
+  id: ScentWeldingFuel
+  name: trait-scent-weldingfuel-name
+  description: trait-scent-weldingfuel-desc
+  category: Scents
+  cost: 1
+  scentProtos:
+  - WeldingFuel
+
+- type: trait
+  id: ScentDust
+  name: trait-scent-dust-name
+  description: trait-scent-dust-desc
+  category: Scents
+  cost: 1
+  scentProtos:
+  - Dust
+
+- type: trait
+  id: ScentOldBooks
+  name: trait-scent-oldbooks-name
+  description: trait-scent-oldbooks-desc
+  category: Scents
+  cost: 1
+  scentProtos:
+  - OldBooks
+
+- type: trait
+  id: ScentBurningPlastic
+  name: trait-scent-burningplastic-name
+  description: trait-scent-burningplastic-desc
+  category: Scents
+  cost: 1
+  scentProtos:
+  - BurningPlastic
+
+- type: trait
+  id: ScentMail
+  name: trait-scent-mail-name
+  description: trait-scent-mail-desc
+  category: Scents
+  cost: 1
+  scentProtos:
+  - Mail
+
+- type: trait
+  id: ScentGlue
+  name: trait-scent-glue-name
+  description: trait-scent-glue-desc
+  category: Scents
+  cost: 1
+  scentProtos:
+  - Glue
+
+- type: trait
+  id: ScentSuperglue
+  name: trait-scent-superglue-name
+  description: trait-scent-superglue-desc
+  category: Scents
+  cost: 1
+  scentProtos:
+  - Superglue
+
+- type: trait
+  id: ScentPaint
+  name: trait-scent-paint-name
+  description: trait-scent-paint-desc
+  category: Scents
+  cost: 1
+  scentProtos:
+  - Paint
+
+- type: trait
+  id: ScentPaintThinner
+  name: trait-scent-paintthinner-name
+  description: trait-scent-paintthinner-desc
+  category: Scents
+  cost: 1
+  scentProtos:
+  - PaintThinner
+
+- type: trait
+  id: ScentCookingOil
+  name: trait-scent-cookingoil-name
+  description: trait-scent-cookingoil-desc
+  category: Scents
+  cost: 1
+  scentProtos:
+  - CookingOil
+
+- type: trait
+  id: ScentGarlic
+  name: trait-scent-garlic-name
+  description: trait-scent-garlic-desc
+  category: Scents
+  cost: 1
+  scentProtos:
+  - Garlic
+
+- type: trait
+  id: ScentSpices
+  name: trait-scent-spices-name
+  description: trait-scent-spices-desc
+  category: Scents
+  cost: 1
+  scentProtos:
+  - Spices
+
+- type: trait
+  id: ScentFastFood
+  name: trait-scent-fastfood-name
+  description: trait-scent-fastfood-desc
+  category: Scents
+  cost: 1
+  scentProtos:
+  - FastFood
+
+- type: trait
+  id: ScentKitchen
+  name: trait-scent-kitchen-name
+  description: trait-scent-kitchen-desc
+  category: Scents
+  cost: 1
+  scentProtos:
+  - Kitchen
+
+- type: trait
+  id: ScentBlood
+  name: trait-scent-blood-name
+  description: trait-scent-kitchen-desc
+  category: Scents
+  cost: 1
+  scentProtos:
+  - Blood
+
+- type: trait
+  id: ScentBankCustomers
+  name: trait-scent-bankcustomers-name
+  description: trait-scent-bankcustomers-desc
+  category: ScentsNSFW
+  cost: 1
+  scentProtos:
+  - BankCustomers
 

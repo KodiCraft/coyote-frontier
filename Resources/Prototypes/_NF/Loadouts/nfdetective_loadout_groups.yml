@@ -1,6 +1,7 @@
 - type: loadoutGroup
   id: NFDetectiveJumpsuit
   name: loadout-group-contractor-jumpsuit
+  minLimit: 0 # Coyote
   loadouts:
   - NFDetectiveClothingUniformJumpsuitDetective
   - NFDetectiveClothingUniformJumpskirtDetective
@@ -29,11 +30,12 @@
   loadouts:
   - NFDetectiveClothingHeadHatFedoraBrown
   - NFDetectiveClothingHeadHatFedoraGrey
-  
+
 - type: loadoutGroup
   id: NFDetectiveGloves
   name: loadout-group-contractor-gloves
-  hidden: true # No point in showing this, it gets auto-selected.
+  minLimit: 0 # Coyote
+  hidden: false # No point in showing this, it gets auto-selected.
   loadouts:
   - NFDetectiveClothingHandsGlovesForensicNF
   fallbacks:
@@ -42,7 +44,8 @@
 - type: loadoutGroup
   id: NFDetectiveNeck
   name: loadout-group-contractor-neck
-  hidden: true # No point in showing this, it gets auto-selected.
+  minLimit: 0 # Coyote
+  hidden: false # No point in showing this, it gets auto-selected.
   loadouts:
   - NFDetectiveClothingNeckNfsdBadgeDetective
 

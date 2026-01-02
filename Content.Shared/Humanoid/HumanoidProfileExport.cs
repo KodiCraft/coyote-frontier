@@ -1,4 +1,6 @@
+using Content.Shared.Consent;
 using Content.Shared.Preferences;
+using Robust.Shared.Prototypes;
 
 namespace Content.Shared.Humanoid;
 
@@ -16,4 +18,22 @@ public sealed partial class HumanoidProfileExport
 
     [DataField(required: true)]
     public HumanoidCharacterProfile Profile = default!;
+
+    /// <summary>
+    /// Character-specific OOC consent freetext.
+    /// </summary>
+    [DataField]
+    public string? CharacterConsentFreetext;
+
+    /// <summary>
+    /// Account-level OOC consent freetext.
+    /// </summary>
+    [DataField]
+    public string? AccountConsentFreetext;
+
+    /// <summary>
+    /// OOC consent toggles.
+    /// </summary>
+    [DataField]
+    public Dictionary<ProtoId<ConsentTogglePrototype>, string>? ConsentToggles;
 }

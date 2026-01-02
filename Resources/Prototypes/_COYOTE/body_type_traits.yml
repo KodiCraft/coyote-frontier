@@ -358,3 +358,108 @@
   cost: 1
   bodytype: extremelybuxom
 
+- type: trait
+  id: BodyTypeMorphable
+  name: trait-bodytype-morphable-name
+  description: trait-bodytype-morphable-desc
+  category: BodyType
+  cost: 1
+  bodytype: morphable
+
+- type: trait
+  id: BodyTypeSwimmer
+  name: trait-bodytype-swimmer-name
+  description: trait-bodytype-swimmer-desc
+  category: BodyType
+  cost: 1
+  bodytype: swimmer
+
+- type: trait
+  id: BodyTypeAndrogynous
+  name: trait-bodytype-androgynous-name
+  description: trait-bodytype-androgynous-desc
+  category: BodyType
+  cost: 1
+  bodytype: androgynous
+
+- type: trait
+  id: BodyTypeMasculinePresenting
+  name: trait-bodytype-masculinepresenting-name
+  description: trait-bodytype-masculinepresenting-desc
+  category: BodyType
+  cost: 1
+  bodytype: masculinepresenting
+
+- type: trait
+  id: BodyTypeFemininePresenting
+  name: trait-bodytype-femininepresenting-name
+  description: trait-bodytype-femininepresenting-desc
+  category: BodyType
+  cost: 1
+  bodytype: femininepresenting
+
+- type: trait
+  id: BodyTypeFluffy
+  name: trait-bodytype-fluffy-name
+  description: trait-bodytype-fluffy-desc
+  category: BodyType
+  cost: 1
+  bodytype: fluffy
+
+- type: trait
+  id: BodyTypeExtremelyFluffy
+  name: trait-bodytype-extremelyfluffy-name
+  description: trait-bodytype-extremelyfluffy-desc
+  category: BodyType
+  cost: 1
+  bodytype: extremelyfluffy
+
+- type: trait
+  id: BodyTypeJacked
+  name: trait-bodytype-jacked-name
+  description: trait-bodytype-jacked-desc
+  category: BodyType
+  cost: 1
+  bodytype: jacked
+
+- type: trait
+  id: BodyTypeShortstack
+  name: trait-bodytype-shortstack-name
+  description: trait-bodytype-shortstack-desc
+  category: BodyType
+  cost: 1
+  bodytype: shortstack
+
+- type: trait
+  id: BodyTypeButtsum
+  name: trait-bodytype-buttsum-name
+  description: trait-bodytype-buttsum-desc
+  category: BodyType
+  cost: 1
+  bodytype: buttsum
+
+- type: trait
+  id: BodyTypeExtremelyButtsum
+  name: trait-bodytype-extremelybuttsum-name
+  description: trait-bodytype-extremelybuttsum-desc
+  category: BodyType
+  cost: 1
+  bodytype: extremelybuttsum
+
+- type: trait
+  id: BodyTypeFlatchested
+  name: trait-bodytype-flatchested-name
+  description: trait-bodytype-flatchested-desc
+  category: BodyType
+  cost: 1
+  bodytype: flatchested
+
+- type: trait
+  id: BodyTypeFlatassed
+  name: trait-bodytype-flatassed-name
+  description: trait-bodytype-flatassed-desc
+  category: BodyType
+  cost: 1
+  bodytype: flatassed
+
+

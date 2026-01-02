@@ -65,16 +65,16 @@ public sealed partial class ChatSystem : SharedChatSystem
     [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
     [Dependency] private readonly ExamineSystemShared _examineSystem = default!;
 
-    public const int VoiceRange = 12; // how far voice goes in world units
-    public const int ShoutRange = 30; // how far Shout goes in world units
-    public const int EmoteRange = 12; // how far Emote goes in world units
-    public const int SubtleRange = 1; // how far Subtle goes in world units
+    public const float VoiceRange = 12f; // how far voice goes in world units
+    public const float ShoutRange = 30f; // how far Shout goes in world units
+    public const float EmoteRange = 12f; // how far Emote goes in world units
+    public const float SubtleRange = 1.5f; // how far Subtle goes in world units
     [SuppressMessage("ReSharper", "InconsistentNaming")]
-    public const int LOOCRange = 15; // how far LOOC goes in world units
+    public const float LOOCRange = 15f; // how far LOOC goes in world units
     [SuppressMessage("ReSharper", "InconsistentNaming")]
-    public const int SubtleLOOCRange = SubtleRange; // how far Subtle LOOC goes in world units
-    public const int WhisperClearRange = 2; // how far whisper goes while still being understandable, in world units
-    public const int WhisperMuffledRange = 5; // how far whisper goes at all, in world units
+    public const float SubtleLOOCRange = SubtleRange; // how far Subtle LOOC goes in world units
+    public const float WhisperClearRange = 2f; // how far whisper goes while still being understandable, in world units
+    public const float WhisperMuffledRange = 5f; // how far whisper goes at all, in world units
     public const string DefaultAnnouncementSound = "/Audio/Announcements/announce.ogg";
 
     public const bool SayGoesThroughWalls = true; // I like says going through walls

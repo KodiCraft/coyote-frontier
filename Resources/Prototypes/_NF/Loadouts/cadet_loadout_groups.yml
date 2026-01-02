@@ -1,6 +1,7 @@
 - type: loadoutGroup
   id: CadetJumpsuit
   name: loadout-group-contractor-jumpsuit
+  minLimit: 0 # Coyote
   loadouts:
   - CadetClothingUniformJumpsuitCadet
   - CadetClothingUniformJumpskirtCadet
@@ -27,7 +28,8 @@
 - type: loadoutGroup
   id: CadetNeck
   name: loadout-group-contractor-neck
-  hidden: true
+  minLimit: 0 # Coyote
+  hidden: false
   loadouts:
   - CadetClothingNeckBadgeCadet
   fallbacks:

@@ -1,6 +1,7 @@
 - type: loadoutGroup
   id: PilotJumpsuit
   name: loadout-group-contractor-jumpsuit
+  minLimit: 0 # Coyote
   loadouts:
   - PilotClothingUniformJumpsuitPilot
   - PilotClothingUniformJumpsuitMilitaryPilot
@@ -16,6 +17,7 @@
 - type: loadoutGroup
   id: PilotBackpack
   name: loadout-group-contractor-backpack
+  minLimit: 0 # Coyote
   loadouts:
   - PilotClothingBackpackPilot
   - PilotClothingBackpackDuffelPilot
@@ -25,7 +27,7 @@
   - ContractorBackpack
   fallbacks:
   - PilotClothingBackpackPilot
-  
+
 - type: loadoutGroup
   id: PilotOuterClothing
   name: loadout-group-contractor-outerclothing
@@ -39,6 +41,7 @@
 - type: loadoutGroup
   id: PilotShoes
   name: loadout-group-contractor-shoes
+  minLimit: 0 # Coyote
   loadouts:
   - PilotClothingShoesBootsPilot
   subgroups:
@@ -92,7 +95,7 @@
   - ContractorPDA
   fallbacks:
   - PilotPilotPDA
-  
+
 - type: loadoutGroup
   id: PilotGlasses
   name: loadout-group-contractor-glasses
@@ -105,6 +108,7 @@
 - type: loadoutGroup
   id: PilotFace
   name: loadout-group-contractor-face
+  minLimit: 0 # Coyote
   loadouts:
   - PilotClothingMaskPilot
   subgroups:
