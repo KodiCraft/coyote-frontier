@@ -44,8 +44,8 @@
     back:
     - EncryptionKeyMedical
     - Flash
-    - NFMagazineHighCapacityPistol35Overpressure
-    - NFMagazineHighCapacityPistol35Rubber
+    - CSMagazinePistol40Overpressure # Coyote NFMagazineHighCapacityPistol35Overpressure < CSMagazinePistol40Overpressure
+    - CSMagazinePistol40Rubber # Coyote NFMagazineHighCapacityPistol35Rubber < CSMagazinePistol40Rubber
     - BaseSecurityUplinkRadioOfficer # Coyote added uplink to brigmedics and removed starting FUCs
 
 - type: chameleonOutfit
