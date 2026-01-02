@@ -7,6 +7,7 @@ using Content.Shared.Ghost;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Interaction;
 using Content.Shared.InteractionVerbs.Events;
+using Content.Shared.Inventory.VirtualItem;
 using Content.Shared.Mind.Components;
 using Content.Shared.Popups;
 using Content.Shared.Verbs;
@@ -337,7 +338,7 @@ public abstract class SharedInteractionVerbsSystem : EntitySystem
             _ => VerbCategory.Interaction
         };
         // ensure the categories stay in order
-        verb.Priority = proto.Priority 
+        verb.Priority = proto.Priority
             + proto.CategoryKey switch
                 {
                     "interact-sfw" => 500,
@@ -390,6 +391,12 @@ public abstract class SharedInteractionVerbsSystem : EntitySystem
 
         var (user, target, used) = (args.User, args.Target, args.Used);
 
+        // Prevent virtual items from appearing in verb messages
+        if (HasComp<VirtualItemComponent>(used))
+        {
+            used = null;
+        }
+
         // Effect targets for different players
         var userTarget = specifier.EffectTarget is User or UserThenTarget or TargetThenUser ? user : target;
         var targetTarget = specifier.EffectTarget is Target or UserThenTarget or TargetThenUser ? target : user;
@@ -403,7 +410,7 @@ public abstract class SharedInteractionVerbsSystem : EntitySystem
             specifier.Popup,
             target,
             specifier);
-        var makeSoundObvious = 
+        var makeSoundObvious =
             specifier.SoundPerceivedByOthers
             || (specifier.ObviousIfTargetIsNonPlayer
                && prePlopup is not null
