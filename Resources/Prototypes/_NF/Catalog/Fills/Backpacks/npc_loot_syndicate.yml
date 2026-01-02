@@ -419,8 +419,8 @@
   - type: SpawnItemsOnUse
     items:
       - id: NFWeaponSubMachineGunC20rExpedition
-      - id: NFMagazineSubMachineGun35Uranium
-      - id: NFMagazineSubMachineGun35Uranium
+      - id: CSMagazineSubMachineGun40Uranium # Coyote NFMagazineSubMachineGun35Uranium < CSMagazineSubMachineGun40Uranium
+      - id: CSMagazineSubMachineGun40Uranium # Coyote NFMagazineSubMachineGun35Uranium < CSMagazineSubMachineGun40Uranium
         prob: 0.2
       - id: SpaceCash1000
       - id: SpaceCash1000
