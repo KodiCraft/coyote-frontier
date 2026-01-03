@@ -78,6 +78,7 @@
         whitelist:
           components:
           - Stunbaton
+          - SecStunbaton
       tear_gas_grenade:
         whitelist:
           components:
