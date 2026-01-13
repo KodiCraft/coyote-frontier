@@ -146,7 +146,7 @@
 
 
 - type: latheRecipePack
-  id: NFServiceTechfabDeprecatedEmagStatic
+  id: CSDonkcoServiceTechfabDeprecatedEmagStatic
   recipes:
     - NFHappyHonkNukieEmpty
     - NFHappyHonkCluwneEmpty
