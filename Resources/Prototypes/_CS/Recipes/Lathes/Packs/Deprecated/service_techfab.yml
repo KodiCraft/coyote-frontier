@@ -138,6 +138,8 @@
   recipes:
     - MysteryFigureBox
     - NFHappyHonkNukieEmpty
+    - DrinkDonkcoCup
+    - FoodBoxDonkngo
 
 
 - type: latheRecipePack

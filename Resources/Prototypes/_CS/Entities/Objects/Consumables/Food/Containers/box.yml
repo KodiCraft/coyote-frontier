@@ -55,3 +55,33 @@
     contents:
     - id: FoodDonkpocketSupermatter
       amount: 6
+
+# Printable to-go box
+
+- type: entity
+  parent: [ BoxCardboard, BaseBagOpenClose ]
+  id: FoodBoxDonkngo
+  name: Donk 'n Go box
+  description: A Donk 'n Go box for holding all manner of donk pocket flavours
+  components:
+  - type: Sprite
+    sprite: _CS/Objects/Consumable/Food/Baked/donpocket.rsi
+    state: box
+    layers:
+    - state: box
+      map: ["closeLayer"]
+    - state: box-open
+      map: ["openLayer"]
+      visible: false
+  - type: Storage
+    grid:
+    - 0,0,5,0
+    whitelist:
+      tags:
+      - DonkPocket
+  - type: Item
+    sprite: _CS/Objects/Consumable/Food/Baked/donkpocket.rsi
+    size: Small
+    heldPrefix: box
+  - type: StorageFill
+

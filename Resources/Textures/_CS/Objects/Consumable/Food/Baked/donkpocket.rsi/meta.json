@@ -30,6 +30,18 @@
         },
         {
             "name": "supermatter-box"
+        },
+        {
+            "name": "box"
+        },
+        {
+            "name": "box-open"
+        },
+        {
+            "name": "box-inhand-left"
+        },
+        {
+            "name": "box-inhand-right"
         }
     ]
 }
