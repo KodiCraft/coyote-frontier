@@ -1,5 +1,40 @@
 - type: entity
-  parent: BaseFlag
+  parent: CSBaseSign
+  id: CSBaseFlag
+  abstract: true
+  components:
+  - type: WallMount
+    arc: 360
+  - type: Sprite
+    drawdepth: WallMountedItems
+    sprite: _CS/Structures/Wallmounts/flags.rsi
+
+  - type: StaticPrice
+    price: 25
+  - type: Destructible
+    thresholds:
+    - trigger: !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger: !type:DamageTrigger
+        damage: 25
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/poster_broken.ogg
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialCloth:
+            min: 5
+            max: 5
+        offset: 0
+
+- type: entity
+  parent: CSBaseFlag
   id: DonkFlag
   name: Donk co flag
   description: A flag featuring Donk co's signature "D" Logo

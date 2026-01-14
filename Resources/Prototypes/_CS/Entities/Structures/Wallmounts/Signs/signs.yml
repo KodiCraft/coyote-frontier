@@ -1,0 +1,40 @@
+# Directional Station Guide Signs
+- type: entity
+  parent: CSBaseSign
+  id: CSBaseSign
+  abstract: true
+  components:
+    - type: Sprite
+      sprite: _CS/Structures/Wallmounts/signs.rsi
+
+- type: entity
+  parent: CSBaseSign
+  id: TSF Sign
+  abstract: true
+  components:
+  - type: Sprite
+    state: tsf_sign
+
+- type: entity
+  parent: CSBaseSign
+  id: Donk co sign
+  abstract: true
+  components:
+  - type: Sprite
+    state: donk_co_logo_small
+
+- type: entity
+  parent: CSBaseSign
+  id: Donk co logo left
+  abstract: true
+  components:
+  - type: Sprite
+    state: donkcologo1
+
+- type: entity
+  parent: CSBaseSign
+  id: Donk co logo right
+  abstract: true
+  components:
+  - type: Sprite
+    state: donkcologo2
