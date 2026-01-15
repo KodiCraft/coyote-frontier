@@ -135,7 +135,7 @@
   parent: BaseDrink
   desc: reagent-desc-grenadine
   physicalDesc: reagent-physical-desc-dark-red
-  flavor: bitter
+  flavor: sweet # Coyote: changed from bitter to sweet
   color: "#EA1D26"
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/grenadineglass.rsi
