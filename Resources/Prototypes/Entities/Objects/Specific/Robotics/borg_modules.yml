@@ -482,6 +482,8 @@
     layers:
     - state: generic
     - state: icon-tools
+  - type: BorgModule
+    defaultModule: true
   - type: ItemBorgModule
     moduleId: Tools # Frontier
     items:

@@ -27,6 +27,8 @@
     - state: generic
     - state: icon-jetpack
       sprite: _NF/Objects/Specific/Robotics/borgmodule.rsi
+  - type: BorgModule
+    defaultModule: true
   - type: ItemBorgModule
     moduleId: NFJetpack
     items:
