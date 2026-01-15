@@ -107,15 +107,17 @@ namespace Content.Server.Lathe
             {
                 // Try to produce multiple items per tick
                 var timeToSpend = _timing.CurTime - comp.StartTime;
+                bool itemProduced = false;
                 while (lathe.CurrentRecipe != null && timeToSpend >= comp.ProductionLength * ProductionTimeMultiplier)
                 {
                     timeToSpend -= comp.ProductionLength * ProductionTimeMultiplier;
                     FinishProducing(uid, lathe);
                     TryStartProducing(uid, lathe);
+                    itemProduced = true;
                 }
 
                 // If more items are queued, subtract excess time from startTime so it isn't wasted
-                if (lathe.CurrentRecipe != null && timeToSpend.TotalMilliseconds > 0)
+                if (lathe.CurrentRecipe != null && itemProduced)
                 {
                     comp.StartTime -= timeToSpend;
                 }
