@@ -129,6 +129,7 @@
   id: SyndicateKitchenElectricRange
   parent: KitchenElectricRange
   name: donk co. electric range
+  description: Donk co.'s patented Electric Range! With award winning flash-heating technology that cooks food in half the time of standard appliances!
   components:
   - type: Microwave
     cookTimeMultiplier: 0.5
@@ -145,7 +146,7 @@
   id: KitchenAssembler
   parent: KitchenMicrowave
   name: food-o-mat
-  description: Assembles and prepares NT-approved meals. You don't know what it's doing in there.
+  description: Assembles and prepares meals. You don't know what it's doing in there.
   components:
   - type: Microwave
     explosionChance: 0
