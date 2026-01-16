@@ -229,3 +229,269 @@
   - type: Sprite
     sprite: _CS/Objects/Consumable/Food/Baked/diydonkpocket.rsi
     state: plain
+
+- type: entity
+  name: Cheddar Donk Pocket
+  parent: FoodDonkpocketBase
+  id: FoodDonkpocketCheddarDIY
+  description: A donk pocket filled with meat and cheese!
+  components:
+  - type: FlavorProfile
+    flavors:
+    - cheesy
+    - meaty
+    - bread
+  - type: Sprite
+    sprite: _CS/Objects/Consumable/Food/Baked/diydonkpocket.rsi
+    state: banana
+
+- type: entity
+  name: Mozzarella Donk Pocket
+  parent: FoodDonkpocketBase
+  id: FoodDonkpocketMozzarellaDIY
+  description: A donk pocket filled with mozzarella and tomato sauce!
+  components:
+  - type: FlavorProfile
+    flavors:
+    - cheesy
+    - tomato
+    - bread
+  - type: Sprite
+    sprite: _CS/Objects/Consumable/Food/Baked/diydonkpocket.rsi
+    state: plain
+
+# Prepped
+
+- type: entity
+  name: Prepped Donk Pocket
+  parent: FoodDonkpocketBase
+  id: FoodDonkpocketPrepBananaDIY
+  description: A donk pocket prepped for baking
+  components:
+  - type: FlavorProfile
+    flavors:
+    - sweet-dough
+  - type: Sprite
+    sprite: _CS/Objects/Consumable/Food/Baked/diydonkpocket.rsi
+    state: prep
+
+- type: entity
+  name: Prepped Donk Pocket
+  parent: FoodDonkpocketBase
+  id: FoodDonkpocketPrepBananaSplitDIY
+  description: A donk pocket prepped for baking
+  components:
+  - type: FlavorProfile
+    flavors:
+    - sweet-dough
+  - type: Sprite
+    sprite: _CS/Objects/Consumable/Food/Baked/diydonkpocket.rsi
+    state: prep
+
+- type: entity
+  name: Prepped Donk Pocket
+  parent: FoodDonkpocketBase
+  id: FoodDonkpocketPrepBbqDIY
+  description: A donk pocket prepped for baking
+  components:
+  - type: FlavorProfile
+    flavors:
+    - dough
+  - type: Sprite
+    sprite: _CS/Objects/Consumable/Food/Baked/diydonkpocket.rsi
+    state: prep
+
+- type: entity
+  name: Prepped Donk Pocket
+  parent: FoodDonkpocketBase
+  id: FoodDonkpocketPrepBerryDIY
+  description: A donk pocket prepped for baking
+  components:
+  - type: FlavorProfile
+    flavors:
+    - sweet-dough
+  - type: Sprite
+    sprite: _CS/Objects/Consumable/Food/Baked/diydonkpocket.rsi
+    state: prep
+
+- type: entity
+  name: Prepped Donk Pocket
+  parent: FoodDonkpocketBase
+  id: FoodDonkpocketPrepCherryDIY
+  description: A donk pocket prepped for baking
+  components:
+  - type: FlavorProfile
+    flavors:
+    - sweet-dough
+  - type: Sprite
+    sprite: _CS/Objects/Consumable/Food/Baked/diydonkpocket.rsi
+    state: prep
+
+- type: entity
+  name: Prepped Donk Pocket
+  parent: FoodDonkpocketBase
+  id: FoodDonkpocketPrepChocolateDIY
+  description: A donk pocket prepped for baking
+  components:
+  - type: FlavorProfile
+    flavors:
+    - sweet-dough
+  - type: Sprite
+    sprite: _CS/Objects/Consumable/Food/Baked/diydonkpocket.rsi
+    state: prep
+
+- type: entity
+  name: Prepped Donk Pocket
+  parent: FoodDonkpocketBase
+  id: FoodDonkpocketPrepDankDIY
+  description: A donk pocket prepped for baking
+  components:
+  - type: FlavorProfile
+    flavors:
+    - sweet-dough
+  - type: Sprite
+    sprite: _CS/Objects/Consumable/Food/Baked/diydonkpocket.rsi
+    state: prep
+
+- type: entity
+  name: Prepped Donk Pocket
+  parent: FoodDonkpocketBase
+  id: FoodDonkpocketPrepHoneyDIY
+  description: A donk pocket prepped for baking
+  components:
+  - type: FlavorProfile
+    flavors:
+    - sweet-dough
+  - type: Sprite
+    sprite: _CS/Objects/Consumable/Food/Baked/diydonkpocket.rsi
+    state: prep
+
+- type: entity
+  name: Prepped Donk Pocket
+  parent: FoodDonkpocketBase
+  id: FoodDonkpocketPrepMothDIY
+  description: A donk pocket prepped for baking
+  components:
+  - type: FlavorProfile
+    flavors:
+    - sweet-dough
+  - type: Sprite
+    sprite: _CS/Objects/Consumable/Food/Baked/diydonkpocket.rsi
+    state: prep
+
+- type: entity
+  name: Prepped Donk Pocket
+  parent: FoodDonkpocketBase
+  id: FoodDonkpocketPrepOrangeDIY
+  description: A donk pocket prepped for baking
+  components:
+  - type: FlavorProfile
+    flavors:
+    - sweet-dough
+  - type: Sprite
+    sprite: _CS/Objects/Consumable/Food/Baked/diydonkpocket.rsi
+    state: prep
+
+- type: entity
+  name: Prepped Donk Pocket
+  parent: FoodDonkpocketBase
+  id: FoodDonkpocketPrepPizzaDIY
+  description: A donk pocket prepped for baking
+  components:
+  - type: FlavorProfile
+    flavors:
+    - dough
+  - type: Sprite
+    sprite: _CS/Objects/Consumable/Food/Baked/diydonkpocket.rsi
+    state: prep
+
+- type: entity
+  name: Prepped Donk Pocket
+  parent: FoodDonkpocketBase
+  id: FoodDonkpocketPrepPlainDIY
+  description: A donk pocket prepped for baking
+  components:
+  - type: FlavorProfile
+    flavors:
+    - dough
+  - type: Sprite
+    sprite: _CS/Objects/Consumable/Food/Baked/diydonkpocket.rsi
+    state: prep
+
+- type: entity
+  name: Prepped Donk Pocket
+  parent: FoodDonkpocketBase
+  id: FoodDonkpocketPrepSpicyDIY
+  description: A donk pocket prepped for baking
+  components:
+  - type: FlavorProfile
+    flavors:
+    - dough
+  - type: Sprite
+    sprite: _CS/Objects/Consumable/Food/Baked/diydonkpocket.rsi
+    state: prep
+
+- type: entity
+  name: Prepped Donk Pocket
+  parent: FoodDonkpocketBase
+  id: FoodDonkpocketPrepTeriyakiDIY
+  description: A donk pocket prepped for baking
+  components:
+  - type: FlavorProfile
+    flavors:
+    - dough
+  - type: Sprite
+    sprite: _CS/Objects/Consumable/Food/Baked/diydonkpocket.rsi
+    state: prep
+
+- type: entity
+  name: Prepped Donk Pocket
+  parent: FoodDonkpocketBase
+  id: FoodDonkpocketPrepPirozhkiDIY
+  description: A donk pocket prepped for baking
+  components:
+  - type: FlavorProfile
+    flavors:
+    - dough
+  - type: Sprite
+    sprite: _CS/Objects/Consumable/Food/Baked/diydonkpocket.rsi
+    state: prep
+
+- type: entity
+  name: Prepped Donk Pocket
+  parent: FoodDonkpocketBase
+  id: FoodDonkpocketPrepMushroomDIY
+  description: A donk pocket prepped for baking
+  components:
+  - type: FlavorProfile
+    flavors:
+    - dough
+  - type: Sprite
+    sprite: _CS/Objects/Consumable/Food/Baked/diydonkpocket.rsi
+    state: prep
+
+- type: entity
+  name: Prepped Donk Pocket
+  parent: FoodDonkpocketBase
+  id: FoodDonkpocketPrepCheddarDIY
+  description: A donk pocket prepped for baking
+  components:
+  - type: FlavorProfile
+    flavors:
+    - dough
+  - type: Sprite
+    sprite: _CS/Objects/Consumable/Food/Baked/diydonkpocket.rsi
+    state: prep
+
+- type: entity
+  name: Prepped Donk Pocket
+  parent: FoodDonkpocketBase
+  id: FoodDonkpocketPrepMozzarellaDIY
+  description: A donk pocket prepped for baking
+  components:
+  - type: FlavorProfile
+    flavors:
+    - sweet-dough
+  - type: Sprite
+    sprite: _CS/Objects/Consumable/Food/Baked/diydonkpocket.rsi
+    state: prep
