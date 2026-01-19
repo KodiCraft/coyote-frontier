@@ -6,7 +6,8 @@
     Piercing: 0.80
     Poison: 0
     Asphyxiation: 0
-    Cold: 1.25
+    Cold: 0
+    Radiation: 0.5
     Heat: 1.5
     Shock: 1.5
 

@@ -16,7 +16,7 @@
 
 
   <GuideEntityEmbed Entity="MobIPCDummy" Caption="I.P.C."/>
-  An IPC (short for Integrated Positronic Chassis) is a type of sentient robot and is considered an [color=yellow]independent individual[/color], meaning [color=red]they are not guided by any laws of robotics[/color]. IPCs cannot be hacked by Emags because they do not have to follow any predefined directives in their system. [color=red]IPCs are silicon-based beings, so doctors do not have the skills to repair them.[/color]
+  An IPC (short for Integrated Positronic Chassis) is a type of sentient robot and is considered an [color=goldenrod]independent individual[/color], meaning [color=red]they are not guided by any laws of robotics[/color]. IPCs cannot be hacked by Emags because they do not have to follow any predefined directives in their system. [color=red]IPCs are silicon-based beings, so doctors often do not have the skills to repair them.[/color]
 
   <Box>
     <GuideEntityEmbed Entity="PositronicBrain" Caption="Positronic Brain"/>
@@ -25,34 +25,35 @@
 
   ### Perks
   IPCs have the following perks:
-  - They are immune to [color=lime]toxins[/color], [color=yellow]drugs[/color], and [color=yellow]alcohol[/color].
-  - They are also immune to the effects of [color=yellow]space[/color], [color=yellow]low pressure[/color], and [color=cyan]the cold[/color].
+  - They are immune to [color=limegreen]toxins[/color], [color=palegreen]drugs[/color], and [color=olivedrab]alcohol[/color].
+  - They take 50% reduced [color=lime]Radiation[/color] damage.
+  - They take 20% reduced [color=pink]Brute[/color] damage.
+  - They are also immune to the effects of [color=lightsteelblue]space[/color], [color=lightslategray]low pressure[/color], and [color=cyan]cold[/color].
   - They do not need to eat, drink, or breathe.
   - They are easy to revive, just repair the damage and hit the "Restart" button in the right-click menu.
   - Their power cell can be swapped out with a self-charging one, to never need to recharge again!
-  - They have a built-in [color=yellow]headset[/color] and do not need to carry one.
+  - They have a built-in [color=goldenrod]headset[/color] and do not need to carry one.
   - IPC specific chems work regardless of if they're alive or not.
 
   ### Drawbacks
   IPCs have the following drawbacks:
-  - They are vulnerable to [color=yellow]EMP[/color] damage, which will drain your battery.
+  - They are vulnerable to [color=lightskyblue]EMP[/color] damage, which will drain your battery.
   - They are slowed by low battery, by up to 90% at 0 charge.
-  - They take [color=orange]double damage from heat,[/color] and can be set on fire more easily.
+  - They take 50% more [color=orange]Burn[/color] damage.
   - Their topicals are specialized, storage inefficient, and relatively expensive.
   - They need IPC specific chems to be healed.
-  - They take [color=yellow]Structural[/color] damage, such as that from pickaxes, drills, and PKAs. However, they resist 50% of it after a flat reduction of 10.
 
   ## Recharging an IPC
-   <Box>
+  <Box>
     <GuideEntityEmbed Entity="APCBasic" Caption="APC Terminal"/>
-    <GuideEntityEmbed Entity="BorgCharger" Caption="Borg Charger"/>
+	<GuideEntityEmbed Entity="BorgCharger" Caption="Cyborg Recharging Station"/>
     <GuideEntityEmbed Entity="PowerCellMedium" Caption="Power Cell"/>
   </Box>
   IPCs can be recharged in three different ways:
 
-  APC Terminal: IPCs can use APC terminals to recharge. Press [color=yellow]Alt + left click[/color] on a terminal as many times as needed to fully recharge.
+  APC Terminal: IPCs can use APC terminals to recharge. Press [color=goldenrod]Alt + left click[/color] on a terminal as many times as needed to fully recharge.
 
-  Borg Rechargers: IPCs can use borg rechargers to recharge. Always prioritize the ones outside of the Sci area to avoid headaches.
+  Cyborg Recharging Station: IPCs can use borg rechargers to recharge. These can be found within a few locations throught the sector. <!---Always prioritize the ones outside of the Sci area to avoid headaches.-->
 
   Power Cell: IPCs have an internal power cell that serves as their battery. They can simply swap it out by opening the hatch and manually replacing it.
 
@@ -61,31 +62,32 @@
     <GuideEntityEmbed Entity="EncryptionKeyScience" Caption="Encryption key"/>
   </Box>
 
-  IPCs can choose not to use external radios because they already have one built in. They only need to get an encryption key from a radio. By clicking on an IPC with a [color=yellow]wire cutter[/color], you can remove their keys.
-  You can find new keys around the station or remove one from a sector radio using a [color=yellow]screwdriver[/color].
+  IPCs can choose not to use external radios because they already have one built in. They only need to get an encryption key from a radio. By clicking on an IPC with a [color=yellow]wirecutter[/color], you can remove their keys.
+  You can find new keys around the sector or remove one from a radio using a [color=yellow]screwdriver[/color].
 
   ## Repairing
   <Box HorizontalAlignment="Stretch">
-    <GuideEntityEmbed Entity="RepairSpray" Caption="Repair Spray"/>
-    Repair sprays are used to cure huge [color=pink]Slashing, Piercing[/color] damage, and [color=yellow]Structural[/color] damage too.
+    <GuideEntityEmbed Entity="RepairSpray" Caption=""/>
+    Repair sprays are used to cure extensive [color=orange]Burn[/color] damage.
   </Box>
+  Repair Spray restores [color=darkred]Blood level[/color], repairs some [color=darkred]Bloodloss[/color] and helps stop [color=darkred]Bleeding[/color].
   <Box HorizontalAlignment="Stretch">
-    <GuideEntityEmbed Entity="RepairPatch" Caption="Repair Patch"/>
-    Repair sprays are used to cure moderate [color=pink]Slashing, Piercing[/color] damage in a pinch, and light[color=yellow]Structural[/color] damage.
+    <GuideEntityEmbed Entity="RepairPatch" Caption=""/>
+    Repair Patches are used to cure moderate [color=pink]Brute[/color] damage.
   </Box>
+  Repair Patches innately repair some [color=darkred]Bloodloss[/color] but do not stop [color=darkred]Bleeding[/color].
   <Box HorizontalAlignment="Stretch">
-    <GuideEntityEmbed Entity="WelderIndustrialAdvanced" Caption="Welder"/>
-    Welders can be used to repair [color=pink]Blunt[/color] damage, and low [color=yellow]structural[/color] damage too.
+    <GuideEntityEmbed Entity="RepairAutoinjector" Caption=""/>
+	Emergency Repair autoinjectors contain 20u of [color=seagreen]Autosolder[/color] and 10u of [color=steelblue]Sylexalin[/color]!
   </Box>
-  <Box HorizontalAlignment="Stretch">
-    <GuideEntityEmbed Entity="CableApcStack" Caption="Cables (any type)"/>
-    Cables can be used to repair light [color=orange]Burns[/color] in an emergency, low [color=yellow]Structural[/color] damage too.
-  </Box>
-  <Box HorizontalAlignment="Stretch">
-    <GuideEntityEmbed Entity="RepairAutoinjector" Caption="Emergency Repair autoinjector: contains 20u of Autosolder!"/>
-    Autosolder is used to repair [color=yellow]Blindness and Structural[/color], [color=lime]Radiation[/color], major [color=orange]Burns.[/color].
-  </Box>
-    In the event an IPC dies, after being fully repaired, it should be restarted using the [color=yellow]"Restart"[/color] button (located by right-clicking).
+  ## IPC Chems
+	- [color=seagreen]Autosolder[/color] is used to repair [color=yellow]Blindness[/color], as well as [color=lime]Radiation[/color] and [color=orange]Burn[/color] damage.
+	- [color=steelblue]Sylexalin[/color] is used to restore [color=darkred]blood level[/color] and remove [color=darkred]bloodloss[/color].
+	- [color=violet]Sylashizine[/color] is used to restore heavy [color=pink]Piercing[/color] and [color=pink]Slash[/color] damage. [color=violet]Sylashizine[/color] also helps stop helps stop [color=darkred]Bleeding[/color] but deals minor [color=pink]Blunt[/color] damage in the process.
+	- [color=darkred]Oxidant[/color] is their [color=darkred]blood[/color].
+
+
+	In the event an IPC dies, after being fully repaired, it should be restarted using the [color=goldenrod]"Restart"[/color] button (located by right-clicking).
 
     [color=red]DO NOT DEFIBRILLATE OR SHOCK A DEAD IPC. They'll explode and probably kill you too![/color]
 
