@@ -1,10 +1,10 @@
 # region Doubloons
 - type: entity
-  name: doubloon
+  name: Den Bullion
   parent: [BaseItem, BaseC3MetaPirate] # + BaseC3MetaPirate
   id: Doubloon
   suffix: 20 DB
-  description: A dirty gold coin used for nefarious pirate exchanges.
+  description: A minted gold coin used to depart from government backed currencies.
   components:
   - type: Sprite
     sprite: _NF/Objects/Specific/Pirate/pirate_doubloon.rsi
@@ -51,22 +51,15 @@
 - type: entity
   parent: [ BaseItem, StorePresetPirateUplink, BaseC3MetaPirate] # COYOTE: + BaseC3MetaPirate
   id: BasePirateUplink
-  name: pirate uplink
-  description: A coconut with an antenna?
+  name: freelancer uplink
+  description: A digital black market storefront inserted into a hollowed out book of law as an ironic statement.
   suffix: Empty
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    sprite: _NF/Objects/Devices/pirate_uplink.rsi
+    sprite: _NF/Objects/Misc/books.rsi
     layers:
-    - state: icon
-      scale: 0.7, 0.7
-    - state: icon-overlay
-      scale: 0.7, 0.7
-      shader: unshaded
-  - type: Item
-    sprite: _NF/Objects/Devices/pirate_uplink.rsi
-    heldPrefix: icon
+    - state: law_space
   - type: UserInterface
     interfaces:
       enum.StoreUiKey.Key:
@@ -76,6 +69,8 @@
   - type: Tag
     tags:
     - PirateUplink
+    - Book
+    - BookSpaceLaw
 
 - type: entity
   parent: BasePirateUplink

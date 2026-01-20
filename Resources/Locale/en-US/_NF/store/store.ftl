@@ -7,7 +7,7 @@ store-category-secammo = Ammunition
 store-category-secexplosives = Explosives
 store-category-secbundles = Bundles
 # Pirate Uplink
-store-preset-name-pirate-uplink = Pirate Uplink Catalogue
+store-preset-name-pirate-uplink = freelancer Uplink Catalogue
 store-category-piratehardsuits = EVA Suits
 store-category-pirateweapons = Weapons
 store-category-pirateutility = Utility

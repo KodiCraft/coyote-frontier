@@ -83,9 +83,8 @@ stack-frontier-uplink-coin = frontier uplink {$amount ->
     *[other] coins
 }
 stack-doubloon = {$amount ->
-    [1] doubloon
-    [8] pieces of eight
-    *[other] doubloons
+    [1] den bullion
+    *[other] den bullions
 }
 stack-anomalite = anomalite
 stack-fuel-grade-plasma = fuel-grade plasma
