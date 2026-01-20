@@ -281,11 +281,18 @@ public sealed class EventManagerSystem : EntitySystem
             return false;
         }
 
+        bool jobzOk = stationEvent.RequiredJobs.Count == 0;
         // Frontier: require jobs to run event
         foreach (var (jobProtoId, numJobs) in stationEvent.RequiredJobs)
         {
-            if (_jobs.GetNumberOfActiveRoles(jobProtoId, false) < numJobs)
-                return false;
+            if (_jobs.GetNumberOfActiveRoles(jobProtoId, true) < numJobs)
+                continue;
+            jobzOk = true;
+            break;
+        }
+        if (!jobzOk)
+        {
+            return false;
         }
         // End Frontier
 
