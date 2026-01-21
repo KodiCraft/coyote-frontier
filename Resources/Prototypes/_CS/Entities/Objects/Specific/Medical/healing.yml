@@ -90,10 +90,10 @@
         # Piercing: -60 # Better if brutes are handled by the repair patch imo
         # Slash: -60 # Ditto
         # Structural: -10 # good, but please use autosolder.
-        Cold: -40
-        Heat: -40 # not useless, but please use autosolder.
-        Shock: -40
-        Bloodloss: -40
+        Cold: -45
+        Heat: -45 # not useless, but please use autosolder.
+        Shock: -45
+        Bloodloss: -30
     bloodlossModifier: -10 # stops bleeding
     ModifyBloodLevel: 50 # restores a lot of internal fluid
     healingBeginSound:
@@ -108,30 +108,33 @@
         variation: 0.125
 
 - type: entity
-  name: repair spray+ # unobtainable. for now.
-  description: A single-use spray gun to fill damaged areas with polyurethane-based expanding foam. For synthetic use only.
+  name: repair spray+
+  description: An unwieldy and obnoxiously large version of the single-use spray gun to fill damaged areas with polyurethane-based expanding foam. For synthetic use only.
   parent: [BaseHealingItem,RepairSpray]
   id: RepairSprayPlus
   components:
+  - type: MultiHandedItem
   - type: Tag
     tags:
     - Brutepack
   - type: Sprite
     sprite: _CS/Objects/Specific/Medical/robotopicals.rsi
     state: robofoam_super
+  - type: Item
+    size: Ginormous
   - type: Healing
+    delay: 5
     damageContainers:
     - Silicon
     - IPC
     damage:
       types:
-        Blunt: -20
-        Piercing: -30
-        Slash: -30
-        # Structural: -10 # very. good.
-        Cold: -35
-        Heat: -35
-        Shock: -35
+        Cold: -900
+        Heat: -900
+        Shock: -900
+        Bloodloss: -600
+    bloodlossModifier: -25
+    ModifyBloodLevel: 90
 
 - type: entity
   name: synthetic emergency autoinjector
@@ -201,8 +204,23 @@
     MaterialCloth: 5
   reagents:
     Autosolder: 10
-    Sylashizine: 10
+    Oxidant: 10
     Sylexalin: 10
+  recipeType: MedicalAssembler
+
+- type: microwaveMealRecipe
+  id: RecipeRepairSpray
+  name: repair spray+
+  result: RepairSprayPlus
+  time: 25
+  group: Medicinal
+  solids:
+    BlankMediPen: 1
+    MaterialCloth: 5
+  reagents:
+    Autosolder: 200
+    Oxidant: 50
+    Sylexalin: 200
   recipeType: MedicalAssembler
 
 - type: latheRecipe
