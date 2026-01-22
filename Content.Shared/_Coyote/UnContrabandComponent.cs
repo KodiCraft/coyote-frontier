@@ -6,5 +6,5 @@ namespace Content.Shared._Coyote;
 [RegisterComponent]
 public sealed partial class UnContrabandComponent : Component
 {
-    
+   
 }
