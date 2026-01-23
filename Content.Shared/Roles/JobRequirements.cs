@@ -18,9 +18,21 @@ public static class JobRequirements
     {
         var sys = entManager.System<SharedRoleSystem>();
         var requirements = sys.GetJobRequirement(job);
+        var overrequirements = sys.GetOverrideJobRequirement(job);
         reason = null;
         if (requirements == null)
             return true;
+
+        if (overrequirements is {Count: > 0})
+        {
+            foreach (var requirement in overrequirements)
+            {
+                if (requirement.Check(entManager, protoManager, profile, playTimes, out reason))
+                {
+                    return true;
+                }
+            }
+        }
 
 
         // Frontier: add alternate requirement sets
