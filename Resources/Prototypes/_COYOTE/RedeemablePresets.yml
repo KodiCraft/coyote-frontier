@@ -4,3 +4,7 @@
   fucValue: 0
   denBullionValue: 1
 
+- type: redeemablePreset
+  id: Example2
+  fucValue: 1
+  denBullionValue: 0
