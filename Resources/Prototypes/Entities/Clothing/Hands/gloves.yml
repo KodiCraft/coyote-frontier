@@ -425,6 +425,8 @@
     tags:
     - Kangaroo
     - WhitelistChameleon
+  - type: Redeemable
+    preset: Example
 
 - type: entity
   parent: [ClothingHandsBase, BaseC4ContrabandUnredeemable] # Frontier: BaseSecurityContraband<BaseC2ContrabandUnredeemable

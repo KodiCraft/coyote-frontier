@@ -1,0 +1,6 @@
+# Redeemable Presets for Coyote FUC System
+- type: redeemablePreset
+  id: Example
+  fucValue: 0
+  denBullionValue: 1
+

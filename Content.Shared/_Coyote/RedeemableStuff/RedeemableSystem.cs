@@ -38,11 +38,16 @@ public sealed class RedeemableSystem : EntitySystem
             return;
         if (TryComp(uid, out UnRedeemableComponent? unRedeemable))
             return;
+        foreach (var (currency, amount) in c.TurnInValues)
+        {
+            if (!args.Values.TryAdd(currency, amount))
+                args.Values[currency] += amount;
+        }
     }
-
 
 }
 
+[ByRefEvent]
 public sealed class GetRedeemValueEvent : EntityEventArgs
 {
     public Dictionary<ProtoId<CurrencyPrototype>, int> Values = new();
