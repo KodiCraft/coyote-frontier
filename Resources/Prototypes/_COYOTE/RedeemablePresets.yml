@@ -10,6 +10,11 @@
   denBullionValue: 0
 
 - type: redeemablePreset
+  id: Valueless
+  fucValue: 0
+  denBullionValue: 0
+
+- type: redeemablePreset
   id: NFSDGear
   fucValue: 0
   denBullionValue: 1
@@ -20,6 +25,11 @@
   denBullionValue: 3
 
 - type: redeemablePreset
+  id: NFSDGearExtremeValuable
+  fucValue: 0
+  denBullionValue: 6
+
+- type: redeemablePreset
   id: FreelancerGear
   fucValue: 0
   denBullionValue: 1
@@ -28,6 +38,11 @@
   id: FreelancerGearValuable
   fucValue: 0
   denBullionValue: 3
+
+- type: redeemablePreset
+  id: FreelancerGearExtremeValuable
+  fucValue: 0
+  denBullionValue: 6
 
 - type: redeemablePreset
   id: ContraLvl1

@@ -6,6 +6,8 @@
   description: |-
     Pla-ket-ket-ket-ket! An illegal firearm often used by Syndicate agents.
   components:
+  - type: Redeemable
+    preset: SyndieLvl2
   - type: Gun
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/atreides.ogg
@@ -21,6 +23,8 @@
   description: |-
     An illegal firearm that is often used by the infamous nuclear operatives.
   components:
+  - type: Redeemable
+    preset: SyndieLvl2
   - type: Gun
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/c-20r.ogg
@@ -41,6 +45,8 @@
   name: Drozd
   description: A fully automatic SMG.
   components: &drozdComponents
+  - type: Redeemable
+    preset: ContraLvl2
   - type: Gun
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/atreides.ogg
