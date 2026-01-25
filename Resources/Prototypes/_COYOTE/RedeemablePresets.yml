@@ -30,6 +30,26 @@
   denBullionValue: 6
 
 - type: redeemablePreset
+  id: ExpedNFSDLvl1
+  fucValue: 1
+  denBullionValue: 2
+
+- type: redeemablePreset
+  id: ExpedNFSDLvl2
+  fucValue: 1
+  denBullionValue: 3
+
+- type: redeemablePreset
+  id: ExpedNFSDLvl3
+  fucValue: 1
+  denBullionValue: 4
+
+- type: redeemablePreset
+  id: ExpedNFSDLvl4
+  fucValue: 1
+  denBullionValue: 5
+
+- type: redeemablePreset
   id: FreelancerGear
   fucValue: 0
   denBullionValue: 1
@@ -43,6 +63,26 @@
   id: FreelancerGearExtremeValuable
   fucValue: 0
   denBullionValue: 6
+
+- type: redeemablePreset
+  id: ExpedFreelancerLvl1
+  fucValue: 2
+  denBullionValue: 1
+
+- type: redeemablePreset
+  id: ExpedFreelancerLvl2
+  fucValue: 3
+  denBullionValue: 1
+
+- type: redeemablePreset
+  id: ExpedFreelancerLvl3
+  fucValue: 4
+  denBullionValue: 1
+
+- type: redeemablePreset
+  id: ExpedFreelancerLvl4
+  fucValue: 5
+  denBullionValue: 1
 
 - type: redeemablePreset
   id: ContraLvl1
