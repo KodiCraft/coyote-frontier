@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using Content.Client.UserInterface.Screens;
 using Content.Shared.CCVar;
 using Content.Shared._EE.CCVars; // EE - chat stack
@@ -52,6 +52,7 @@ public sealed partial class MiscTab : Control
 
         Control.AddOptionDropDown(CVars.InterfaceTheme, DropDownHudTheme, themeEntries);
         Control.AddOptionDropDown(CCVars.UILayout, DropDownHudLayout, layoutEntries);
+        Control.AddOptionSlider(CCVars.ChatLines, SliderLineMax, 5, 20);
         Control.AddOptionDropDown<int>(EECVars.ChatStackLastLines, ChatStackLastLines, chatStackEntries); // EE - Chat stacking
 
         Control.AddOptionCheckBox(CVars.DiscordEnabled, DiscordRich);

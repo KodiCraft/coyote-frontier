@@ -1,6 +1,7 @@
 using System.Globalization;
 using System.Linq;
 using System.Numerics;
+using System.Text.RegularExpressions;
 using Content.Client.Administration.Managers;
 using Content.Client.Chat;
 using Content.Client.Chat.Managers;
@@ -712,7 +713,7 @@ public sealed partial class ChatUIController : UIController
 
     public void UpdateSelectedChannel(ChatBox box)
     {
-        var (prefixChannel, _, radioChannel) = SplitInputContents(box.ChatInput.Input.Text.ToLower());
+        var (prefixChannel, _, radioChannel) = SplitInputContents(Rope.Collapse(box.ChatInput.Input.TextRope).ToLower());
 
         if (prefixChannel == ChatSelectChannel.None)
             box.ChatInput.ChannelSelector.UpdateChannelSelectButton(box.SelectedChannel, null);
@@ -756,8 +757,11 @@ public sealed partial class ChatUIController : UIController
     {
         _typingIndicator?.ClientSubmittedChatText();
 
-        var text = box.ChatInput.Input.Text;
-        box.ChatInput.Input.Clear();
+        var text = Rope.Collapse(box.ChatInput.Input.TextRope);
+        // Clean up message and prevent massive amounts of newlines
+        text = new Regex("\n\n\n*").Replace(text, "\n\n").Trim();
+        box.ChatInput.Input.TextRope = new Rope.Leaf("");
+        box.ChatInput.Input.SetHeight = 22;
         box.ChatInput.Input.ReleaseKeyboardFocus();
         UpdateSelectedChannel(box);
 
@@ -792,7 +796,7 @@ public sealed partial class ChatUIController : UIController
         if (chatBox == null)
             return;
 
-        var msg = chatBox.ChatInput.Input.Text.TrimEnd();
+        var msg = Rope.Collapse(chatBox.ChatInput.Input.TextRope).TrimEnd();
         // Don't send on OOC/LOOC obviously!
 
         // we need to handle selected channel
@@ -820,8 +824,8 @@ public sealed partial class ChatUIController : UIController
             : Loc.GetString(forceSay.ForceSayMessageWrapNoSuffix,
                 ("message", msg));
 
-        chatBox.ChatInput.Input.SetText(modifiedText);
-        chatBox.ChatInput.Input.ForceSubmitText();
+        chatBox.ChatInput.Input.TextRope = new Rope.Leaf(modifiedText);
+        chatBox.Submit();
     }
 
     private void OnChatMessage(MsgChatMessage message)

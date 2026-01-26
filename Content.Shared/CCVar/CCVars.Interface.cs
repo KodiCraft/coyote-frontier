@@ -1,4 +1,4 @@
-﻿using Robust.Shared.Configuration;
+using Robust.Shared.Configuration;
 
 namespace Content.Shared.CCVar;
 
@@ -21,6 +21,12 @@ public sealed partial class CCVars
     /// </summary>
     public static readonly CVarDef<string> UILayout =
         CVarDef.Create("ui.layout", "Default", CVar.CLIENTONLY | CVar.ARCHIVE);
+
+    /// <summary>
+    /// The layout style of the UI
+    /// </summary>
+    public static readonly CVarDef<int> ChatLines =
+        CVarDef.Create("ui.chat-lines", 10, CVar.CLIENTONLY | CVar.ARCHIVE);
 
     /// <summary>
     /// The dimensions for the chat window in Default UI mode
