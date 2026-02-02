@@ -26,14 +26,14 @@ coyote-rpi-journalism-pay-message = Article published! You earned { $amount }$.
 coyote-rpi-flarpi-payout-message-freelancer = You received your FLARPI payout of { $amount }DB for being such a good baddie!
 coyote-rpi-flarpi-payout-message-nfsd = You received your NARPI payout of { $amount }FUC for being such a lovely critter!
 
-coyote-rpi-flarpi-has-banked-freelancer = You also have { $amount }DB banked with FLARPI! Use the verb "Withdraw Den Bullion" to get it out!
-coyote-rpi-flarpi-has-banked-nfsd = You also have { $amount }FUC banked with NARPI! Use the verb "Uplink Credits" to get it out!
+coyote-rpi-flarpi-has-banked-freelancer = You also have { $amount }DB banked with FLARPI! Use the verb "Withdraw DB" to get it out!
+coyote-rpi-flarpi-has-banked-nfsd = You also have { $amount }FUC banked with NARPI! Use the verb "Withdraw FUC" to get it out!
 
-coyote-rpi-flarpi-got-more-freelancer = [color=green]+{ $amount }DB[/color] for being such a good baddie, bringing your total FLARPI bank to [color=green]{ $totalAmount }DB[/color]! Use the verb "Withdraw Den Bullion" to get it out!
-coyote-rpi-flarpi-got-more-nfsd = [color=green]+{ $amount }FUC[/color] for being such a lovely critter, bringing your total NARPI bank to [color=green]{ $totalAmount }DB[/color]! Use the verb "Withdraw Den Bullion" to get it out!
+coyote-rpi-flarpi-got-more-freelancer = [color=green]+{ $amount }DB[/color] for being such a good baddie, bringing your total FLARPI bank to [color=green]{ $totalAmount }DB[/color]! Use the verb "Withdraw DB" to get it out!
+coyote-rpi-flarpi-got-more-nfsd = [color=green]+{ $amount }FUC[/color] for being such a lovely critter, bringing your total NARPI bank to [color=green]{ $totalAmount }DB[/color]! Use the verb "Withdraw FUC" to get it out!
 
-coyote-rpi-flarpi-withdrawverb-freelancer = Withdraw Den Bullion { $amount }DB
-coyote-rpi-flarpi-withdrawverb-nfsd = Withdraw Uplink Coins { $amount }FUC
+coyote-rpi-flarpi-withdrawverb-freelancer = Withdraw DB - { $amount }
+coyote-rpi-flarpi-withdrawverb-nfsd = Withdraw FUC - { $amount }
 
 coyote-rpi-flarpi-currency-freelancer = Den Bullion
 coyote-rpi-flarpi-currency-nfsd = Uplink Coins
