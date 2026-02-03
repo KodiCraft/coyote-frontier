@@ -826,9 +826,7 @@ public sealed class RoleplayIncentiveSystem : EntitySystem
             {
                 if (!ValidForRPI(uid))
                 {
-                    TickEverythingAnyway(
-                        uid,
-                        rpic);
+                    TickEverythingAnyway(rpic);
                     continue; // not valid for RPI
                 }
             }
@@ -845,12 +843,9 @@ public sealed class RoleplayIncentiveSystem : EntitySystem
     /// </summary>
     /// <param name="uid"></param>
     /// <param name="rpic"></param>
-    private void TickEverythingAnyway(
-        EntityUid uid,
-        RoleplayIncentiveComponent rpic
-        )
+    private void TickEverythingAnyway(RoleplayIncentiveComponent rpic)
     {
-        var now = _timing.CurTime;
+        TimeSpan now = _timing.CurTime;
         rpic.LastCheck                      = now;
         rpic.NextPayward                    = now + rpic.PaywardInterval;
         rpic.NextProxyCheck                 = now + rpic.ProxyCheckInterval;
