@@ -13,7 +13,7 @@
 - type: vessel
   id: mender
   parent: BaseVessel
-  name: LVHI Mender
+  name: LL2 Mender
   description: An older model made by LVHI, which had far outlived it's usefulness as a cargo ship, now finds new life as a cheap medical vessel that retains some transport capabilities.
   price: 145000 #40000 + 28000 (LL2(70%) + 80000(price per tile(322)) = 145000
   category: Medium
