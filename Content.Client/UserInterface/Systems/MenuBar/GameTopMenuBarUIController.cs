@@ -1,3 +1,4 @@
+using Content.Client._COYOTE.VesselConsent.UI;
 using Content.Client.Consent.UI; // Floofstation
 using Content.Client.UserInterface.Systems.Actions;
 using Content.Client.UserInterface.Systems.Admin;
@@ -26,6 +27,7 @@ public sealed class GameTopMenuBarUIController : UIController
     [Dependency] private readonly GuidebookUIController _guidebook = default!;
     [Dependency] private readonly EmotesUIController _emotes = default!;
     [Dependency] private readonly ConsentUiController _consent = default!; // Floofstation
+    [Dependency] private readonly VesselConsentUIController _vesselConsent = default!; // Coyote
 
     private GameTopMenuBar? GameTopMenuBar => UIManager.GetActiveUIWidgetOrNull<GameTopMenuBar>();
 
@@ -50,6 +52,7 @@ public sealed class GameTopMenuBarUIController : UIController
         _sandbox.UnloadButton();
         _emotes.UnloadButton();
         _consent.UnloadButton(); // Floofstation
+        _vesselConsent.UnloadButton(); // Coyote
     }
 
     public void LoadButtons()
@@ -64,5 +67,6 @@ public sealed class GameTopMenuBarUIController : UIController
         _sandbox.LoadButton();
         _emotes.LoadButton();
         _consent.LoadButton(); // Floofstation
+        _vesselConsent.LoadButton(); // Coyote
     }
 }

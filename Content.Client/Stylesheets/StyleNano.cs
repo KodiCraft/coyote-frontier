@@ -1337,6 +1337,14 @@ namespace Content.Client.Stylesheets
                         new StyleProperty(Button.StylePropertyModulateSelf, ButtonColorDefaultRed),
                     }),
 
+                // Coyote: Green top button
+                new StyleRule(
+                    new SelectorElement(typeof(MenuButton), new[] {MenuButton.StyleClassGreenTopButton}, null, new[] {Button.StylePseudoClassNormal}),
+                    new[]
+                    {
+                        new StyleProperty(Button.StylePropertyModulateSelf, ButtonColorGoodDefault), // TODO: This color kinda sucks ass for this, it's the same as neutral pressed
+                    }),
+
                 new StyleRule(
                     new SelectorElement(typeof(MenuButton), null, null, new[] {Button.StylePseudoClassNormal}),
                     new[]
@@ -1351,6 +1359,22 @@ namespace Content.Client.Stylesheets
                         new StyleProperty(Button.StylePropertyModulateSelf, ButtonColorPressed),
                     }),
 
+                // Coyote: Red top button pressed style
+                new StyleRule(
+                    new SelectorElement(typeof(MenuButton), new[] {MenuButton.StyleClassRedTopButton}, null, new[] {Button.StylePseudoClassPressed}),
+                    new[]
+                    {
+                        new StyleProperty(Button.StylePropertyModulateSelf, ButtonColorCautionPressed),
+                    }),
+
+                // Coyote: Green top button
+                new StyleRule(
+                    new SelectorElement(typeof(MenuButton), new[] {MenuButton.StyleClassGreenTopButton}, null, new[] {Button.StylePseudoClassPressed}),
+                    new[]
+                    {
+                        new StyleProperty(Button.StylePropertyModulateSelf, ButtonColorPressed), // TODO: Consider adding a new color for green pressed
+                    }),
+
                 new StyleRule(
                     new SelectorElement(typeof(MenuButton), null, null, new[] {Button.StylePseudoClassHover}),
                     new[]
@@ -1363,6 +1387,14 @@ namespace Content.Client.Stylesheets
                     new[]
                     {
                         new StyleProperty(Button.StylePropertyModulateSelf, ButtonColorHoveredRed),
+                    }),
+
+                // Coyote: Green top button
+                new StyleRule(
+                    new SelectorElement(typeof(MenuButton), new[] {MenuButton.StyleClassGreenTopButton}, null, new[] {Button.StylePseudoClassHover}),
+                    new[]
+                    {
+                        new StyleProperty(Button.StylePropertyModulateSelf, ButtonColorGoodHovered),
                     }),
 
                 new StyleRule(

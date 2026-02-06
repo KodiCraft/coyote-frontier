@@ -53,6 +53,7 @@ namespace Content.Shared.Input
         public static readonly BoundKeyFunction FlipObject = "FlipObject";
         public static readonly BoundKeyFunction ToggleRoundEndSummaryWindow = "ToggleRoundEndSummaryWindow";
         public static readonly BoundKeyFunction OpenConsentWindow = "OpenConsentWindow"; // Floofstation
+        public static readonly BoundKeyFunction OpenVesselConsentWindow = "OpenVesselConsentWindow"; // Coyote
         public static readonly BoundKeyFunction OpenEntitySpawnWindow = "OpenEntitySpawnWindow";
         public static readonly BoundKeyFunction OpenSandboxWindow = "OpenSandboxWindow";
         public static readonly BoundKeyFunction OpenTileSpawnWindow = "OpenTileSpawnWindow";

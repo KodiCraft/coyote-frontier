@@ -13,10 +13,12 @@ using Robust.Shared.Configuration;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Numerics;
+using Content.Server._Coyote.VesselConsent;
 using Content.Shared._NF.Shipyard.Events;
 using Content.Shared.Mobs.Components;
 using Robust.Shared.Containers;
 using Content.Server._NF.Station.Components;
+using Content.Shared._Coyote.VesselConsent;
 using Robust.Shared.EntitySerialization.Systems;
 using Robust.Shared.Utility;
 
@@ -169,6 +171,10 @@ public sealed partial class ShipyardSystem : SharedShipyardSystem
         _shuttleIndex += grid.Value.Comp.LocalAABB.Width + ShuttleSpawnBuffer;
 
         shuttleGrid = grid.Value.Owner;
+        // Coyote: Has to happen at some point during the purchase and
+        // this is the closest time to the vessel's creation.
+        AddComp(shuttleGrid.Value, new VesselConditionsComponent());
+        AddComp(shuttleGrid.Value, new ConsentingEntitiesComponent());
         return true;
     }
 

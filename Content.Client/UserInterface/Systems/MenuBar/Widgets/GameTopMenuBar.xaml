@@ -83,6 +83,18 @@
         HorizontalExpand="True"
         AppendStyleClass="{x:Static style:StyleBase.ButtonSquare}"
         />
+    <!-- Coyote: Vessel consent option -->
+    <!-- TODO: Not sure if "home" is the clearest icon for this, consider replacing -->
+    <ui:MenuButton
+        Name="VesselConsentButton"
+        Access="Internal"
+        Icon="{xe:Tex '/Textures/Interface/home.png'}"
+        BoundKey="{x:Static is:ContentKeyFunctions.OpenVesselConsentWindow}"
+        ToolTip="{Loc 'game-hud-open-vessel-consent-window-button-tooltip'}"
+        MinSize="42 64"
+        HorizontalExpand="True"
+        AppendStyleClass="{x:Static style:StyleBase.ButtonSquare}"
+        />
     <ui:MenuButton
         Name="AdminButton"
         Access="Internal"

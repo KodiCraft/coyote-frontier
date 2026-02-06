@@ -13,17 +13,24 @@ public sealed class MenuButton : ContainerButton
 {
     [Dependency] private readonly IInputManager _inputManager = default!;
     public const string StyleClassLabelTopButton = "topButtonLabel";
-    public const string StyleClassRedTopButton = "topButtonLabel";
+    public const string StyleClassRedTopButton = "topButtonLabelRed"; // Coyote: Appended Red to this, for some reason in baseline it's identical to StyleClassLabelTopButton
+    public const string StyleClassGreenTopButton = "topButtonLabelGreen"; // Coyote
 
     private static readonly Color ColorNormal = Color.FromHex("#7b7e7b");
     private static readonly Color ColorRedNormal = Color.FromHex("#FEFEFE");
+    private static readonly Color ColorGreenNormal = Color.FromHex("#7b7e7b"); // Coyote
     private static readonly Color ColorHovered = Color.FromHex("#969A96");
     private static readonly Color ColorRedHovered = Color.FromHex("#FFFFFF");
+    private static readonly Color ColorGreenHovered = Color.FromHex("#969A96"); // Coyote
     private static readonly Color ColorPressed = Color.FromHex("#789B8C");
 
     private const float VertPad = 8f;
-    private Color NormalColor => HasStyleClass(StyleClassRedTopButton) ? ColorRedNormal : ColorNormal;
-    private Color HoveredColor => HasStyleClass(StyleClassRedTopButton) ? ColorRedHovered : ColorHovered;
+    private Color NormalColor => HasStyleClass(StyleClassRedTopButton) ? ColorRedNormal :
+        HasStyleClass(StyleClassGreenTopButton) ? ColorGreenNormal : // Coyote
+        ColorNormal;
+    private Color HoveredColor => HasStyleClass(StyleClassRedTopButton) ? ColorRedHovered :
+        HasStyleClass(StyleClassGreenTopButton) ? ColorGreenHovered : // Coyote
+        ColorHovered;
 
     private BoundKeyFunction _function;
     private readonly BoxContainer _root;

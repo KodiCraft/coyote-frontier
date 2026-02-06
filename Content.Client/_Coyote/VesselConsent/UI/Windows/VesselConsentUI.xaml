@@ -1,0 +1,33 @@
+<controls:FancyWindow
+    xmlns="https://spacestation14.io"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:gfx="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
+    xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
+    x:Class="Content.Client._COYOTE.VesselConsent.UI.Windows.VesselConsentUI"
+    Title="{Loc vessel-consent-window-title}"
+    MinSize="620 670"
+    >
+    <BoxContainer HorizontalExpand="True" VerticalExpand="True" Orientation="Vertical" Margin="5">
+        <Label Text="{Loc vessel-consent-current-conditions}"/>
+        <PanelContainer HorizontalExpand="True" VerticalExpand="True" MinWidth="200">
+            <PanelContainer.PanelOverride>
+                <gfx:StyleBoxFlat BackgroundColor="#1B1B1E" />
+            </PanelContainer.PanelOverride>
+            <TextEdit
+                Name="VesselConditionsText"
+                Access="Public"
+                MinHeight="100"
+                VerticalExpand="True">
+            </TextEdit>
+        </PanelContainer>
+        <BoxContainer Orientation="Horizontal">
+            <Label Name="Explanation" Text="should-be-overriden!" HorizontalExpand="True" />
+            <Button Name="Save" Text="{Loc vessel-consent-save}" />
+        </BoxContainer>
+        <Button
+            Name="ToggleButton"
+            Text="{Loc vessel-consent-consent}"
+            HorizontalExpand="True"/>
+        <Label Name="Feedback" Access="Public" Text="should-be-overriden!" />
+    </BoxContainer>
+</controls:FancyWindow>
