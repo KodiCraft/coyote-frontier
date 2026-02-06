@@ -54,7 +54,7 @@
 
 - type: entity
   id: NFWeaponRevolverRitland45
-  parent: [ NFBaseWeaponRevolverChamber45, NFBaseWeaponFrameRevolverGorlex, BaseC1Contraband ]
+  parent: [ BaseC1Contraband, NFBaseWeaponRevolverChamber45, NFBaseWeaponFrameRevolverGorlex ]
   name: ritland-45
   description: |-
     An illegal revolver favoured by Syndicate agents.
@@ -66,7 +66,7 @@
 
 - type: entity
   id: NFWeaponRevolverPirate
-  parent: [ NFBaseWeaponRevolverChamber45, NFBaseWeaponFrameRevolverSteelbolt, BaseC1Contraband ]
+  parent: [ BaseC1Contraband, NFBaseWeaponRevolverChamber45, NFBaseWeaponFrameRevolverSteelbolt ]
   name: pirate revolver
   description: |-
     An odd, illegal, old-looking revolver, favoured by pirate crews.
@@ -78,7 +78,7 @@
 
 - type: entity
   id: NFWeaponPistolFlintlock
-  parent: [ NFBaseWeaponRevolverChamber60, NFBaseWeaponFrameRevolverSteelbolt, BaseC2Contraband ]
+  parent: [ BaseC2Contraband, NFBaseWeaponRevolverChamber60, NFBaseWeaponFrameRevolverSteelbolt ]
   name: flintlock pistol
   description: |-
     A pirate's companion. Yarrr! An illegal weapon often used by pirates.
@@ -100,7 +100,7 @@
 #region DeltaV
 - type: entity
   id: NFWeaponRevolverFitz
-  parent: [ NFBaseWeaponRevolverChamber45, NFBaseWeaponFrameRevolverFrontierGunsmith ]
+  parent: [ BaseC1Contraband, NFBaseWeaponRevolverChamber45, NFBaseWeaponFrameRevolverFrontierGunsmith ]
   name: fitz special
   description: |-
     A compact and concealable self defence snub revolver.
@@ -112,7 +112,7 @@
 
 - type: entity
   id: NFWeaponRevolverFaith
-  parent: [ NFBaseWeaponRevolverChamber45, NFBaseWeaponFrameRevolverFrontierGunsmith ]
+  parent: [ BaseC1Contraband, NFBaseWeaponRevolverChamber45, NFBaseWeaponFrameRevolverFrontierGunsmith ]
   name: faith
   description: |-
     Delivers blessings in bullet form.
@@ -128,7 +128,7 @@
 
 - type: entity
   id: NFWeaponRevolverLucky
-  parent: [ NFBaseWeaponRevolverChamber45, NFBaseWeaponFrameRevolverFrontierGunsmith ]
+  parent: [ BaseC1Contraband, NFBaseWeaponRevolverChamber45, NFBaseWeaponFrameRevolverFrontierGunsmith ]
   name: lucky
   description: |-
     Luck always beats skill, ya weasel.
@@ -141,7 +141,7 @@
 #region Frontier
 - type: entity
   id: NFWeaponRevolverArgenti
-  parent: [ NFBaseWeaponRevolverChamber35, NFBaseWeaponFrameRevolverFrontierGunsmith ]
+  parent: [ BaseC1Contraband, NFBaseWeaponRevolverChamber35, NFBaseWeaponFrameRevolverFrontierGunsmith ]
   name: argenti
   description: |-
     The civilian grade Argenti Type 35 revolver. Manufactured by Silver Industries. While the design with expanded cylinder is quite ancient, the right gunslinger will know how to utilise it well.

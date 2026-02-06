@@ -3,6 +3,7 @@ using Content.Server.Emp;
 using Content.Server.Radio.Components;
 using Content.Shared._Coyote.RadioNoises;
 using Content.Shared.Chat;
+using Content.Shared.Ghost;
 using Content.Shared.Inventory.Events;
 using Content.Shared.Radio;
 using Content.Shared.Radio.Components;
@@ -101,15 +102,21 @@ public sealed class HeadsetSystem : SharedHeadsetSystem
 
     private void OnHeadsetReceive(EntityUid uid, HeadsetComponent component, ref RadioReceiveEvent args)
     {
-        if (!TryComp(Transform(uid).ParentUid, out ActorComponent? actor))
+        EntityUid wearer = Transform(uid).ParentUid;
+        if (!TryComp(wearer, out ActorComponent? actor))
             return;
+        if (HasComp<GhostHearingComponent>(wearer))
+        {
+            _netMan.ServerSendMessage(args.ChatMsg, actor.PlayerSession.Channel);
+            return;
+        }
 
         MsgChatMessage chatMess = _radio.MangleRadioMessage(
             uid,
             ref args,
             out RadioDegradationParams dParams);
 
-        if (dParams.DropMessageEntirely)
+        if (dParams.DropMessageEntirely || dParams.DropMessage)
             return;
         // do the KSSHHT
         var staticEv = new DoRadioStaticEvent(
@@ -120,8 +127,6 @@ public sealed class HeadsetSystem : SharedHeadsetSystem
             args.Message,
             dParams);
         RaiseLocalEvent(uid, ref staticEv);
-        if (dParams.DropMessage)
-            return;
         // Send the message to the client
         _netMan.ServerSendMessage(chatMess, actor.PlayerSession.Channel);
     }

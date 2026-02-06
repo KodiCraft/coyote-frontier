@@ -27,7 +27,7 @@
 
 - type: entity # Coyote: Converted to .40 caliber
   id: NFWeaponPistolViper
-  parent: [ CSBaseWeaponHeavyPistolChamber40, CSBaseWeaponFrameHeavyMachinePistolGorlex, BaseC1Contraband ]
+  parent: [ BaseC1Contraband, CSBaseWeaponHeavyPistolChamber40, CSBaseWeaponFrameHeavyMachinePistolGorlex ]
   name: viper
   description: |-
     A small, easily concealable machine pistol. An illegal firearm often used by Syndicate agents.

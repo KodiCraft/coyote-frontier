@@ -1,6 +1,6 @@
 - type: entity
   name: prototype pulse rifle
-  parent: [BaseWeaponBattery, BaseGunWieldable, BaseC3Contraband] # Frontier: added BaseC2Contraband
+  parent: [BaseC3Contraband, BaseWeaponBattery, BaseGunWieldable] # Frontier: added BaseC2Contraband
   id: WeaponPrototypePulseRifle
   description: Some nutjob built this pulse rifle in their spess garage. It's quite power hungry. And why is it a lever action?!
   components:

@@ -200,6 +200,8 @@
   # HardsuitsArmored
   - ClothingOuterHardsuitMercenary
   - ClothingOuterHardsuitPrivateSecurity
+  # HardsuitsOldWar
+  - ClothingOuterHardsuitSurplus
   # ArsenalStyle
   - ClothingEyesPunkInfoShades
   - ClothingOuterArmorPunkRandomized
@@ -220,6 +222,7 @@
   - ClothingOuterCoatBomberRandomized
   # HardsuitsArmoredAdvanced
   - ClothingOuterHardsuitScaf
+  - ClothingOuterHardsuitNoble
   # MiscellaneousItemsOrganization
   - NFPouchMercenary
   - NFPouchPrivateSecurity
@@ -331,8 +334,9 @@
   - DeviceDesynchronizer
   # MagnetsTechAdvanced
   - ClothingShoesBootsMagAdv
-  # HardsuitsExperimentalRD
+  # HardsuitsExperimentalProtection
   - ClothingOuterHardsuitRd
+  - ClothingOuterHardsuitHostileEnvironment
   # IndustrialEngineering
   - ProtolatheHyperConvectionMachineCircuitboard
   # AdvancedToolsTechnology

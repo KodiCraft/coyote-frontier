@@ -32,6 +32,10 @@
   - !type:GiveItemOnHolidaySpecial
     holiday: FrontierBirthday
     prototype: FrontierBirthdayGift
+  - !type:AddComponentSpecial
+    components:
+    - type: IsNfsd
+      worth: 2
 
 - type: startingGear
   id: SeniorOfficerGear
@@ -45,6 +49,7 @@
     - BaseSecurityUplinkRadioOfficer
     - FrontierUplinkCoin5 # Coyote added 5 FUCs to Sergeants
     - ShipVoucherNfsdSergeant
+    - RubberStampSergeant
     - EncryptionKeyCommand
 
 - type: chameleonOutfit

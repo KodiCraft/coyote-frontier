@@ -34,7 +34,7 @@ entities:
     mapInit: true
     components:
     - type: MetaData
-      name: Donk n Go
+      name: Donk 'n Go
     - type: Transform
       pos: 83.725,-73.325
       parent: invalid

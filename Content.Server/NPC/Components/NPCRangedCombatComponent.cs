@@ -76,4 +76,12 @@ public sealed partial class NPCRangedCombatComponent : Component
     /// </summary>
     [ViewVariables]
     public CollisionGroup BulletMask;
+
+    // Frontier
+    /// <summary>
+    /// The chance that a shot will miss the projected path.
+    /// </summary>
+    [ViewVariables(VVAccess.ReadWrite)]
+    public float MissChance = 0.25f;
+    // End Frontier
 }

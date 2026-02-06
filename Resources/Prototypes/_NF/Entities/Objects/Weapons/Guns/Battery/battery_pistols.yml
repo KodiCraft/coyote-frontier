@@ -192,8 +192,8 @@
 - type: entity
   id: NFWeaponPistolCHIMPUpgraded
   parent:
-  - WeaponPistolCHIMPUpgraded
   - BaseC4Contraband
+  - WeaponPistolCHIMPUpgraded
   components:
   - type: ProjectileBatteryAmmoProvider
     proto: NFAnomalousParticleDeltaStrong

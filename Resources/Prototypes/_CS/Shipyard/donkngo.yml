@@ -11,13 +11,13 @@
 - type: vessel
   id: DonknGo
   parent: BaseVessel
-  name: LL2 Donk n Go
+  name: LL1 Donk n Go
   description: "Donk co's new franchise package includes your very own floating restraunt to craft homemade donk pockets!"
   price: 80000
   category: Medium
   group: Shipyard
   shuttlePath: /Maps/_CS/Shuttles/donkngo.yml
-  guidebookPage: null
+  guidebookPage: Null
   class:
   - Civilian
   - Kitchen
@@ -25,8 +25,8 @@
   - Uranium
 
 - type: gameMap
-  id: Donk n Go
-  mapName: 'DC Donk n Go'
+  id: DonknGo
+  mapName: 'Donk n Go'
   mapPath: /Maps/_CS/Shuttles/donkngo.yml
   minPlayers: 0
   stations:

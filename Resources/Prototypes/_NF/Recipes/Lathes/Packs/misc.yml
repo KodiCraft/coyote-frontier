@@ -16,6 +16,8 @@
   - ExteriorLightTube
   - LedLightBulb
   - LedLightTube
+  - DimLightBulb #Coyote
+  - WarmLightBulb #Coyote
 
 - type: latheRecipePack
   id: NFBasicToolsStatic
@@ -143,6 +145,9 @@
   - ClothingOuterHardsuitScaf
   - ClothingOuterHardsuitPilot
   - ClothingOuterHardsuitMaximPrototype
+  - ClothingOuterHardsuitNoble
+  - ClothingOuterHardsuitSurplus
+  - ClothingOuterHardsuitHostileEnvironment
 
 - type: latheRecipePack
   id: NFPouches

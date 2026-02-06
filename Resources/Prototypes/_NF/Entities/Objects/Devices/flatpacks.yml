@@ -521,6 +521,9 @@
   components:
   - type: Flatpack
     entity: ChemistryHotplate
+  - type: StaticPrice
+    price: 250
+    vendPrice: 10000
 
 - type: entity
   parent: MedicalTechFabFlatpack

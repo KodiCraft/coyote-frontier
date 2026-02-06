@@ -27,7 +27,7 @@
 
 - type: entity
   id: NFWeaponPistolCobra
-  parent: [ NFBaseWeaponPistolChamber45, NFBaseWeaponFramePistolCybersun, BaseC4Contraband ]
+  parent: [ BaseC4Contraband, NFBaseWeaponPistolChamber45, NFBaseWeaponFramePistolCybersun ]
   name: cobra
   description: |-
     A rugged, robust operator handgun with inbuilt silencer. An illegal firearm often used by Syndicate agents.

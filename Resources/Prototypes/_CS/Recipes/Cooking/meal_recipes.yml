@@ -15,7 +15,7 @@
   name: warm chocolate donk pocket recipe
   result: FoodDonkpocketChocolateWarm
   time: 5
-  group: Sweet
+  group: Dessert
   solids:
     FoodDonkpocketChocolate: 1
   recipeType: Microwave # Frontier
@@ -25,7 +25,7 @@
   name: warm maple donk pocket recipe
   result: FoodDonkpocketMapleWarm
   time: 5
-  group: Sweet
+  group: Dessert
   solids:
     FoodDonkpocketMaple: 1
   recipeType: Microwave # Frontier
@@ -44,10 +44,10 @@
 
 - type: microwaveMealRecipe
   id: FoodDonkpocketPrepBananaDIY
-  name: Prepped Donk Pocket
+  name: Prepped Banana Donk Pocket
   result: FoodDonkpocketPrepBananaDIY
   time: 5
-  group: Sweet
+  group: Dessert
   solids:
     FoodDoughPastryBaseRaw: 1
     FoodBanana: 1
@@ -57,10 +57,10 @@
 
 - type: microwaveMealRecipe
   id: FoodDonkpocketPrepBananaSplitDIY
-  name: Prepped Donk Pocket
+  name: Prepped Banana Split Donk Pocket
   result: FoodDonkpocketPrepBananaDIY
   time: 5
-  group: Sweet
+  group: Dessert
   solids:
     FoodDoughPastryBaseRaw: 1
     FoodBanana: 1
@@ -72,10 +72,10 @@
 
 - type: microwaveMealRecipe
   id: FoodDonkpocketPrepBbqDIY
-  name: Prepped Donk Pocket
+  name: Prepped Bbq Donk Pocket
   result: FoodDonkpocketPrepBbqDIY
   time: 5
-  group: Sweet
+  group: Savory
   solids:
     FoodDoughPastryBaseRaw: 1
   reagents:
@@ -85,10 +85,10 @@
 
 - type: microwaveMealRecipe
   id: FoodDonkpocketPrepBerryDIY
-  name: Prepped Donk Pocket
+  name: Prepped Berry Donk Pocket
   result: FoodDonkpocketPrepBerryDIY
   time: 5
-  group: Sweet
+  group: Dessert
   solids:
     FoodDoughPastryBaseRaw: 1
     FoodBerries: 1
@@ -98,10 +98,10 @@
 
 - type: microwaveMealRecipe
   id: FoodDonkpocketPrepCherryDIY
-  name: Prepped Donk Pocket
+  name: Prepped Cherry Donk Pocket
   result: FoodDonkpocketPrepCherryDIY
   time: 5
-  group: Sweet
+  group: Dessert
   solids:
     FoodDoughPastryBaseRaw: 1
     FoodCherry: 1
@@ -111,10 +111,10 @@
 
 - type: microwaveMealRecipe
   id: FoodDonkpocketPrepChocolateDIY
-  name: Prepped Donk Pocket
+  name: Prepped Chocolate Donk Pocket
   result: FoodDonkpocketPrepChocolateDIY
   time: 5
-  group: Sweet
+  group: Dessert
   solids:
     FoodDoughPastryBaseRaw: 1
     FoodSnackChocolate: 2
@@ -124,10 +124,10 @@
 
 - type: microwaveMealRecipe
   id: FoodDonkpocketPrepDankDIY
-  name: Prepped Donk Pocket
+  name: Prepped Dank Pocket
   result: FoodDonkpocketPrepDankDIY
   time: 5
-  group: Sweet
+  group: Savory
   solids:
     FoodDoughPastryBaseRaw: 1
     FoodCannabisButter: 1
@@ -137,10 +137,10 @@
 
 - type: microwaveMealRecipe
   id: FoodDonkpocketPrepHoneyDIY
-  name: Prepped Donk Pocket
+  name: Prepped Honey Donk Pocket
   result: FoodDonkpocketPrepHoneyDIY
   time: 5
-  group: Sweet
+  group: Dessert
   solids:
     FoodDoughPastryBaseRaw: 1
   reagents:
@@ -150,10 +150,10 @@
 
 - type: microwaveMealRecipe
   id: FoodDonkpocketPrepMothDIY
-  name: Prepped Donk Pocket
+  name: Prepped Moth Pocket
   result: FoodDonkpocketPrepMothDIY
   time: 5
-  group: Sweet
+  group: Other
   solids:
     FoodDoughCottonSlice: 1
     MaterialCloth1: 1
@@ -163,10 +163,10 @@
 
 - type: microwaveMealRecipe
   id: FoodDonkpocketPrepOrangeDIY
-  name: Prepped Donk Pocket
+  name: Prepped Orange Donk Pocket
   result: FoodDonkpocketPrepOrangeDIY
   time: 5
-  group: Sweet
+  group: Savory
   solids:
     FoodDoughPastryBaseRaw: 1
     FoodOrange: 1
@@ -176,10 +176,10 @@
 
 - type: microwaveMealRecipe
   id: FoodDonkpocketPrepPizzaDIY
-  name: Prepped Donk Pocket
+  name: Prepped Pizza Donk Pocket
   result: FoodDonkpocketPrepPizzaDIY
   time: 5
-  group: Sweet
+  group: Savory
   solids:
     FoodDoughPastryBaseRaw: 1
     FoodCheeseSlice: 1
@@ -190,10 +190,10 @@
 
 - type: microwaveMealRecipe
   id: FoodDonkpocketPrepPlainDIY
-  name: Prepped Donk Pocket
+  name: Prepped Plain Donk Pocket
   result: FoodDonkpocketPrepPlainDIY
   time: 5
-  group: Sweet
+  group: Savory
   solids:
     FoodDoughPastryBaseRaw: 1
     FoodMeatMeatball: 1
@@ -203,10 +203,10 @@
 
 - type: microwaveMealRecipe
   id: FoodDonkpocketPrepSpicyDIY
-  name: Prepped Donk Pocket
+  name: Prepped Spicy Donk Pocket
   result: FoodDonkpocketPrepSpicyDIY
   time: 5
-  group: Sweet
+  group: Savory
   solids:
     FoodDoughPastryBaseRaw: 1
     FoodMeatMeatball: 1
@@ -217,10 +217,10 @@
 
 - type: microwaveMealRecipe
   id: FoodDonkpocketPrepTeriyakiDIY
-  name: Prepped Donk Pocket
+  name: Prepped Teriyaki Donk Pocket
   result: FoodDonkpocketPrepTeriyakiDIY
   time: 5
-  group: Sweet
+  group: Savory
   solids:
     FoodDoughPastryBaseRaw: 1
   reagents:
@@ -231,10 +231,10 @@
 
 - type: microwaveMealRecipe
   id: FoodDonkpocketPrepPirozhkiDIY
-  name: Prepped Donk Pocket
+  name: Prepped Pirozhki Donk Pocket
   result: FoodDonkpocketPrepPirozhkiDIY
   time: 5
-  group: Sweet
+  group: Dessert
   solids:
     FoodDoughPastryBaseRaw: 1
     FoodMeatMeatball: 1
@@ -246,10 +246,10 @@
 
 - type: microwaveMealRecipe
   id: FoodDonkpocketPrepMushroomDIY
-  name: Prepped Donk Pocket
+  name: Prepped Mushroom Donk Pocket
   result: FoodDonkpocketPrepMushroomDIY
   time: 5
-  group: Sweet
+  group: Savory
   solids:
     FoodDoughPastryBaseRaw: 1
     FoodMushroom: 1
@@ -259,10 +259,10 @@
 
 - type: microwaveMealRecipe
   id: FoodDonkpocketPrepCheddarDIY
-  name: Prepped Donk Pocket
+  name: Prepped Cheddar Donk Pocket
   result: FoodDonkpocketPrepCheddarDIY
   time: 5
-  group: Sweet
+  group: Savory
   solids:
     FoodDoughPastryBaseRaw: 1
     FoodCheeseSlice: 1
@@ -273,10 +273,10 @@
 
 - type: microwaveMealRecipe
   id: FoodDonkpocketPrepMozzarellaDIY
-  name: Prepped Donk Pocket
+  name: Prepped Mozzarella Donk Pocket
   result: FoodDonkpocketPrepMozzarellaDIY
   time: 5
-  group: Sweet
+  group: Savory
   solids:
     FoodDoughPastryBaseRaw: 1
     FoodMozzarella: 1
@@ -292,7 +292,7 @@
   name: Banana Donk Pocket
   result: FoodDonkpocketBananaDIY
   time: 5
-  group: Sweet
+  group: Savory
   solids:
     FoodDonkpocketPrepBananaDIY: 1
   recipeType: Oven # Frontier
@@ -302,7 +302,7 @@
   name: Banana Split Donk Pocket
   result: FoodDonkpocketBananaSplitDIY
   time: 5
-  group: Sweet
+  group: Dessert
   solids:
     FoodDonkpocketPrepBananaSplitDIY: 1
   recipeType: Oven # Frontier
@@ -322,7 +322,7 @@
   name: Berry Donk Pocket
   result: FoodDonkpocketBerryDIY
   time: 5
-  group: Sweet
+  group: Dessert
   solids:
     FoodDonkpocketPrepBerryDIY: 1
   recipeType: Oven # Frontier
@@ -332,7 +332,7 @@
   name: Cherry Donk Pocket
   result: FoodDonkpocketCherryDIY
   time: 5
-  group: Sweet
+  group: Dessert
   solids:
     FoodDonkpocketPrepCherryDIY: 1
   recipeType: Oven # Frontier
@@ -342,7 +342,7 @@
   name: Chocolate Donk Pocket
   result: FoodDonkpocketChocolateDIY
   time: 5
-  group: Sweet
+  group: Dessert
   solids:
     FoodDonkpocketPrepChocolateDIY: 1
   recipeType: Oven # Frontier
@@ -352,7 +352,7 @@
   name: Dank Donk Pocket
   result: FoodDonkpocketDankDIY
   time: 5
-  group: Sweet
+  group: Savory
   solids:
     FoodDonkpocketPrepDankDIY: 1
   recipeType: Oven # Frontier
@@ -362,7 +362,7 @@
   name: Honey Donk Pocket
   result: FoodDonkpocketHoneyDIY
   time: 5
-  group: Sweet
+  group: Dessert
   solids:
     FoodDonkpocketPrepHoneyDIY: 1
   recipeType: Oven # Frontier
@@ -372,7 +372,7 @@
   name: Moth Donk Pocket
   result: FoodDonkpocketMothDIY
   time: 5
-  group: Sweet
+  group: Other
   solids:
     FoodDonkpocketPrepMothDIY: 1
   recipeType: Oven # Frontier
@@ -382,7 +382,7 @@
   name: Orange Donk Pocket
   result: FoodDonkpocketOrangeDIY
   time: 5
-  group: Sweet
+  group: Savory
   solids:
     FoodDonkpocketPrepOrangeDIY: 1
   recipeType: Oven # Frontier
@@ -422,7 +422,7 @@
   name: Teriyaki Donk Pocket
   result: FoodDonkpocketTeriyakiDIY
   time: 5
-  group: Sweet
+  group: Savory
   solids:
     FoodDonkpocketPrepTeriyakiDIY: 1
   recipeType: Oven # Frontier

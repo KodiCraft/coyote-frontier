@@ -263,7 +263,7 @@
 # Prepped
 
 - type: entity
-  name: Prepped Donk Pocket
+  name: Prepped Banana Donk Pocket
   parent: FoodDonkpocketBase
   id: FoodDonkpocketPrepBananaDIY
   description: A donk pocket prepped for baking
@@ -276,7 +276,7 @@
     state: prep
 
 - type: entity
-  name: Prepped Donk Pocket
+  name: Prepped Banana Split Donk Pocket
   parent: FoodDonkpocketBase
   id: FoodDonkpocketPrepBananaSplitDIY
   description: A donk pocket prepped for baking
@@ -289,7 +289,7 @@
     state: prep
 
 - type: entity
-  name: Prepped Donk Pocket
+  name: Prepped Bbq Donk Pocket
   parent: FoodDonkpocketBase
   id: FoodDonkpocketPrepBbqDIY
   description: A donk pocket prepped for baking
@@ -302,7 +302,7 @@
     state: prep
 
 - type: entity
-  name: Prepped Donk Pocket
+  name: Prepped Berry Donk Pocket
   parent: FoodDonkpocketBase
   id: FoodDonkpocketPrepBerryDIY
   description: A donk pocket prepped for baking
@@ -315,7 +315,7 @@
     state: prep
 
 - type: entity
-  name: Prepped Donk Pocket
+  name: Prepped Cherry Donk Pocket
   parent: FoodDonkpocketBase
   id: FoodDonkpocketPrepCherryDIY
   description: A donk pocket prepped for baking
@@ -328,7 +328,7 @@
     state: prep
 
 - type: entity
-  name: Prepped Donk Pocket
+  name: Prepped Chocolate Donk Pocket
   parent: FoodDonkpocketBase
   id: FoodDonkpocketPrepChocolateDIY
   description: A donk pocket prepped for baking
@@ -341,7 +341,7 @@
     state: prep
 
 - type: entity
-  name: Prepped Donk Pocket
+  name: Prepped Dank Pocket
   parent: FoodDonkpocketBase
   id: FoodDonkpocketPrepDankDIY
   description: A donk pocket prepped for baking
@@ -354,7 +354,7 @@
     state: prep
 
 - type: entity
-  name: Prepped Donk Pocket
+  name: Prepped Honey Donk Pocket
   parent: FoodDonkpocketBase
   id: FoodDonkpocketPrepHoneyDIY
   description: A donk pocket prepped for baking
@@ -367,7 +367,7 @@
     state: prep
 
 - type: entity
-  name: Prepped Donk Pocket
+  name: Prepped Moth Pocket
   parent: FoodDonkpocketBase
   id: FoodDonkpocketPrepMothDIY
   description: A donk pocket prepped for baking
@@ -380,7 +380,7 @@
     state: prep
 
 - type: entity
-  name: Prepped Donk Pocket
+  name: Prepped Orange Donk Pocket
   parent: FoodDonkpocketBase
   id: FoodDonkpocketPrepOrangeDIY
   description: A donk pocket prepped for baking
@@ -393,7 +393,7 @@
     state: prep
 
 - type: entity
-  name: Prepped Donk Pocket
+  name: Prepped Pizza Donk Pocket
   parent: FoodDonkpocketBase
   id: FoodDonkpocketPrepPizzaDIY
   description: A donk pocket prepped for baking
@@ -406,7 +406,7 @@
     state: prep
 
 - type: entity
-  name: Prepped Donk Pocket
+  name: Prepped Plain Donk Pocket
   parent: FoodDonkpocketBase
   id: FoodDonkpocketPrepPlainDIY
   description: A donk pocket prepped for baking
@@ -419,7 +419,7 @@
     state: prep
 
 - type: entity
-  name: Prepped Donk Pocket
+  name: Prepped Spicy Donk Pocket
   parent: FoodDonkpocketBase
   id: FoodDonkpocketPrepSpicyDIY
   description: A donk pocket prepped for baking
@@ -432,7 +432,7 @@
     state: prep
 
 - type: entity
-  name: Prepped Donk Pocket
+  name: Prepped Teriyaki Donk Pocket
   parent: FoodDonkpocketBase
   id: FoodDonkpocketPrepTeriyakiDIY
   description: A donk pocket prepped for baking
@@ -445,7 +445,7 @@
     state: prep
 
 - type: entity
-  name: Prepped Donk Pocket
+  name: Prepped Pirozhki Donk Pocket
   parent: FoodDonkpocketBase
   id: FoodDonkpocketPrepPirozhkiDIY
   description: A donk pocket prepped for baking
@@ -458,7 +458,7 @@
     state: prep
 
 - type: entity
-  name: Prepped Donk Pocket
+  name: Prepped Mushroom Donk Pocket
   parent: FoodDonkpocketBase
   id: FoodDonkpocketPrepMushroomDIY
   description: A donk pocket prepped for baking
@@ -471,7 +471,7 @@
     state: prep
 
 - type: entity
-  name: Prepped Donk Pocket
+  name: Prepped Cheddar Donk Pocket
   parent: FoodDonkpocketBase
   id: FoodDonkpocketPrepCheddarDIY
   description: A donk pocket prepped for baking
@@ -484,7 +484,7 @@
     state: prep
 
 - type: entity
-  name: Prepped Donk Pocket
+  name: Prepped Mozzarella Donk Pocket
   parent: FoodDonkpocketBase
   id: FoodDonkpocketPrepMozzarellaDIY
   description: A donk pocket prepped for baking

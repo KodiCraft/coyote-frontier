@@ -19,7 +19,7 @@
 # Frontier
 - type: entity
   id: NFWeaponEnergyLightMachineGunTurbo
-  parent: [ NFBaseWeaponEnergyRifleAssaultFireModes, NFBaseWeaponFrameEnergyRifleAssaultCybersun, BaseC2Contraband ]
+  parent: [ BaseC2Contraband, NFBaseWeaponEnergyRifleAssaultFireModes, NFBaseWeaponFrameEnergyRifleAssaultCybersun ]
   name: turbo laser mk3
   description: |-
     A turbo laser ripped from the guardian unit. Appears to be a rather old model. Doesn't seem to be working properly. Supposedly highly illegal.

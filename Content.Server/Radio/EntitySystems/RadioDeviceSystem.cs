@@ -241,7 +241,7 @@ public sealed class RadioDeviceSystem : EntitySystem
             ref args,
             out RadioDegradationParams dParams);
 
-        if (dParams.DropMessageEntirely)
+        if (dParams.DropMessageEntirely || dParams.DropMessage)
             return;
         // do the KSSHHT
         var staticEv = new DoRadioStaticEvent(
@@ -252,8 +252,6 @@ public sealed class RadioDeviceSystem : EntitySystem
             args.Message,
             dParams);
         RaiseLocalEvent(uid, ref staticEv);
-        if (dParams.DropMessage)
-            return;
 
         RaiseLocalEvent(args.MessageSource, nameEv);
         var origName = dParams is { GenerifyName: true, NameOverride: not null }

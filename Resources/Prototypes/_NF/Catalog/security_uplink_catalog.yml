@@ -263,7 +263,7 @@
   productEntity: ShuttleGunChortMachineGunCircuitboard
   icon: { sprite: _NF/Objects/Misc/module.rsi, state: nfsd }
   cost:
-    FrontierUplinkCoin: 4
+    FrontierUplinkCoin: 30
   categories:
   - UplinkSecurityWeapons
   conditions:
@@ -271,6 +271,9 @@
     whitelist:
       tags:
       - SecurityUplink
+  - !type:BuyerJobCondition # Coyote
+    whitelist:
+    - Sheriff
 
 - type: listing #Coyote added hristov to NFSD uplink
   id: UplinkSecurityHristov

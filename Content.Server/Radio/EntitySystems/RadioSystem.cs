@@ -82,8 +82,32 @@ public sealed class RadioSystem : EntitySystem
 
     private void OnIntrinsicReceive(EntityUid uid, IntrinsicRadioReceiverComponent component, ref RadioReceiveEvent args)
     {
-        if (TryComp(uid, out ActorComponent? actor))
+        if (!TryComp(uid, out ActorComponent? actor))
+            return;
+        if (HasComp<GhostHearingComponent>(uid))
+        {
             _netMan.ServerSendMessage(args.ChatMsg, actor.PlayerSession.Channel);
+            return;
+        }
+
+        MsgChatMessage chatMess = MangleRadioMessage(
+            uid,
+            ref args,
+            out RadioDegradationParams dParams);
+
+        if (dParams.DropMessageEntirely || dParams.DropMessage)
+            return;
+        // do the KSSHHT
+        var staticEv = new DoRadioStaticEvent(
+            uid,
+            args.MessageSource,
+            actor.PlayerSession.AttachedEntity,
+            args.Channel.ID,
+            args.Message,
+            dParams);
+        RaiseLocalEvent(uid, ref staticEv);
+        // Send the message to the client
+        _netMan.ServerSendMessage(chatMess, actor.PlayerSession.Channel);
     }
 
     /// <summary>
@@ -91,7 +115,13 @@ public sealed class RadioSystem : EntitySystem
     /// </summary>
     public void SendRadioMessage(EntityUid messageSource, string message, ProtoId<RadioChannelPrototype> channel, EntityUid radioSource, int? frequency = null, bool escapeMarkup = true) // Frontier: added frequency
     {
-        SendRadioMessage(messageSource, message, _prototype.Index(channel), radioSource, frequency: frequency, escapeMarkup: escapeMarkup); // Frontier: added frequency
+        SendRadioMessage(
+            messageSource,
+            message,
+            _prototype.Index(channel),
+            radioSource,
+            frequency: frequency,
+            escapeMarkup: escapeMarkup); // Frontier: added frequency
     }
 
     /// <summary>

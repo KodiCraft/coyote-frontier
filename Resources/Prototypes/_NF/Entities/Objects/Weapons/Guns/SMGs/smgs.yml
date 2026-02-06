@@ -1,7 +1,7 @@
 #region WizDen
 - type: entity
   id: NFWeaponSubMachineGunAtreides
-  parent: [ NFBaseWeaponSubMachineGunChamber35, NFBaseWeaponFrameSubMachineGunGorlex, BaseC2Contraband ]
+  parent: [ BaseC2Contraband, NFBaseWeaponSubMachineGunChamber35, NFBaseWeaponFrameSubMachineGunGorlex ]
   name: Atreides
   description: |-
     Pla-ket-ket-ket-ket! An illegal firearm often used by Syndicate agents.
@@ -16,7 +16,7 @@
 
 - type: entity # Coyote: Converted to .40 caliber
   id: NFWeaponSubMachineGunC20r
-  parent: [ CSBaseWeaponHeavySubMachineGunChamber40, CSBaseWeaponFrameHeavySubMachineGunCybersun, BaseC2Contraband ]
+  parent: [ BaseC2Contraband, CSBaseWeaponHeavySubMachineGunChamber40, CSBaseWeaponFrameHeavySubMachineGunCybersun ]
   name: C-20r
   description: |-
     An illegal firearm that is often used by the infamous nuclear operatives.
@@ -37,7 +37,7 @@
 
 - type: entity # Coyote: Converted to .40 caliber
   id: NFWeaponSubMachineGunDrozd
-  parent: [ CSBaseWeaponHeavySubMachineGunChamber40, CSBaseWeaponFrameHeavySubMachineGunNanotrasen, BaseC2Contraband ]
+  parent: [ BaseC2Contraband, CSBaseWeaponHeavySubMachineGunChamber40, CSBaseWeaponFrameHeavySubMachineGunNanotrasen ]
   name: Drozd
   description: A fully automatic SMG.
   components: &drozdComponents
@@ -51,7 +51,7 @@
 
 - type: entity # Coyote: Converted to .40 caliber
   id: NFWeaponSubMachineGunDrozdLessLethal # Frontier-specific rubber variant
-  parent: [ CSBaseWeaponHeavySubMachineGunChamber40Rubber, CSBaseWeaponFrameHeavySubMachineGunNanotrasen ]
+  parent: [ BaseC2Contraband, CSBaseWeaponHeavySubMachineGunChamber40Rubber, CSBaseWeaponFrameHeavySubMachineGunNanotrasen ]
   name: Drozd
   description: A fully automatic SMG.
   suffix: Frontier, Less-Lethal
@@ -89,7 +89,7 @@
 #region DeltaV
 - type: entity # Coyote: Converted to .40 caliber
   id: NFWeaponSubMachineGunTypewriter
-  parent: [ CSBaseWeaponHeavySubMachineGunChamber40, CSBaseWeaponFrameHeavySubMachineGunFrontierGunsmith, BaseC2Contraband ]
+  parent: [ BaseC2Contraband, CSBaseWeaponHeavySubMachineGunChamber40, CSBaseWeaponFrameHeavySubMachineGunFrontierGunsmith ]
   name: Typewriter
   description: |-
     A modern take on the classic design used by mobsters throughout space and time.

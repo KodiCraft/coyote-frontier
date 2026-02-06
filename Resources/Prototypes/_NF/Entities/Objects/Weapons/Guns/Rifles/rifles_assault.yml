@@ -1,7 +1,7 @@
 #region WizDen
 - type: entity # TODO: switch to .25 rifle (caseless)
   id: NFWeaponRifleAssaultSm
-  parent: [ NFBaseWeaponRifleAssaultChamber30, NFBaseWeaponFrameRifleAssaultCybersun, BaseC2Contraband ]
+  parent: [ BaseC2Contraband, NFBaseWeaponRifleAssaultChamber30, NFBaseWeaponFrameRifleAssaultCybersun ]
   name: Soland-Moss # Renamed: real brand name
   description: |-
     An iconic weapon of war. An illegal firearm often used by Syndicate agents.
@@ -17,7 +17,7 @@
 
 - type: entity # TODO: switch to .25 rifle (caseless)
   id: NFWeaponRifleAssaultM90GrenadeLauncher
-  parent: [ NFBaseWeaponRifleAssaultChamber20, NFBaseWeaponFrameRifleAssaultCybersun, BaseC2Contraband ]
+  parent: [ BaseC2Contraband, NFBaseWeaponRifleAssaultChamber20, NFBaseWeaponFrameRifleAssaultCybersun ]
   name: M-90gl
   description: |-
     An older bullpup carbine model, with an attached underbarrel grenade launcher. An illegal firearm often used by Syndicate agents.
@@ -101,7 +101,7 @@
 #region Frontier
 - type: entity
   id: NFWeaponRifleAssaultGestio
-  parent: [ NFBaseWeaponRifleAssaultChamber30LowCapacity, NFBaseWeaponFrameRifleAssaultFrontierGunsmith, BaseC2Contraband ]
+  parent: [ BaseC2Contraband, NFBaseWeaponRifleAssaultChamber30LowCapacity, NFBaseWeaponFrameRifleAssaultFrontierGunsmith ]
   name: Gestio
   description: |-
     An old burst-fire rifle designed by Silver Industries that never left trials.
@@ -124,7 +124,7 @@
 
 - type: entity
   id: NFWeaponRifleAssaultNovaliteC1
-  parent: [ NFBaseWeaponRifleAssaultChamber20Clip, NFBaseWeaponFrameRifleAssaultFrontierGunsmith ]
+  parent: [ BaseC2Contraband, NFBaseWeaponRifleAssaultChamber20Clip, NFBaseWeaponFrameRifleAssaultFrontierGunsmith ]
   name: Novalite C1
   description: |-
     A civilian grade semi-automatic rifle with an internal magazine.
